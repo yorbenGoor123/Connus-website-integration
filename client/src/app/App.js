@@ -6,6 +6,9 @@ import { StandardRoute } from './utils';
 import { RouteLayout } from './layouts';
 import { Home } from './pages';
 
+import './_sass/index.scss';
+import 'bootstrap/dist/css/bootstrap.css';
+
 function App() {
   return (
     <AnimateProvider>
