@@ -1,5 +1,10 @@
-.section-two {
-    background-image: url(/bgImages/sectionTwoYellow.svg);
-    
-    width: 100vw;
+.section-two__bg-container {
+    object-fit: fill;
+
+    position: absolute;
+    top: -20px;
+    left: -21vw;
+    width: 140vw;
+
+    z-index: -1;
 }

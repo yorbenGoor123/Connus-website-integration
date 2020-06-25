@@ -12,10 +12,11 @@ function SectionTwo(props) {
     return (
         <div className ="section-two">
             {/* correct typographic components have to be implemented */}
-            <h1>{}</h1>
+            <img className="section-two__bg-container" src="./bgImages/sectionTwoYellow.svg" />
             <p>
+
+            <h1>{}</h1>
             {Parser(text["section_two_bubble_four_text"])}
-                {!text["section_two_bubble_four_text"]}
             </p>
         </div>
     );
