@@ -1,10 +1,15 @@
-.section-two__bg-container {
-    object-fit: fill;
+.section-two {
+    position: relative;
 
-    position: absolute;
-    top: -20px;
-    left: -21vw;
-    width: 140vw;
-
-    z-index: -1;
+    .section-two__bg-container {
+        object-fit: fill;
+    
+        position: absolute;
+        top: -20px;
+        left: -21vw;
+        width: 140vw;
+    
+        z-index: -1;
+    }
 }
+

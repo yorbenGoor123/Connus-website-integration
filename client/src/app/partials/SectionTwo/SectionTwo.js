@@ -15,7 +15,6 @@ function SectionTwo(props) {
             <img className="section-two__bg-container" src="./bgImages/sectionTwoYellow.svg" />
             <p>
 
-            <h1>{}</h1>
             {Parser(text["section_two_bubble_four_text"])}
             </p>
         </div>

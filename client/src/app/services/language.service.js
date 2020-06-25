@@ -13,7 +13,7 @@ const LanguageProvider = ({children}) => {
 		const cookies = {}
 		cookieArray.forEach( (cookie) => {
 			const parts = cookie.split('=');
-			cookies[parts[0].trim()] = parts[1].trim();
+			if ( parts[0] && parts[1] ) cookies[parts[0].trim()] = parts[1].trim();
 		})
 
 		return cookies.language;
@@ -24,6 +24,7 @@ const LanguageProvider = ({children}) => {
 	 */
 	const getText = (page) => {
 		const language = getLanguageFromCookie();
+		if (!page || !language) return text["en_brand"]
 		return text[`${language}_${page}`];
 	}
 
