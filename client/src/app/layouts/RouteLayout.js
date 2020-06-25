@@ -1,9 +1,18 @@
 import React from 'react';
 
+import {
+    Header, 
+    Row,
+} from '../partials';
+
 const RouteLayout = ({ children }) => {
     return (
         <div className="App">
-            {/** Header here */ }
+            <Header>
+                <Row>
+                    
+                </Row>
+            </Header>
 
             {/** Content here */ }
             { children }

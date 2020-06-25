@@ -1,12 +1,16 @@
 import React from 'react';
 
-import { SectionTwo } from '../partials';
+import { SectionTwo, Head, PageContainer } from '../partials';
 
 const Home = () => {
     return (
-        <div>
+        <PageContainer>
+            <Head>
+
+            </Head>
+
             <SectionTwo page="brand" />
-        </div>
+        </PageContainer>
     )
 };
 

@@ -12,15 +12,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 function App() {
   return (
     <LanguageProvider>
-    <AnimateProvider>
-      
-      <Router basename="/">
-        <Switch>
-          <StandardRoute exact path="/" component={Home} layout={RouteLayout} />
-        </Switch>
-      </Router>
-
-    </AnimateProvider>
+      <AnimateProvider>
+        <Router basename="/">
+          <Switch>
+            <StandardRoute exact path="/" component={Home} layout={RouteLayout} />
+          </Switch>
+        </Router>
+      </AnimateProvider>
     </LanguageProvider>
   );
 }

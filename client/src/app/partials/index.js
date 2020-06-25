@@ -1,5 +1,4 @@
-import SectionTwo from './SectionTwo';
-
-export {
-    SectionTwo,
-}
+export * from './SectionTwo';
+export * from './Head';
+export * from './Header';
+export * from './Layout';
