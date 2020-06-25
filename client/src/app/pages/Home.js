@@ -1,8 +1,12 @@
 import React from 'react';
 
+import { SectionTwo } from '../partials';
+
 const Home = () => {
     return (
-        <div></div>
+        <div>
+            <SectionTwo page="brand" />
+        </div>
     )
 };
 

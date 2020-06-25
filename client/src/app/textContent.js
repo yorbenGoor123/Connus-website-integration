@@ -1,4 +1,4 @@
-const text = {
+export default {
     "en_brand" : {
         header_title: "The right person for your business",
         header_text: "A breakthrough in creating intuitive new opportunities to inspire others through influencer marketing.",

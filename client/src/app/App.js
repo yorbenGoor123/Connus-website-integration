@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 
-import { AnimateProvider } from './services/animate.service';
+import { AnimateProvider, LanguageProvider } from './services';
 import { StandardRoute } from './utils';
 import { RouteLayout } from './layouts';
 import { Home } from './pages';
@@ -11,13 +11,17 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
+    <LanguageProvider>
     <AnimateProvider>
+      
       <Router basename="/">
         <Switch>
           <StandardRoute exact path="/" component={Home} layout={RouteLayout} />
         </Switch>
       </Router>
+
     </AnimateProvider>
+    </LanguageProvider>
   );
 }
 
