@@ -10,6 +10,10 @@ import IosDownload from '../assets/icons/download-ios.png';
 import AndroidDownload from '../assets/icons/download-android.png';
 
 const Home = () => {
+    /** 
+    * Maybe good when using these services on upper level
+    * Makes it useable everywhere...
+    */
     const { getText } = useLanguage(); 
     const text = getText("brand");
 
@@ -31,19 +35,36 @@ const Home = () => {
 
                         <Col sizes="col-12 col-md-8 justify-content-md-center">
                             <DownloadButtons>
-                                <DownloadButton size="big" img={IosDownload} />
-                                <DownloadButton size="big" img={AndroidDownload} />
+                                <DownloadButton 
+                                    size="big" 
+                                    img={IosDownload} 
+                                />
+
+                                <DownloadButton 
+                                    size="big" 
+                                    img={AndroidDownload} 
+                                />
                             </DownloadButtons>
                         </Col>
 
-                        <Col>
-                            
+                        <Col size="col-12 col-md-4 justify-content-md-end justify-content-center">
+                            {/**
+                             * NEED TO ADD THE MOCK UP HEREEEEEEEE!!!!!!
+                             */}
                         </Col>
                     </Row>
                 </Container>
             </Head>
 
+            {/**
+             * Include first section here!
+             */}
+
             <SectionTwo page="brand" />
+
+            {/**
+             * Other...
+             */}
         </PageContainer>
     )
 };
