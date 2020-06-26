@@ -1,15 +1,42 @@
 .section-two {
     position: relative;
+    margin-top: 300px;
+    // padding-top: 5%;
 
-    .section-two__bg-container {
+    .section-two__bg-container-large {
         object-fit: fill;
     
         position: absolute;
-        top: -20px;
+        top: -150px;
         left: -21vw;
         width: 140vw;
+        height: 60vw;
+        min-height: 900px;
+        max-height: 1000px;
+        // height: 1000px;
     
         z-index: -1;
+    }
+
+    .section-two__bg-container-small {
+        object-fit: fill;
+    
+        position: absolute;
+        top: -150px;
+        left: -120vw;
+        width: 340vw;
+        height: 250vw;
+        min-height: 1100px;
+        max-height: 1200px;
+    
+        z-index: -1;
+    }
+
+    .section-two__text-container {
+        text-align: center;
+        div {
+            margin: 0 auto;
+        }
     }
 }
 
