@@ -4,15 +4,16 @@
     // padding-top: 5%;
 
     .section-two__bg-container-large {
+        background-image: url("../../assets/bgImages/sectionTwoYellow.svg");
         object-fit: fill;
     
         position: absolute;
         top: -150px;
         left: -21vw;
         width: 140vw;
-        height: 60vw;
-        min-height: 900px;
-        max-height: 1000px;
+        // height: 60vw;
+        // min-height: 1100px;
+        // max-height: 1200px;
         // height: 1000px;
     
         z-index: -1;
@@ -39,4 +40,3 @@
         }
     }
 }
-

@@ -13,8 +13,10 @@ function SectionTwo(props) {
     return (
         <section className ="section-two">
             {/* correct typographic components have to be implemented */} 
-            <img className="section-two__bg-container-large d-none d-md-inline" src="./bgImages/sectionTwoYellow.svg" />
-            <img className="section-two__bg-container-small d-inline d-md-none" src="./bgImages/sectionTwoYellow.svg" />
+            <div className="section-two__bg-container-large d-none d-md-inline"> </div>
+            <div className="section-two__bg-container-small d-inline d-md-none"> </div>
+            {/* <img  src="./bgImages/sectionTwoYellow.svg" />
+            <img c src="./bgImages/sectionTwoYellow.svg" /> */}
 
             <div className="section-two__text-container container">
                 <div className="col-12 col-md-6" >
