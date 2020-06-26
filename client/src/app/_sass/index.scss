@@ -2,3 +2,7 @@
 @import './components/index.scss';
 @import './partials/index.scss';
 @import './pages/index.scss';
+
+.App {
+    overflow: hidden;
+}
