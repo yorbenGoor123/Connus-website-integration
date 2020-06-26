@@ -29,6 +29,6 @@ export default {
 
         section_six_proudPartner: "Proud partner of",
 
-        section_six_doanload_title: "Are your ready to start your influencer carreer right now",
+        section_six_download_title: "Are your ready to start your influencer carreer right now",
     }
 }

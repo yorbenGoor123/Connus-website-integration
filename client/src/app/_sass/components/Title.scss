@@ -1,0 +1,12 @@
+.head-title {
+    @include font-head;
+    color: $white;
+}
+
+.text {
+    @include font-text;
+}
+
+.white-font {
+    color: $white;
+}

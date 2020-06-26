@@ -1,9 +1,13 @@
 @import './variables';
+@import './mixins';
 @import './components/index.scss';
 @import './partials/index.scss';
 @import './pages/index.scss';
-@import './partials/SectionTwo.scss';
 
 .App {
     overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
 }
