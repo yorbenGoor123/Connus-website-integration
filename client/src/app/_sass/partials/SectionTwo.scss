@@ -2,9 +2,10 @@
     position: relative;
     margin-top: 300px;
     // padding-top: 5%;
+    background-image: url("../../assets/bgImages/sectionTwoYellow.svg");
+    background-repeat: no-repeat;
 
     .section-two__bg-container-large {
-        background-image: url("../../assets/bgImages/sectionTwoYellow.svg");
         object-fit: fill;
     
         position: absolute;
