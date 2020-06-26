@@ -4,7 +4,7 @@ import Parser from 'html-react-parser';
 import {useLanguage} from '../../services';
 import { Row } from '../Layout'
 
-import './SectionTwo.scss';
+import '../../_sass/partials/SectionTwo.scss';
 
 
 function SectionTwo(props) {
@@ -12,7 +12,7 @@ function SectionTwo(props) {
     const text = getText(props.page);
     return (
         <section className ="section-two">
-            {/* correct typographic components have to be implemented */}
+            {/* correct typographic components have to be implemented */} 
             <img className="section-two__bg-container-large d-none d-md-inline" src="./bgImages/sectionTwoYellow.svg" />
             <img className="section-two__bg-container-small d-inline d-md-none" src="./bgImages/sectionTwoYellow.svg" />
 
@@ -27,9 +27,9 @@ function SectionTwo(props) {
 
             <div className="section-two__phone-container container">
 
-                <div className="row">
+                <Row>
                     <div className="col">
-
+                         
                     </div>
                     <div className="col">
 
@@ -37,7 +37,7 @@ function SectionTwo(props) {
                     <div className="col">
 
                     </div>
-                </div>
+                </Row>
             </div>
         </section>
     );
