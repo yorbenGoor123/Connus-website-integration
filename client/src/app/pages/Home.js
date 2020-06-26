@@ -35,6 +35,10 @@ const Home = () => {
                                 <DownloadButton size="big" img={AndroidDownload} />
                             </DownloadButtons>
                         </Col>
+
+                        <Col>
+                            
+                        </Col>
                     </Row>
                 </Container>
             </Head>
