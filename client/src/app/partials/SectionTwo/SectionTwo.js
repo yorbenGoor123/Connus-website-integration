@@ -4,6 +4,7 @@ import Parser from 'html-react-parser';
 import {useLanguage} from '../../services';
 import { Row } from '../Layout'
 import { SectionTitle, Text } from '../../components'
+import FactCard  from '../../components/misc/FactCard'
 
 import '../../_sass/partials/SectionTwo.scss';
 
@@ -39,12 +40,15 @@ function SectionTwo(props) {
             <div className="section-two__phone-container container">
 
                 <Row>
-                    <div className="col">
-                         
+                    <div className="col d-none d-md-block">
+                        <FactCard
+                            numberBig="103"
+                            text={Parser(text["section_two_bubble_two_text"])} 
+                        />
                     </div>
                     <div className="section-two__mockup col">
                     </div>
-                    <div className="col">
+                    <div className="col d-none d-md-block">
 
                     </div>
                 </Row>

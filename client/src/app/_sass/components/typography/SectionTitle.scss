@@ -1,0 +1,5 @@
+.section-title {
+    @include font-title;
+    color: $white;
+    margin-bottom: 100px;
+}
