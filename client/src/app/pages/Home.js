@@ -2,7 +2,7 @@ import React from 'react';
 import Parser from 'html-react-parser';
 
 import { SectionTwo, Head, PageContainer, Container, Row, Col, DownloadButtons } from '../partials';
-import { HeadTitle, Text, DownloadButton } from '../components';
+import { HeadTitle, Text, DownloadButton, EmptyMockup, Logo } from '../components';
 
 import { useLanguage } from '../services';
 
@@ -24,12 +24,12 @@ const Home = () => {
                     <Row>
                         <Col sizes="col-12 col-md-8">
                             <HeadTitle
-                                text={Parser(text["header_title"])}
+                                text={Parser(text["header_one_title"])}
                             />
 
                             <Text 
                                 color="white-font" 
-                                text={Parser(text["header_text"])}
+                                text={Parser(text["header_one_text"])}
                             />
                         </Col>
 
@@ -47,10 +47,10 @@ const Home = () => {
                             </DownloadButtons>
                         </Col>
 
-                        <Col size="col-12 col-md-4 justify-content-md-end justify-content-center">
-                            {/**
-                             * NEED TO ADD THE MOCK UP HEREEEEEEEE!!!!!!
-                             */}
+                        <Col sizes="col-md-4">
+                            <EmptyMockup>
+                                <Logo />
+                            </EmptyMockup>
                         </Col>
                     </Row>
                 </Container>

@@ -4,26 +4,13 @@ const AnimateContext = createContext();
 const useAnimation = () => useContext(AnimateContext);
 
 const AnimateProvider = ({children}) => {
-    /** 
-     * 
-     * 
-     * Insert all functions here 
-     * 
-     * 
-     * */
+    const ToggleMenu = (action) => {
 
+    };
 
     return (
         <AnimateContext.Provider value={{
-            /** 
-             * 
-             * 
-             * 
-             * Here comes the animations 
-             * 
-             * 
-             * 
-             * */
+            ToggleMenu,
         }}>
             {children}
         </AnimateContext.Provider>

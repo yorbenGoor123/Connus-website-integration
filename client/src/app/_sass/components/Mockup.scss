@@ -1,0 +1,52 @@
+.empty-mockup {
+    background-image: url("../../assets/mock/empty-phone.png");
+    width: 330px;
+    height: 530px;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: -20vh;
+    transform: rotate(5deg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 25px;
+
+    img {
+        width: 75px;
+        transform: rotate(5deg);
+    }
+
+    transition: ease-in-out 0.5s;
+    -webkit-animation: fadein 2s;
+       -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s; 
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; transform: translate(0, -10px); transform: rotate(0deg); }
+    to   { opacity: 1; transform: translate(0, 0px); transform: rotate(5deg); }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; transform: translate(0, -10px); transform: rotate(0deg); }
+    to   { opacity: 1; transform: translate(0, 0px); transform: rotate(5deg); }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
