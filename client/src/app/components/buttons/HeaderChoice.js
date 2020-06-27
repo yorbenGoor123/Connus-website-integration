@@ -4,16 +4,21 @@ import ArrowDown from '../../assets/icons/arrow-down.png';
 import { useAnimation } from '../../services';
 
 const HeaderChoice = ({ choice }) => {
-    const { ToggleMenu } = useAnimation();
+    const { ToggleMenu, HideMenu } = useAnimation();
     const [ toggleState, setToggleState ] = useState(false);
 
     const toggle = (state) => {
+        const choiceBtn = document.getElementsByClassName('choice-button')[0];
+        const choiceArrow = choiceBtn.lastElementChild.lastElementChild;
+        const choiceOption = document.getElementsByClassName('choice-button-option')[0];
+
         if (state === true) {
-            const choiceBtn = document.getElementsByClassName('choice-button')[0];
-            const choiceOption = document.getElementsByClassName('choice-button-option')[0];
-            console.log(choiceBtn, choiceOption);
-            ToggleMenu(choiceBtn, choiceOption);
-        }
+            ToggleMenu(choiceBtn, choiceOption, choiceArrow);
+            setToggleState(state);
+        } else {
+            HideMenu(choiceBtn, choiceOption, choiceArrow);
+            setToggleState(state);
+        };
     };
 
     return (

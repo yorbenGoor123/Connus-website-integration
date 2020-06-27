@@ -4,8 +4,16 @@ import {
     Header, 
     Row,
     Col,
+    Footer,
+    LanguageButtons,
 } from '../partials';
-import { FullLogo, HeaderChoice } from '../components';
+
+import { 
+    FullLogo, 
+    HeaderChoice,
+    LanguageButton,
+    LightButton,
+} from '../components';
 
 const RouteLayout = ({ children }) => {
     return (
@@ -24,7 +32,20 @@ const RouteLayout = ({ children }) => {
 
             { children }
 
-            {/** Footer here */}
+            <Footer>
+                <Row>
+                    <Col sizes="col-12 col-md-6">
+                        <LanguageButtons>
+                            <LanguageButton text="Nederlands" />
+                            <LanguageButton text="English" used={true} />
+                        </LanguageButtons>
+                    </Col>
+
+                    <Col sizes="col-12 col-md-4 d-md-flex justify-content-md-end">
+                        <LightButton text="Privacy Policy"/>
+                    </Col>
+                </Row>
+            </Footer>
         </div>
     )
 };
