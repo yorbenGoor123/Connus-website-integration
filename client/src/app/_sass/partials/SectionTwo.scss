@@ -1,41 +1,27 @@
 .section-two {
+    width: 100vw;
     position: relative;
-    margin-top: 300px;
-    // padding-top: 5%;
+    padding-top: 200px;
+    padding-bottom: 150px;
+
     background-image: url("../../assets/bgImages/sectionTwoYellow.svg");
     background-repeat: no-repeat;
+    background-size: 120% 100%;
+    background-position: center;
 
-    .section-two__bg-container-large {
-        object-fit: fill;
-    
-        position: absolute;
-        top: -150px;
-        left: -21vw;
-        width: 140vw;
-        // height: 60vw;
-        // min-height: 1100px;
-        // max-height: 1200px;
-        // height: 1000px;
-    
-        z-index: -1;
-    }
-
-    .section-two__bg-container-small {
-        object-fit: fill;
-    
-        position: absolute;
-        top: -150px;
-        left: -120vw;
-        width: 340vw;
-        height: 250vw;
-        min-height: 1100px;
-        max-height: 1200px;
-    
-        z-index: -1;
+    .section-two__mockup {
+        background-image: url("../../assets/mock/empty-phone.png");
+        background-position: center;
+        
+        width: 330px;
+        height: 530px;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .section-two__text-container {
         text-align: center;
+        margin-bottom: 80px;
         div {
             margin: 0 auto;
         }
