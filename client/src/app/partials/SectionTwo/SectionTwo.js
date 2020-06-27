@@ -3,6 +3,7 @@ import Parser from 'html-react-parser';
 
 import {useLanguage} from '../../services';
 import { Row } from '../Layout'
+import { SectionTitle, Text } from '../../components'
 
 import '../../_sass/partials/SectionTwo.scss';
 
@@ -13,17 +14,25 @@ function SectionTwo(props) {
     return (
         <section className ="section-two">
             {/* correct typographic components have to be implemented */} 
-            <div className="section-two__bg-container-large d-none d-md-inline"> </div>
-            <div className="section-two__bg-container-small d-inline d-md-none"> </div>
-            {/* <img  src="./bgImages/sectionTwoYellow.svg" />
-            <img c src="./bgImages/sectionTwoYellow.svg" /> */}
 
             <div className="section-two__text-container container">
                 <div className="col-12 col-md-6" >
-                    <h1>{Parser(text["section_two_title"])}</h1>
-                    <p>{Parser(text["section_two_text_one"])}</p>
-                    <p>{Parser(text["section_two_text_two"])}</p>
-                    <p>{Parser(text["section_two_text_three"])}</p>
+                    <SectionTitle 
+                        color="white-font" 
+                        text={Parser(text["section_two_title"])}
+                    />
+                    <Text
+                        color="white-font" 
+                        text={Parser(text["section_two_text_one"])} 
+                    />
+                    <Text
+                        color="white-font" 
+                        text={Parser(text["section_two_text_two"])} 
+                    />
+                    <Text
+                        color="white-font" 
+                        text={Parser(text["section_two_text_three"])} 
+                    />
                 </div>
             </div>
 
@@ -33,8 +42,7 @@ function SectionTwo(props) {
                     <div className="col">
                          
                     </div>
-                    <div className="col">
-
+                    <div className="section-two__mockup col">
                     </div>
                     <div className="col">
 

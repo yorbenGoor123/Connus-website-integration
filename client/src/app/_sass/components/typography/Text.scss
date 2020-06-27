@@ -1,13 +1,6 @@
-.head-title {
-    @include font-head;
-    color: $white;
-
-    transition: ease-in-out 0.5s;
-    -webkit-animation: fadetext 2s;
-       -moz-animation: fadetext 2s;
-        -ms-animation: fadetext 2s; 
-         -o-animation: fadetext 2s; 
-            animation: fadetext 2s;
+p {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .text {
