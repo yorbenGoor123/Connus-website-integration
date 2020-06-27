@@ -3,9 +3,9 @@ import React from 'react';
 const SectionTitle = (props) => {
 
     return (
-        <h1 className={`section-title ${props.color}`}>
+        <h2 className={`section-title ${props.color}`}>
             {props.text}
-        </h1>
+        </h2>
     )
 };
 
