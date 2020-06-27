@@ -4,8 +4,9 @@ const AnimateContext = createContext();
 const useAnimation = () => useContext(AnimateContext);
 
 const AnimateProvider = ({children}) => {
-    const ToggleMenu = (action) => {
-
+    const ToggleMenu = (btn, option) => {
+        option.style.display = 'block';
+        option.style.opacity = '1';
     };
 
     return (

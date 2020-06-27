@@ -22,6 +22,22 @@
     opacity: 0.8;
 }
 
+.choice-button-option {
+    background-color: #0C43C6;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: $standard-shadow;
+    opacity: 0;
+    display: none;
+    transition: ease-in-out 0.3s;
+
+    &__text {
+        color: $white;
+        font-family: $primary-font;
+    }
+}
+
 .download-buttons {
     display: flex;
 }
