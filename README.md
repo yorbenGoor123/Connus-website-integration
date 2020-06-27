@@ -6,3 +6,5 @@
 26/10/2020 15:30: added some documentation, added folder with design
 <br>
 27/10/2020 10:30: added mock, added little animation
+<br>
+27/10/2020 15:05: added footer

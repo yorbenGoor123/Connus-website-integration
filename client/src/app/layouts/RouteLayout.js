@@ -6,6 +6,7 @@ import {
     Col,
     Footer,
     LanguageButtons,
+    SocialButtons,
 } from '../partials';
 
 import { 
@@ -13,7 +14,13 @@ import {
     HeaderChoice,
     LanguageButton,
     LightButton,
+    SocialButton,
 } from '../components';
+
+import Facebook from '../assets/icons/facebook.png';
+import Instagram from '../assets/icons/instagram.png';
+import Twitter from '../assets/icons/twitter.png';
+import Linkedin from '../assets/icons/linkedin.png';
 
 const RouteLayout = ({ children }) => {
     return (
@@ -43,6 +50,15 @@ const RouteLayout = ({ children }) => {
 
                     <Col sizes="col-12 col-md-4 d-md-flex justify-content-md-end">
                         <LightButton text="Privacy Policy"/>
+                    </Col>
+
+                    <Col sizes="col-12 col-md-2 d-md-flex align-items-center">
+                        <SocialButtons>
+                            <SocialButton img={Linkedin} />
+                            <SocialButton img={Facebook} />
+                            <SocialButton img={Instagram} />
+                            <SocialButton img={Twitter} />
+                        </SocialButtons>
                     </Col>
                 </Row>
             </Footer>
