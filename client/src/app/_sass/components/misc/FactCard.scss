@@ -1,0 +1,48 @@
+@import '../../variables';
+
+.fact-card {
+    background-color: $white;
+    border-radius: 22px;
+
+    padding:10px 30px;
+    max-width: 290px;
+    max-height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position:relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    p {
+        display: inline-block;
+        color: $yellow;
+        font-family: $primary-font;
+        font-weight: lighter;
+        strong {
+            font-weight: 400;
+        }
+    }
+
+    .fact-card__number-big {
+        font-size: 60px;
+        font-weight: 800;
+    }
+
+    span {
+        width: 0.8vw;
+    }
+
+    .fact-card__text {
+        padding-left:20px;
+    }
+
+    .fact-card__number-small {
+        font-size: 36px;
+        font-weight: 800;
+    }
+
+    img {
+        height: 35px;
+    }
+}

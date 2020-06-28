@@ -1,11 +1,20 @@
 import React from 'react';
 
+import '../../_sass/components/misc/FactCard.scss';
+
 const FactCard = (props) => {
+
+    const postionStyle = {
+        top: props.topOffset,
+        left: props.leftOffset,
+    };
     return (
-        <div class="fact-card">
+        <div class="fact-card"
+             style={postionStyle}
+             >
             {
                 (props.icon)
-                ? <img className="fact-card__icon" src="../../assets/icons/props.icon" /> 
+                ? <img className="fact-card__icon" src={require(`../../assets/icons/${props.icon}`)} /> 
                 : null
             }
             {
@@ -13,9 +22,10 @@ const FactCard = (props) => {
                 ? <p className="fact-card__number-big" >{props.numberBig}</p>
                 : null
             }
+            <span></span>
             {
                 (props.numberSmall)
-                ? <p className="fact-card__number-small" >{props.numbersmall}</p>
+                ? <p className="fact-card__number-small" >{props.numberSmall}</p>
                 : null
             }
             {
