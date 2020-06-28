@@ -9,3 +9,8 @@
          -o-animation: fadetext 2s; 
             animation: fadetext 2s;
 }
+
+.small-title {
+   @include font-small-title;
+   color: $blue;
+}

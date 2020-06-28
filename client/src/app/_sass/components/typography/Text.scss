@@ -14,6 +14,10 @@ p {
             animation: fadetext 2s;
 }
 
+.light-text {
+    @include font-lighttext;
+}
+
 .white-font {
     color: $white;
 }

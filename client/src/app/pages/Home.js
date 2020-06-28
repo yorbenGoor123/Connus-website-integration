@@ -1,19 +1,16 @@
 import React from 'react';
 import Parser from 'html-react-parser';
 
-import { SectionTwo, Head, PageContainer, Container, Row, Col, DownloadButtons } from '../partials';
-import { HeadTitle, Text, DownloadButton, EmptyMockup, Logo } from '../components';
+import { SectionTwo, Head, PageContainer, Container, Row, Col, DownloadButtons, CenterRow } from '../partials';
+import { HeadTitle, Text, DownloadButton, EmptyMockup, Logo, SectionTitle } from '../components';
 
 import { useLanguage } from '../services';
 
 import IosDownload from '../assets/icons/download-ios.png';
 import AndroidDownload from '../assets/icons/download-android.png';
+import InfluencerSection from '../partials/Influencer/InfluencerSection';
 
 const Home = () => {
-    /** 
-    * Maybe good when using these services on upper level
-    * Makes it useable everywhere...
-    */
     const { getText } = useLanguage(); 
     const text = getText("brand");
 
@@ -56,15 +53,20 @@ const Home = () => {
                 </Container>
             </Head>
 
-            {/**
-             * Include first section here!
-             */}
-
             <SectionTwo page="brand" />
 
-            {/**
-             * Other...
-             */}
+            <Container>
+                <CenterRow>
+                    <Col sizes="col-12 col-md-6">
+                        <SectionTitle 
+                            color="blue-font" 
+                            text={Parser(text["section_three_title"])}
+                        />
+
+                        <InfluencerSection />
+                    </Col>
+                </CenterRow>
+            </Container>
         </PageContainer>
     )
 };

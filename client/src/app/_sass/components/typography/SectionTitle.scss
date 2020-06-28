@@ -1,5 +1,13 @@
 .section-title {
     @include font-title;
-    color: $white;
     margin-bottom: 100px;
+    text-align: center;
+}
+
+.blue-font {
+    color: $blue;
+}
+
+.white-font {
+    color: $white;
 }
