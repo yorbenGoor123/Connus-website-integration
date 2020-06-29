@@ -1,8 +1,9 @@
 .influencer-box {
     background-color: $lightblue;
-    padding: 20px;
+    padding: 20px 0px;
     border-radius: 50px;
     margin-top: 20px;
+    display: none;
 
     .small-title {
         margin-bottom: 20px;
@@ -10,5 +11,29 @@
 
     .light-text {
         margin-bottom: 10px;
+    }
+}
+
+.col-influencer {
+    margin-top: 20px;
+}
+
+.influencer-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__point {
+        border-radius: 100%;
+        background-color: $blue;
+        width: 15px;
+        height: 15px;
+        margin: 1px;
+        opacity: 0.2;
+        margin-top: 10px;
+    }
+
+    .valid-point {
+        opacity: 1;
     }
 }

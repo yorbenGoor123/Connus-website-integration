@@ -1,15 +1,44 @@
 import React from 'react';
 
-import { CenterRow } from '../Layout';
-import { InfluencerButton, SmallTitle, LightText } from '../../components';
+import { CenterRow, Col } from '../Layout';
+import { SmallTitle, LightText } from '../../components';
+import InfluencerRating from './InfluencerRating';
 
-const InfluencerBox = ({show}) => {
+const InfluencerBox = ({title, followers, rating, index}) => {
     return (
         <div className="influencer-box">
-            <SmallTitle text="Nano-influencer" center={true} />
-            <LightText text="1-5K followers" center={true} />
+            <SmallTitle text={title} center={true} />
+            <LightText text={followers} center={true} />
             <CenterRow>
+                <Col sizes="col-2 col-influencer">
+                    <LightText text="Reach" center={true} />
 
+                    <InfluencerRating rating={3} />
+                </Col>
+
+                <Col sizes="col-2 col-influencer">
+                    <LightText text="Reach" center={true} />
+
+                    <InfluencerRating rating={3} />
+                </Col>
+
+                <Col sizes="col-2 col-influencer">
+                    <LightText text="Reach" center={true} />
+
+                    <InfluencerRating rating={3} />
+                </Col>
+
+                <Col sizes="col-2 col-influencer">
+                    <LightText text="Reach" center={true} />
+
+                    <InfluencerRating rating={3} />
+                </Col>
+
+                <Col sizes="col-2 col-influencer">
+                    <LightText text="Reach" center={true} />
+
+                    <InfluencerRating rating={3} />
+                </Col>
             </CenterRow>
         </div>
     )

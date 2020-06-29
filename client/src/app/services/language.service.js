@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
 import text from '../textContent';
 
@@ -6,6 +6,12 @@ const LanguageContext = createContext();
 const useLanguage = () => useContext(LanguageContext);
 
 const LanguageProvider = ({children}) => {
+	/**
+	 * Todo: pop-up for accepting cookies
+	 * 
+	 */
+	// const [ cookie, setCookie ] = useState();
+
 	const getLanguageFromCookie = () => {
 		// get cookies and process the string
 		const cookieString = document.cookie;
@@ -17,7 +23,7 @@ const LanguageProvider = ({children}) => {
 		})
 
 		return cookies.language;
-	}
+	};
 
 	/**
 	 * @param page values: "brand", "influencer"
@@ -26,7 +32,7 @@ const LanguageProvider = ({children}) => {
 		const language = getLanguageFromCookie();
 		if (!page || !language) return text["en_brand"]
 		return text[`${language}_${page}`];
-	}
+	};
 
 	return (
 		<LanguageContext.Provider value={{
@@ -41,4 +47,4 @@ export {
 	LanguageContext,
 	LanguageProvider,
 	useLanguage,
-}
+};
