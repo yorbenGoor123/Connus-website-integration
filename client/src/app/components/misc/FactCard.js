@@ -14,7 +14,7 @@ const FactCard = (props) => {
              >
             {
                 (props.icon)
-                ? <img className="fact-card__icon" src={require(`../../assets/icons/${props.icon}`)} /> 
+                ? <img alt="icon" className="fact-card__icon" src={require(`../../assets/icons/${props.icon}`)} /> 
                 : null
             }
             {
