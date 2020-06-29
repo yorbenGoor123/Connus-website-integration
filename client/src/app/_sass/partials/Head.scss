@@ -7,3 +7,16 @@
     display: flex;
     align-items: center;
 }
+
+@media (max-width: 768px) {  
+    .head {
+        height: 100vh;
+        background-position-y: 0vh;
+        align-items: flex-start;
+        padding-top: 150px;
+
+        .text {
+            @include font-lighttext;
+        }
+    }
+}

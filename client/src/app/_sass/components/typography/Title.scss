@@ -14,3 +14,9 @@
    @include font-small-title;
    color: $blue;
 }
+
+@media (max-width: 768px) {  
+   .head-title {
+      @include font-small-title
+   }
+}
