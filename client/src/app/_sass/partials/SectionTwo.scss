@@ -14,10 +14,14 @@
         background-position: center;
         background-size: 100%;
 
-        width: 330px;
+        width: 300px;
         height: 530px;
         background-size: contain;
         background-repeat: no-repeat;
+    }
+
+    .section-two__mockup--mobile {
+        width: 100vw;
     }
 
     .section-two__text-container {
@@ -40,5 +44,20 @@
     .column-right {
         align-items: flex-start;
         margin-right: 20px;
+    }
+
+    .section-two__mobile-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+
+        margin: 0 auto;
+        padding: 10% 0;
+
+        width: 100%;
+        height:100%;
+        position: absolute;
+        top: 0;
     }
 }

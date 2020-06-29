@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Parser from 'html-react-parser';
 
 import {useLanguage} from '../../services';
 import { Row } from '../Layout'
 import { SectionTitle, Text } from '../../components'
 import FactCard  from '../../components/misc/FactCard'
+import FactCardMobile  from '../../components/misc/FactCardMobile'
 
 import '../../_sass/partials/SectionTwo.scss';
 
@@ -12,6 +13,22 @@ import '../../_sass/partials/SectionTwo.scss';
 function SectionTwo(props) {
     const { getText } = useLanguage(); 
     const text = getText(props.page);
+
+    const [activeDotNr, setActiveDotNr] = useState(undefined);
+
+    useEffect (() => {
+        for (let i = 1; i < 8; i ++) {
+            document.getElementById(`fact-card-mobile-${i}`)
+            .addEventListener('click', () => {
+                if (activeDotNr === i.toString()) {
+                    setActiveDotNr(undefined);
+                } else {
+                    setActiveDotNr(i.toString());
+                }
+            })
+        }
+    })
+
     return (
         <section className ="section-two">
             {/* correct typographic components have to be implemented */} 
@@ -40,13 +57,11 @@ function SectionTwo(props) {
             <div className="section-two__phone-container container">
 
                 <Row>
-                    <div className="col d-none d-md-block"><div className="column-left">
+                    <div className="col d-none d-lg-block"><div className="column-left">
 
                         <FactCard
                             icon="heart-solid.svg"
-                            numberSmall="+33" 
-                            // topOffset="100px"
-                            // leftOffset="20px"
+                            numberSmall="+33"
                         />
                         <FactCard
                             numberBig="103"
@@ -58,13 +73,113 @@ function SectionTwo(props) {
                             leftOffset="-7vw"
                         />
                     </div></div>
-                    <div className="section-two__mockup col">
+
+                    <div className="d-none d-lg-block">
+                         <div className="section-two__mockup"></div>
                     </div>
-                    <div className="col d-none d-md-block"><div className="column-right">
+                    <div className="col d-lg-none p-relative d-flex justify-content-center">
+                        <div className="col section-two__mockup section-two__mockup--mobile"></div>
+                        <div className="section-two__mobile-buttons">
+                            <FactCardMobile
+                                active={(activeDotNr === "1") ? "true": "false"}
+                                id="fact-card-mobile-1"
+
+                                icon="heart-solid.svg"
+                                numberSmall="+33"
+
+                                unfoldDirection="top-right"
+                                size="small" 
+
+                                leftOffset="-95px"
+                                topOffset=""
+                            />
+                            <FactCardMobile
+                                active={(activeDotNr === "2") ? "true": "false"}
+                                id="fact-card-mobile-2"
+
+                                numberBig="103"
+                                text={Parser(text["section_two_bubble_two_text"])} 
+
+                                unfoldDirection="top-left-large"
+                                size="large"
+
+                                leftOffset="95px"
+                                topOffset=""
+                            />
+                            <FactCardMobile
+                                active={(activeDotNr === "3") ? "true": "false"}
+                                id="fact-card-mobile-3"
+
+                                icon="comment.svg"
+                                numberSmall="+91" 
+
+                                unfoldDirection="top-left"
+                                size="small"
+
+                                leftOffset="105px"
+                                topOffset=""
+                            />
+                            <FactCardMobile
+                                active={(activeDotNr === "4") ? "true": "false"}
+                                id="fact-card-mobile-4"
+
+                                numberBig="93"
+                                text={Parser(text["section_two_bubble_four_text"])} 
+
+                                unfoldDirection="top-right-large"
+                                size="large"
+
+                                leftOffset="-90px"
+                                topOffset="-20px"
+                            />
+                            <FactCardMobile
+                                active={(activeDotNr === "5") ? "true": "false"}
+                                id="fact-card-mobile-5"
+
+                                icon="comment-dollar-solid.svg"
+                                numberSmall="+€101" 
+
+                                unfoldDirection="top-right"
+                                size="small"
+
+                                leftOffset="20px"
+                                topOffset="-20px"
+                            />
+                            <FactCardMobile
+                                active={(activeDotNr === "6") ? "true": "false"}
+                                id="fact-card-mobile-6"
+
+                                numberBig="186"
+                                text={Parser(text["section_two_bubble_five_text"])} 
+
+                                unfoldDirection="top-left-large"
+                                size="large"
+
+                                leftOffset="70px"
+                                topOffset="15px"
+                            />
+                            <FactCardMobile
+                                active={(activeDotNr === "7") ? "true": "false"}
+                                id="fact-card-mobile-7"
+
+                                icon="telegram-plane-brands.svg"
+                                numberSmall="+66"  
+
+                                unfoldDirection="top-right"
+                                size="small"
+
+                                leftOffset="-95px"
+                                topOffset="-20px"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="col d-none d-lg-block"><div className="column-right">
                         <FactCard
                             numberBig="93"
                             text={Parser(text["section_two_bubble_four_text"])} 
                             leftOffset="3vw"
+                            topOffset="-3vh"
                         />
                         <FactCard
                             icon="comment-dollar-solid.svg"

@@ -9,7 +9,7 @@ const FactCard = (props) => {
         left: props.leftOffset,
     };
     return (
-        <div class="fact-card"
+        <div className="fact-card"
              style={postionStyle}
              >
             {

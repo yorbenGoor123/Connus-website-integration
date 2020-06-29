@@ -1,0 +1,30 @@
+.fact-card-mobile {
+    position: relative;
+    .fact-card-mobile__dot {
+        border-radius: 50%;
+        width: 40px;
+        height:40px;
+        background: linear-gradient(180deg, rgba(119,8,167,1) 0%, rgba(189,25,190,1) 100%); 
+        
+        cursor: pointer;
+
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    .fact-card {
+        cursor: pointer;
+        position:absolute;
+    }
+
+    .fact-card-mobile__dot--small {
+        height: 26px;
+        width:26px;
+        border: 6px solid white;
+    }
+
+    .fact-card-mobile__dot--large {
+        height: 40px;
+        width: 40px;
+        border: 9px solid white;
+    }
+}
