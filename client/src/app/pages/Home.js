@@ -44,7 +44,7 @@ const Home = () => {
                             </DownloadButtons>
                         </Col>
 
-                        <Col sizes="col-md-4">
+                        <Col sizes="col-md-4 col-12">
                             <EmptyMockup>
                                 <Logo />
                             </EmptyMockup>
@@ -63,7 +63,7 @@ const Home = () => {
                             text={Parser(text["section_three_title"])}
                         />
                     </Col>
-                    <Col sizes="col-12 col-md-7">
+                    <Col sizes="col-12 col-md-9">
                         <InfluencerSection />
                     </Col>
                 </CenterRow>

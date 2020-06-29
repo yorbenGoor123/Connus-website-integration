@@ -1,8 +1,13 @@
 import React, { useEffect } from 'react';
 
-const InfluencerRating = ({rating}) => {
+const InfluencerRating = ({rating, index}) => {
     useEffect(() => {
+        const ratings = document.getElementsByClassName('influencer-rating__point');
+        console.log(rating);
 
+        for (let i = 0; i < rating; i++) {
+            ratings[i].classList.add('valid-point');
+        };
     });
 
     return (
