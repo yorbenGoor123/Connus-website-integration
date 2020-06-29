@@ -1,16 +1,10 @@
 import React from 'react';
 
-const InfluencerButton = ({used, text}) => {
+const InfluencerButton = ({text, toggle}) => {
     return (
-        used ? (
-            <div className="influencer-button">
-                <p>{ text }</p>
-            </div>
-        ) : (
-            <div className="influencer-button">
-                <p>{ text }</p>
-            </div>
-        )
+        <div className="influencer-button" onClick={toggle}>
+            <p>{ text }</p>
+        </div>
     )
 };
 

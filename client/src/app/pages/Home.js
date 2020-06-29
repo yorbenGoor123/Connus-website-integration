@@ -62,7 +62,8 @@ const Home = () => {
                             color="blue-font" 
                             text={Parser(text["section_three_title"])}
                         />
-
+                    </Col>
+                    <Col sizes="col-12 col-md-7">
                         <InfluencerSection />
                     </Col>
                 </CenterRow>

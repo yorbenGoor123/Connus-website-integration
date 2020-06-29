@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { InfluencerButtons } from '../Buttons';
-import InfluencerBox from './InfluencerBox';
+import InfluencerBoxes from './InfluencerBoxes';
 
 const InfluencerSection = () => {
-    const toggleInfluencer = () => {
+    const [ shownIndex, setShowIndex ] = useState(2);
 
+    const toggleInfluencer = (index) => {
+        setShowIndex(index);
     };
 
     const showInfluencer = () => {
@@ -14,11 +16,13 @@ const InfluencerSection = () => {
     return (
         <div className="influencer-section">
             <InfluencerButtons 
-                handle={toggleInfluencer}  
+                handle={toggleInfluencer}
+                shown={shownIndex}  
             />
 
-            <InfluencerBox 
-                show={showInfluencer}
+            <InfluencerBoxes
+                handle={showInfluencer}
+                shown={shownIndex}
             />
         </div>
     )

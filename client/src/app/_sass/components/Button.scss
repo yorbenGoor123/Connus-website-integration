@@ -103,17 +103,16 @@
     display: flex;
     justify-content: space-around;
 
-    p {
-        color: $blue !important;
-        font-family: $primary-font;
-        cursor: pointer !important;
-        font-weight: 100;
-        font-size: $font-size-button;
+    .influencer-button {
         opacity: 0.5;
-        transition: ease-in-out 0.5s;
-    }
+        transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s;
 
-    p:hover {
-        opacity: 1;
+        p {
+            color: $blue !important;
+            font-family: $primary-font;
+            cursor: pointer !important;
+            font-weight: 100;
+            font-size: $font-size-button;
+        }
     }
 }
