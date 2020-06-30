@@ -55,6 +55,8 @@ export default {
         section_three_complexity: "Complexity",
         section_three_trust: "Trust",
         section_three_cost: "Cost",
+
+        more_info: "Want to learn more about this?",
         
         section_five_title: "Get payed to use our app",
         section_five_content: "This ‘click-based’ advertising gives you the security that you pay when your brand raises it’s brand-awareness or when you connect to influencers.",

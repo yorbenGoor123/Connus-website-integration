@@ -4,15 +4,7 @@ import { CenterRow, Col } from '../Layout';
 import { SmallTitle, LightText } from '../../components';
 import InfluencerRating from './InfluencerRating';
 
-const InfluencerBox = ({title, followers, rating, start, end}) => {
-    const ratings = {
-        "Reach": 5,
-        "Engagement": 3,
-        "Complexity": 5,
-        "Trust": 3,
-        "Cost": 1,
-    };
-
+const InfluencerBox = ({title, followers, container, ratings}) => {
     return (
         <div className="influencer-box">
             <SmallTitle text={title} center={true} />
@@ -24,7 +16,7 @@ const InfluencerBox = ({title, followers, rating, start, end}) => {
                             <Col sizes="col-lg-2 col-4 col-influencer" key={index}>
                                 <LightText text={rate} center={true} />
             
-                                <InfluencerRating rating={ratings[rate]} index={index} />
+                                <InfluencerRating rating={ratings[rate]} index={index} container={container} />
                             </Col>
                         )
                     })

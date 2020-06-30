@@ -19,7 +19,7 @@ const Home = () => {
             <Head>
                 <Container>
                     <Row>
-                        <Col sizes="col-12 col-md-8">
+                        <Col sizes="col-12 col-md-8">git 
                             <HeadTitle
                                 text={Parser(text["header_one_title"])}
                             />
@@ -53,7 +53,7 @@ const Home = () => {
                 </Container>
             </Head>
 
-            <SectionTwo page="influencer" />
+            <SectionTwo page="brand" />
 
             <Container>
                 <CenterRow>
