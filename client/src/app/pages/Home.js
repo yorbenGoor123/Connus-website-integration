@@ -19,7 +19,7 @@ const Home = () => {
             <Head>
                 <Container>
                     <Row>
-                        <Col sizes="col-12 col-md-8">git 
+                        <Col sizes="col-12 col-md-8">
                             <HeadTitle
                                 text={Parser(text["header_one_title"])}
                             />
