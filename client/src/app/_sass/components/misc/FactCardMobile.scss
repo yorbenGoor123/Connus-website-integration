@@ -11,6 +11,15 @@
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     }
 
+    .fact-card-mobile__dot--brand {
+        background: linear-gradient(180deg, rgba(119,8,167,1) 0%, rgba(189,25,190,1) 100%); 
+    }
+
+    .fact-card-mobile__dot--influencer {
+        background: linear-gradient(180deg, rgba(152,103,0,1) 0%, rgba(242,172,25,1) 100%);
+
+    }
+
     .fact-card {
         cursor: pointer;
         position: absolute;

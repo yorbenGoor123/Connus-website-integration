@@ -30,8 +30,8 @@ const LanguageProvider = ({children}) => {
 	 */
 	const getText = (page) => {
 		const language = getLanguageFromCookie();
-		if (!page || !language) return text["en_brand"]
-		return text[`${language}_${page}`];
+		console.log(`${language ?? 'en'}_${page}`)
+		return text[`${language ?? 'en'}_${page ?? 'brand'}`];
 	};
 
 	return (

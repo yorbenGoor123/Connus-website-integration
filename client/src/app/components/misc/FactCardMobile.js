@@ -38,7 +38,9 @@ const FactCardMobile = (props) => {
             {
                 (props.active === "true")
                 ? <FactCard 
+                    page={props.page ?? "brand"}
                     icon={props.icon}
+                    img={props.img}
                     numberBig={props.numberBig}
                     numberSmall={props.numberSmall}
                     text={props.text}
@@ -49,7 +51,7 @@ const FactCardMobile = (props) => {
             }
             
 
-            <div className={`fact-card-mobile__dot fact-card-mobile__dot--${props.size}`}></div>
+            <div className={`fact-card-mobile__dot fact-card-mobile__dot--${props.page} fact-card-mobile__dot--${props.size}`}></div>
             
         </div>
     );

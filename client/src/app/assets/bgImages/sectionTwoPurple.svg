@@ -1,0 +1,41 @@
+<svg id="Layer_1" preserveAspectRatio="none"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 1233 1357">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: none;
+            }
+
+            .cls-2 {
+                clip-path: url(#clip-path);
+            }
+
+            .cls-3 {
+                fill: #fff;
+            }
+
+            .cls-4 {
+                fill: #bd19be;
+            }
+
+            .cls-5 {
+                fill: #8e0eaf;
+            }
+
+            .cls-6 {
+                fill: url(#linear-gradient);
+            }
+        </style>
+        <linearGradient id="linear-gradient" x1="-231.71" y1="1350.71" x2="-231.03" y2="1351.54"
+            gradientTransform="matrix(1657.89, 0, 0, -1081.95, 384181.56, 1462439.53)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#7708a7" />
+            <stop offset="1" stop-color="#bd19be" />
+        </linearGradient>
+    </defs>
+     <path id="Path_7" data-name="Path 7" class="cls-4"
+        d="M-85.43-.5s190.6,104.87,528,83.15,401.4,3.5,617.4,36.7,354.6-36.7,354.6-36.7l50.6,954.07s-357.4,73.41-526.6,0-471.8-64.92-638.6,0-377.4,63.17-466.8-31.71S-85.43-.5-85.43-.5Z" />
+     <path id="Path_28" data-name="Path 28" class="cls-5"
+        d="M-154.77,1342.33s290.8,36.38,481.4-90.74,198.4-247,329.2-198.8,195.2,296.11,486,255.13,246-125.81,246-125.81l-141.4-352.89L-232.17,1009Z" />
+     <path id="Path_5" data-name="Path 5" class="cls-6"
+        d="M-110.17,12.1S80.43,117,417.83,95.25s401.4,3.5,617.4,36.71,354.6-36.71,354.6-36.71l50.6,954.08s-357.4,73.4-526.6,0-471.8-64.92-638.6,0-377.4,63.17-466.8-31.72S-110.17,12.1-110.17,12.1Z" /> 
+</svg>

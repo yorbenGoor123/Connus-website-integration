@@ -53,7 +53,7 @@ const Home = () => {
                 </Container>
             </Head>
 
-            <SectionTwo page="brand" />
+            <SectionTwo page="influencer" />
 
             <Container>
                 <CenterRow>
