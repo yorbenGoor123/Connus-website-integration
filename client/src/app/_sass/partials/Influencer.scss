@@ -1,6 +1,6 @@
 .influencer-box {
     background-color: $lightblue;
-    padding: 20px 0px;
+    padding: 40px 0px;
     border-radius: 50px;
     margin-top: 20px;
     display: none;
@@ -31,9 +31,75 @@
         margin: 1px;
         opacity: 0.2;
         margin-top: 10px;
+        transition: ease-in-out 0.5s;
     }
 
     .valid-point {
         opacity: 1;
+    }
+}
+
+.influencer-info {
+    margin-top: 20px;
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-family: $primary-font;
+            cursor: pointer;
+            font-size: $font-size-smalltext;
+        }
+
+        p:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            width: 15px;
+            margin-left: 10px;
+        }
+    }
+
+    &__card {
+        display: none;
+
+        border-radius: 50px;
+        margin-top: 20px;
+        background-color: $lightblue;
+        padding: 20px 60px;
+        width: 100%;
+        opacity: 0;
+        position: relative;
+
+        transition: ease-in-out 0.3s;
+
+        h4 {
+            font-family: $font-size-text;
+            color: $blue;
+            font-family: $primary-font;
+            margin: 0;
+
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: $black;
+            font-family: $primary-font;
+            font-size: $font-size-lighttext;
+            margin: 0;
+        }
+
+        &--exit {
+            position: absolute;
+            right: 60px;
+
+            img {
+                width: 15px;
+                cursor: pointer;
+            }
+        }
     }
 }
