@@ -1,0 +1,43 @@
+.advertisement-section {
+    background-image: url("../../assets/bgImages/advertisement_bg.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 100vw;
+    padding: 100px 0;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    .advertisement-section__content-container {
+        display:flex;
+        justify-content: center;
+
+
+        .advertisement-container__text {
+
+           padding: 10% 0 20% 0;
+        }
+    
+        p {
+            text-align: center;
+        }
+    }
+
+    .advertisement-section__content-container > col {
+    }
+
+    .advertisement-container__mockup {
+        background-image: url("../../assets/mock/iphone-business.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 350px;
+
+        transform: rotate(12deg);
+        position: relative;
+        left: 20px;
+    }
+}

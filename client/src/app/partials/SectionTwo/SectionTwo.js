@@ -14,8 +14,6 @@ function SectionTwo(props) {
     const { getText } = useLanguage(); 
     const text = getText(props.page);
 
-    console.log(props.page);
-
     const [activeDotNr, setActiveDotNr] = useState(undefined);
 
     useEffect (() => {
@@ -39,7 +37,7 @@ function SectionTwo(props) {
             <div className="section-two__text-container container">
                 <div className="col-12 col-md-6" >
                     <SectionTitle 
-                        color="white" 
+                        color="white-font" 
                         text={Parser(text["section_two_title"])}
                     />
                     <Text

@@ -13,6 +13,7 @@
 .small-title {
    @include font-small-title;
    color: $blue;
+   text-align:center;
 }
 
 @media (max-width: 768px) {  

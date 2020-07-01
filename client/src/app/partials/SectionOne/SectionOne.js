@@ -16,7 +16,7 @@ const SectionOne = (props) => {
             <div className="col col-12 col-md-6">
                 <SectionTitle
                     text={Parser(text["section_one_title"])}
-                    color="blue" 
+                    color="blue-font" 
                 />
                 <Text
                     text={Parser(text["section_one_text_one"])}

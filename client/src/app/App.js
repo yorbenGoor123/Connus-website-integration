@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
 
-import { AnimateProvider, LanguageProvider } from './services';
+import { AnimateProvider, LanguageProvider, ToolboxProvider } from './services';
 import { StandardRoute } from './utils';
 import { RouteLayout } from './layouts';
 import { HomeBrand, HomeInfluencer } from './pages';
@@ -11,8 +11,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
+    <ToolboxProvider>
     <LanguageProvider>
-      <AnimateProvider>
+    <AnimateProvider>
         <Router basename="/">
           <Switch>
             <Redirect exact path="/" to='/home-influencer'/>
@@ -20,8 +21,10 @@ function App() {
             <StandardRoute exact path="/home-brand" component={HomeBrand} layout={RouteLayout} />
           </Switch>
         </Router>
-      </AnimateProvider>
+    </AnimateProvider>
     </LanguageProvider>
+    </ToolboxProvider>
+    
   );
 }
 

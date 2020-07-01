@@ -4,16 +4,28 @@ import Parser from 'html-react-parser';
 import { SectionTwo, Head, PageContainer, Container, Row, Col, DownloadButtons, CenterRow } from '../partials';
 import { HeadTitle, Text, DownloadButton, EmptyMockup, Logo, SectionTitle } from '../components';
 
-import { useLanguage } from '../services';
+import { useLanguage, useToolbox } from '../services';
 
 import IosDownload from '../assets/icons/download-ios.png';
 import AndroidDownload from '../assets/icons/download-android.png';
 import InfluencerSection from '../partials/Influencer/InfluencerSection';
 import SectionOne from '../partials/SectionOne/SectionOne';
+import AdvertisementSection from '../partials/AdvertisementSection/AdvertisementSection';
 
 const HomeInfluencer = () => {
     const { getText } = useLanguage(); 
-    const text = getText("brand");
+    const { getCookie } = useToolbox();
+
+    const text = getText("influencer");
+
+    const redirectToCorrectHomePage = () => {
+        const preferedPage = getCookie('preferedPage');
+        if (preferedPage === 'brand' ) {
+            window.location.replace("/home-brand");
+        }
+    }
+
+    redirectToCorrectHomePage();
 
     return (
         <PageContainer>
@@ -58,7 +70,7 @@ const HomeInfluencer = () => {
             <SectionOne page="influencer" />
             
             <SectionTwo page="influencer" />
-
+        
             <Container>
                 <CenterRow>
                     <Col sizes="col-12 col-md-6">
@@ -72,6 +84,11 @@ const HomeInfluencer = () => {
                     </Col>
                 </CenterRow>
             </Container>
+
+            <AdvertisementSection 
+                title={Parser(text["section_five_title"])}
+                text={Parser(text["section_five_content"])}
+            />
         </PageContainer>
     )
 };

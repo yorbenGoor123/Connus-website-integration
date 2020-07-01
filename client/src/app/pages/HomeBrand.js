@@ -4,7 +4,7 @@ import Parser from 'html-react-parser';
 import { SectionTwo, Head, PageContainer, Container, Row, Col, DownloadButtons, CenterRow } from '../partials';
 import { HeadTitle, Text, DownloadButton, EmptyMockup, Logo, SectionTitle } from '../components';
 
-import { useLanguage } from '../services';
+import { useLanguage, useToolbox } from '../services';
 
 import IosDownload from '../assets/icons/download-ios.png';
 import AndroidDownload from '../assets/icons/download-android.png';
@@ -13,7 +13,18 @@ import SectionOne from '../partials/SectionOne/SectionOne';
 
 const HomeBrand = () => {
     const { getText } = useLanguage(); 
+    const { getCookie } = useToolbox();
+
     const text = getText("brand");
+
+    const redirectToCorrectHomePage = () => {
+        const preferedPage = getCookie('preferedPage');
+        if (preferedPage === 'influencer' ) {
+            window.location.replace("/home-influencer");
+        }
+    }
+
+    redirectToCorrectHomePage();
 
     return (
         <PageContainer>
