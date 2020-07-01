@@ -11,7 +11,7 @@ import AndroidDownload from '../assets/icons/download-android.png';
 import InfluencerSection from '../partials/Influencer/InfluencerSection';
 import SectionOne from '../partials/SectionOne/SectionOne';
 
-const Home = () => {
+const HomeBrand = () => {
     const { getText } = useLanguage(); 
     const text = getText("brand");
 
@@ -57,9 +57,9 @@ const Home = () => {
             </Head>
 
 
-            <SectionOne page="influencer" />
+            <SectionOne/>
             
-            <SectionTwo page="influencer" />
+            <SectionTwo page="brand" />
 
             <Container>
                 <CenterRow>
@@ -78,4 +78,4 @@ const Home = () => {
     )
 };
 
-export default Home; 
+export default HomeBrand; 

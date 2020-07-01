@@ -1,5 +1,7 @@
-import Home from './Home';
+import HomeBrand from './HomeBrand';
+import HomeInfluencer from './HomeInfluencer';
 
 export {
-    Home,
+    HomeBrand,
+    HomeInfluencer
 }
