@@ -1,10 +1,16 @@
 import React from 'react';
 
-const Container = ({ children }) => {
+const Container = ({ children, section }) => {
     return (
-        <div className="container">
-            { children }
-        </div>
+        section ? (
+            <div className={`container ${section}`}>
+                { children }
+            </div>
+        ) : (
+            <div className="container">
+                { children }
+            </div>
+        )
     )
 };
 

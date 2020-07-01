@@ -31,7 +31,7 @@ export default {
 
         section_six_proudPartner: "Proud partner of",
 
-        section_six_download_title: "Are your ready to start your influencer carreer right now",
+        section_six_download_title: "Are your ready to start your influencer carreer right now?",
     },
     "en_influencer" : {
         header_one_title: "The right person for your business",
@@ -65,6 +65,6 @@ export default {
 
         section_six_proudPartner: "Proud partner of",
 
-        section_six_download_title: "Are your ready to start your influencer carreer right now",
+        section_six_download_title: "Are your ready to start your influencer carreer right now?",
     }
 }

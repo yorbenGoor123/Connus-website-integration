@@ -7,7 +7,7 @@ import InfluencerRating from './InfluencerRating';
 const InfluencerBox = ({title, followers, container, ratings}) => {
     return (
         <div className="influencer-box">
-            <SmallTitle text={title} center={true} />
+            <SmallTitle text={title} center={true} color="title-blue" />
             <LightText text={followers} center={true} />
             <CenterRow>
                 {

@@ -1,0 +1,32 @@
+.partner {
+    margin-top: 150px;
+    display: flex;
+    justify-content: flex-end;
+
+    &__section {
+        width: 70%;
+        padding: 50px 80px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+
+        img {
+            width: 190px;
+        }
+    }
+}
+
+.partner-influencer {
+    background: $yellow-gradient;
+}
+
+.partner-brand {
+    background: $purple-gradient;
+}
+
+@media (max-width: 992px) {  
+    .partner {
+        &__section {
+            width: 95%;
+        }
+    }
+}

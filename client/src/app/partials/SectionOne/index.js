@@ -1,5 +1,5 @@
 import SectionOne from './SectionOne';
 
-export default {
+export {
     SectionOne,
-}
+};

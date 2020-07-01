@@ -1,11 +1,11 @@
 import React from 'react';
 
-const SmallTitle = ({text, center}) => {
+const SmallTitle = ({text, center, color}) => {
     return (
         center ? (
-            <h2 className="small-title text-center">{text}</h2>
+            <h2 className={`small-title text-center ${color}`}>{text}</h2>
         ) : (
-            <h2 className="small-title">{text}</h2>
+            <h2 className={`small-title ${color}`}>{text}</h2>
         )
     )
 };
