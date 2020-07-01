@@ -59,7 +59,7 @@ const Home = () => {
             
             <SectionTwo page="influencer" />
 
-            <Container>
+            <Container section="influencer-container">
                 <CenterRow>
                     <Col sizes="col-12 col-md-6">
                         <SectionTitle 
@@ -82,7 +82,7 @@ const Home = () => {
 
             <Container>
                 <CenterRow>
-                    <Col sizes="col-12 col-md-9">
+                    <Col sizes="col-12 col-lg-9">
                         <SectionEnd title={Parser(text["section_six_download_title"])} />
                     </Col>
                 </CenterRow>

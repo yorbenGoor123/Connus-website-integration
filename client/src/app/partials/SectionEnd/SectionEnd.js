@@ -11,7 +11,7 @@ import { DownloadButtons } from '../Buttons';
 const SectionEnd = ({title}) => {
     return (
         <div className="section-end">
-            <img src={UserMock} alt="user-mock" className="section-end__mock d-md-flex d-none" />
+            <img src={UserMock} alt="user-mock" className="section-end__mock d-lg-flex d-none" />
 
             <div className="section-end__content">
                 <SmallTitle

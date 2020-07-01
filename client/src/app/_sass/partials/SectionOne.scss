@@ -1,9 +1,17 @@
 .section-one {
     display: flex;
     justify-content:center;
+    margin-top: 150px;
+    
     .col {
         p {
             text-align: center;
         }
+    }
+}
+
+@media (max-width: 992px) {  
+    .section-one {
+        margin-top: 250px;
     }
 }

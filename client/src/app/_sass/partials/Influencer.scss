@@ -1,3 +1,7 @@
+.influencer-container {
+    margin-top: 100px;
+}
+
 .influencer-box {
     background-color: $lightblue;
     padding: 40px 0px;
@@ -101,5 +105,12 @@
                 cursor: pointer;
             }
         }
+    }
+}
+
+
+@media (max-width: 992px) {  
+    .influencer-container {
+        margin-top: 0px;
     }
 }

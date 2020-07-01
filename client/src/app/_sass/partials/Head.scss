@@ -1,17 +1,15 @@
 .head {
     background-image: url("../../assets/bgImages/header_bg.png");
     background-size:  cover;
-    background-position-y: -10vh;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
 }
 
-@media (max-width: 768px) {  
+@media (max-width: 992px) {  
     .head {
-        height: 100vh;
-        background-position-y: 0vh;
+        height: 110vh;
         align-items: flex-start;
         padding-top: 150px;
 

@@ -1,5 +1,5 @@
 .partner {
-    margin-top: 100px;
+    margin-top: 150px;
     display: flex;
     justify-content: flex-end;
 
@@ -21,4 +21,12 @@
 
 .partner-brand {
     background: $purple-gradient;
+}
+
+@media (max-width: 992px) {  
+    .partner {
+        &__section {
+            width: 95%;
+        }
+    }
 }
