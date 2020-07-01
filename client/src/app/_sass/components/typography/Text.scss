@@ -18,6 +18,10 @@ p {
     @include font-lighttext;
 }
 
+.medium-weight{
+    font-weight: 400;
+}
+
 .white-font {
     color: $white;
 }

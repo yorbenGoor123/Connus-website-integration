@@ -9,6 +9,7 @@ import { useLanguage } from '../services';
 import IosDownload from '../assets/icons/download-ios.png';
 import AndroidDownload from '../assets/icons/download-android.png';
 import InfluencerSection from '../partials/Influencer/InfluencerSection';
+import SectionOne from '../partials/SectionOne/SectionOne';
 
 const Home = () => {
     const { getText } = useLanguage(); 
@@ -16,6 +17,8 @@ const Home = () => {
 
     return (
         <PageContainer>
+
+
             <Head>
                 <Container>
                     <Row>
@@ -53,7 +56,10 @@ const Home = () => {
                 </Container>
             </Head>
 
-            <SectionTwo page="brand" />
+
+            <SectionOne page="influencer" />
+            
+            <SectionTwo page="influencer" />
 
             <Container>
                 <CenterRow>

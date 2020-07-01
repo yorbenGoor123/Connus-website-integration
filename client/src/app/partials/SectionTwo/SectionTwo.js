@@ -39,7 +39,7 @@ function SectionTwo(props) {
             <div className="section-two__text-container container">
                 <div className="col-12 col-md-6" >
                     <SectionTitle 
-                        color="white-font" 
+                        color="white" 
                         text={Parser(text["section_two_title"])}
                     />
                     <Text

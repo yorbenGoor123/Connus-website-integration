@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Text = ({text, color}) => {
+const Text = ({text, color, extraClasses}) => {
     return (
-        <p className={`text ${color}`}>
+        <p className={`text ${color ?? ''} ${extraClasses ?? ''}`}>
             { text }
         </p>
     )
