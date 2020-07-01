@@ -7,3 +7,4 @@ export * from './Footer';
 export * from './Influencer';
 export * from './Partner';
 export * from './SectionEnd';
+export * from './SectionOne';

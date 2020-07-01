@@ -1,7 +1,7 @@
 import React from 'react';
 import Parser from 'html-react-parser';
 
-import { SectionTwo, Head, PageContainer, Container, Row, Col, DownloadButtons, CenterRow, Partner, SectionEnd, InfluencerSection } from '../partials';
+import { SectionTwo, Head, PageContainer, Container, Row, Col, DownloadButtons, CenterRow, Partner, SectionEnd, InfluencerSection, SectionOne } from '../partials';
 import { HeadTitle, Text, DownloadButton, EmptyMockup, Logo, SectionTitle, SmallTitle } from '../components';
 
 import { useLanguage } from '../services';
@@ -15,6 +15,8 @@ const Home = () => {
 
     return (
         <PageContainer>
+
+
             <Head>
                 <Container>
                     <Row>
@@ -52,13 +54,16 @@ const Home = () => {
                 </Container>
             </Head>
 
-            <SectionTwo page="brand" />
+
+            <SectionOne page="influencer" />
+            
+            <SectionTwo page="influencer" />
 
             <Container>
                 <CenterRow>
                     <Col sizes="col-12 col-md-6">
                         <SectionTitle 
-                            color="blue-font" 
+                            color="blue" 
                             text={Parser(text["section_three_title"])}
                         />
                     </Col>
