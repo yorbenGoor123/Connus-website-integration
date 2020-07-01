@@ -10,6 +10,7 @@ import IosDownload from '../assets/icons/download-ios.png';
 import AndroidDownload from '../assets/icons/download-android.png';
 import InfluencerSection from '../partials/Influencer/InfluencerSection';
 import SectionOne from '../partials/SectionOne/SectionOne';
+import AdvertisementSection from '../partials/AdvertisementSection/AdvertisementSection';
 
 const HomeBrand = () => {
     const { getText } = useLanguage(); 
@@ -85,8 +86,13 @@ const HomeBrand = () => {
                     </Col>
                 </CenterRow>
             </Container>
+
+            <AdvertisementSection 
+                title={Parser(text["section_five_title"])}
+                text={Parser(text["section_five_content"])}
+            />
         </PageContainer>
     )
 };
 
-export default HomeBrand; 
+export default HomeBrand;
