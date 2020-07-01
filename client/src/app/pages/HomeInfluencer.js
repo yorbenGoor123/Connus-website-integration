@@ -8,12 +8,8 @@ import { useLanguage, useToolbox } from '../services';
 
 import IosDownload from '../assets/icons/download-ios.png';
 import AndroidDownload from '../assets/icons/download-android.png';
-<<<<<<< HEAD:client/src/app/pages/HomeInfluencer.js
-import InfluencerSection from '../partials/Influencer/InfluencerSection';
-import SectionOne from '../partials/SectionOne/SectionOne';
+
 import AdvertisementSection from '../partials/AdvertisementSection/AdvertisementSection';
-=======
->>>>>>> 7a4ddf2cb2f04882ca68fe89a1d59faf1255e043:client/src/app/pages/Home.js
 
 const HomeInfluencer = () => {
     const { getText } = useLanguage(); 
@@ -72,14 +68,8 @@ const HomeInfluencer = () => {
 
             <SectionOne page="influencer" />
             
-            <SectionTwo page="influencer" />
-<<<<<<< HEAD:client/src/app/pages/HomeInfluencer.js
-        
-            <Container>
-=======
-
-            <Container section="influencer-container">
->>>>>>> 7a4ddf2cb2f04882ca68fe89a1d59faf1255e043:client/src/app/pages/Home.js
+            <SectionTwo page="influencer" />ß
+            <Container section="influencer-container">ß
                 <CenterRow>
                     <Col sizes="col-12 col-md-6">
                         <SectionTitle 
@@ -93,12 +83,10 @@ const HomeInfluencer = () => {
                 </CenterRow>
             </Container>
 
-<<<<<<< HEAD:client/src/app/pages/HomeInfluencer.js
             <AdvertisementSection 
                 title={Parser(text["section_five_title"])}
                 text={Parser(text["section_five_content"])}
             />
-=======
             <Partner page={"brand"}>
                 <SmallTitle 
                     text={Parser(text["section_six_proudPartner"])}
@@ -113,7 +101,6 @@ const HomeInfluencer = () => {
                     </Col>
                 </CenterRow>
             </Container>
->>>>>>> 7a4ddf2cb2f04882ca68fe89a1d59faf1255e043:client/src/app/pages/Home.js
         </PageContainer>
     )
 };

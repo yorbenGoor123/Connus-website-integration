@@ -13,13 +13,11 @@ const AdvertisementSection = (props) => {
     return (
         <section className ={`advertisement-section`}>
             <div className="advertisement-section__content-container row">
-                <div className="d-none d-lg-block col-2">
-
-                </div>
+                <div className="d-none d-lg-block col-2"></div>
                 <div className="col col-8 col-sm-6 col-md-5 col-lg-3 advertisement-container__text ">
-                    <span className="d-none d-md-block"></span>
                     <SmallTitle
                         text={Parser(props.title ?? '')}
+                        color="title-white"
                     />
                     <Text 
                         text={Parser(props.text ?? '')}

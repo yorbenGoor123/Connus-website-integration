@@ -12,11 +12,11 @@
 
 .small-title {
    @include font-small-title;
+   text-align:center;
 }
 
 .title-blue {
    color: $blue;
-   text-align:center;
 }
 
 .title-white {
