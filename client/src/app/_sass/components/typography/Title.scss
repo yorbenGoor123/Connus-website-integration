@@ -12,7 +12,14 @@
 
 .small-title {
    @include font-small-title;
+}
+
+.title-blue {
    color: $blue;
+}
+
+.title-white {
+   color: $white;
 }
 
 @media (max-width: 768px) {  

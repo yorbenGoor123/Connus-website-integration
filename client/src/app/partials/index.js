@@ -5,3 +5,5 @@ export * from './Layout';
 export * from './Buttons';
 export * from './Footer';
 export * from './Influencer';
+export * from './Partner';
+export * from './SectionEnd';

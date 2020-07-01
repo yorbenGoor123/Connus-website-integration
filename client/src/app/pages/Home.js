@@ -1,14 +1,13 @@
 import React from 'react';
 import Parser from 'html-react-parser';
 
-import { SectionTwo, Head, PageContainer, Container, Row, Col, DownloadButtons, CenterRow } from '../partials';
-import { HeadTitle, Text, DownloadButton, EmptyMockup, Logo, SectionTitle } from '../components';
+import { SectionTwo, Head, PageContainer, Container, Row, Col, DownloadButtons, CenterRow, Partner, SectionEnd, InfluencerSection } from '../partials';
+import { HeadTitle, Text, DownloadButton, EmptyMockup, Logo, SectionTitle, SmallTitle } from '../components';
 
 import { useLanguage } from '../services';
 
 import IosDownload from '../assets/icons/download-ios.png';
 import AndroidDownload from '../assets/icons/download-android.png';
-import InfluencerSection from '../partials/Influencer/InfluencerSection';
 
 const Home = () => {
     const { getText } = useLanguage(); 
@@ -65,6 +64,21 @@ const Home = () => {
                     </Col>
                     <Col sizes="col-12 col-md-9">
                         <InfluencerSection />
+                    </Col>
+                </CenterRow>
+            </Container>
+
+            <Partner page={"brand"}>
+                <SmallTitle 
+                    text={Parser(text["section_six_proudPartner"])}
+                    color="title-white"
+                />
+            </Partner>
+
+            <Container>
+                <CenterRow>
+                    <Col sizes="col-12 col-md-9">
+                        <SectionEnd title={Parser(text["section_six_download_title"])} />
                     </Col>
                 </CenterRow>
             </Container>

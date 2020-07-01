@@ -1,0 +1,23 @@
+.section-end {
+    background-color: $lightblue;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 350px;
+    position: relative;
+    border-radius: 50px;
+
+    &__mock {
+        width: 260px;
+        position: absolute;
+        top: -200px;
+        transform: rotate(-5deg);
+    }
+
+    &__content {
+        padding: 50px 50px 50px 300px;
+
+        .download-button {
+            margin: 20px 10px 0px 0px;
+        }
+    }
+}
