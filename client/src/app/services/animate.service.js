@@ -4,14 +4,14 @@ const AnimateContext = createContext();
 const useAnimation = () => useContext(AnimateContext);
 
 const AnimateProvider = ({children}) => {
-    const ToggleMenu = (btn, option, arrow) => {
+    const ToggleMenu = (option, arrow) => {
         option.style.display = 'block';
         option.style.opacity = '1';
 
         arrow.style.transform = "rotate(180deg)";
     };
 
-    const HideMenu = (btn, option, arrow) => {
+    const HideMenu = (option, arrow) => {
         option.style.display = 'none';
         option.style.opacity = '0';
 

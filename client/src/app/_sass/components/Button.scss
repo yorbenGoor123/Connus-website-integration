@@ -1,5 +1,4 @@
 .choice-button {
-    cursor: pointer;
     transition: ease-in-out 0.3s;
     display: flex;
     align-items: center;
@@ -19,19 +18,14 @@
     }
 }
 
-.choice-button:hover {
-    opacity: 0.8;
-}
-
 .choice-button-option {
     background-color: #0C43C6;
     padding: 10px 30px;
     margin: 10px 0px;
-    cursor: pointer;
     position: absolute;
-    right: 20px;
+    cursor: pointer;
+    right: 0px;
     box-shadow: $standard-shadow;
-    opacity: 0;
     transition: ease-in-out 0.3s;
     border-radius: 20px;
 

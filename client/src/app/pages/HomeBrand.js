@@ -77,7 +77,7 @@ const HomeBrand = () => {
                 <CenterRow>
                     <Col sizes="col-12 col-md-6">
                         <SectionTitle 
-                            color="blue-font" 
+                            color="title-blue" 
                             text={Parser(text["section_three_title"])}
                         />
                     </Col>

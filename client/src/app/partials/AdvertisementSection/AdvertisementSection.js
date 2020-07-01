@@ -1,13 +1,7 @@
 import React from 'react';
 import Parser from 'html-react-parser';
 
-import {useLanguage} from '../../services';
-
 import { SmallTitle, Text } from '../../components';
-import { CenterRow } from '../Layout';
-
-import '../../_sass/partials/AdvertisementSection.scss';
-
 
 const AdvertisementSection = (props) => {
     return (
@@ -18,6 +12,7 @@ const AdvertisementSection = (props) => {
                     <SmallTitle
                         text={Parser(props.title ?? '')}
                         color="title-white"
+                        center={true}
                     />
                     <Text 
                         text={Parser(props.text ?? '')}

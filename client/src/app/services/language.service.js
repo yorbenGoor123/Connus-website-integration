@@ -14,7 +14,6 @@ const LanguageProvider = ({children}) => {
 	 */
 	const getText = (page) => {
 		const language = getCookie('language');
-		console.log(language);
 		return text[`${language ?? 'en'}_${page ?? 'brand'}`];
 	};
 

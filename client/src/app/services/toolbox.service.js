@@ -1,7 +1,5 @@
 import React, { createContext, useContext } from 'react';
 
-import text from '../textContent';
-
 const ToolboxContext = createContext();
 const useToolbox = () => useContext(ToolboxContext);
 
@@ -23,9 +21,39 @@ const ToolboxProvider = ({children}) => {
 		return cookies[cookieName];
 	};
 
+	/**
+	* @param prefLang which language you want to retrieve
+	**/ 
+	const setLanguage = (prefLang) => {
+		const language = `language=${prefLang};`;
+		document.cookie = language;
+	};
+
+	/**
+	* @param prefPage which page you want to retrieve
+	**/ 
+	const setPage = (prefPage) => {
+		const page = `page=${prefPage};`;
+		document.cookie = page;
+	}; 
+
+	/**
+	 * Setting a default cookie when no cookie has been set
+	 **/
+	const setDefaultCookie = () => {
+		const language = 'language=en;';
+		document.cookie = language;
+
+		const page = 'preferedPage=influencer;';
+		document.cookie = page;
+	};
+
 	return (
 		<ToolboxContext.Provider value={{
-			getCookie
+			getCookie,
+			setDefaultCookie,
+			setPage,
+			setLanguage,
 		}}>
 			{children}
 		</ToolboxContext.Provider>

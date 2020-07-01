@@ -13,15 +13,19 @@ import AdvertisementSection from '../partials/AdvertisementSection/Advertisement
 
 const HomeInfluencer = () => {
     const { getText } = useLanguage(); 
-    const { getCookie } = useToolbox();
+    const { getCookie, setDefaultCookie } = useToolbox();
 
     const text = getText("influencer");
 
     const redirectToCorrectHomePage = () => {
         const preferedPage = getCookie('preferedPage');
+        if (!preferedPage) {
+            setDefaultCookie();
+        };
+
         if (preferedPage === 'brand' ) {
             window.location.replace("/home-brand");
-        }
+        };
     }
 
     redirectToCorrectHomePage();
@@ -68,12 +72,12 @@ const HomeInfluencer = () => {
 
             <SectionOne page="influencer" />
             
-            <SectionTwo page="influencer" />ß
-            <Container section="influencer-container">ß
+            <SectionTwo page="influencer" />
+            <Container section="influencer-container">
                 <CenterRow>
                     <Col sizes="col-12 col-md-6">
                         <SectionTitle 
-                            color="blue" 
+                            color="title-blue" 
                             text={Parser(text["section_three_title"])}
                         />
                     </Col>
