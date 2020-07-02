@@ -16,11 +16,11 @@ const InfluencerButtons = ({handle, shown}) => {
 
     return (
         <div className="influencer-buttons">
-            <InfluencerButton text="Mega" toggle={() => handle(0)} />
-            <InfluencerButton text="Macro" toggle={() => handle(1)} />
+            <InfluencerButton text="Nano" toggle={() => handle(0)} />
+            <InfluencerButton text="Micro" toggle={() => handle(1)} />
             <InfluencerButton text="Meso" toggle={() => handle(2)} />
-            <InfluencerButton text="Micro" toggle={() => handle(3)} />
-            <InfluencerButton text="Nano" toggle={() => handle(4)} />
+            <InfluencerButton text="Macro" toggle={() => handle(3)} />
+            <InfluencerButton text="Mega" toggle={() => handle(4)} />
         </div>
     )
 };

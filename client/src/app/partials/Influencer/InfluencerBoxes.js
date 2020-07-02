@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import InfluencerBox from './InfluencerBox';
 
-const InfluencerBoxes = ({handle, shown}) => {
+const InfluencerBoxes = ({shown}) => {
     useEffect(() => {
         const boxes = document.getElementsByClassName('influencer-box');
 
@@ -17,67 +17,67 @@ const InfluencerBoxes = ({handle, shown}) => {
     return (
         <div className="influencer-boxes">
             <InfluencerBox 
-                title="Mega-influencer" 
-                followers="1-100 followers" 
+                title="Nano-influencer" 
+                followers="1K-5K followers" 
                 container={0}
                 ratings={{
-                    "Reach": 4,
-                    "Engagement": 3,
-                    "Complexity": 5,
-                    "Trust": 3,
+                    "Reach": 1,
+                    "Engagement": 4,
+                    "Complexity": 1,
+                    "Trust": 5,
                     "Cost": 1,
                 }}  
             />
 
             <InfluencerBox 
-                title="Macro-influencer" 
-                followers="1-100 followers" 
+                title="Micro-influencer" 
+                followers="5K-20K followers" 
                 container={1}
                 ratings={{
-                    "Reach": 5,
-                    "Engagement": 1,
-                    "Complexity": 4,
-                    "Trust": 2,
-                    "Cost": 5,
-                }}  
-            />
-
-            <InfluencerBox 
-                title="Meso-influencer" 
-                followers="1-100 followers" 
-                container={2}
-                ratings={{
-                    "Reach": 4,
-                    "Engagement": 1,
-                    "Complexity": 3,
-                    "Trust": 5,
+                    "Reach": 2,
+                    "Engagement": 4,
+                    "Complexity": 2,
+                    "Trust": 4,
                     "Cost": 2,
                 }}  
             />
 
             <InfluencerBox 
-                title="Mirco-influencer" 
-                followers="1-100 followers" 
-                container={3}
+                title="Meso-influencer" 
+                followers="20K-100K followers" 
+                container={2}
                 ratings={{
-                    "Reach": 4,
+                    "Reach": 3,
                     "Engagement": 3,
-                    "Complexity": 5,
+                    "Complexity": 3,
                     "Trust": 3,
-                    "Cost": 1,
+                    "Cost": 3,
                 }}  
             />
 
             <InfluencerBox 
-                title="Nano-influencer" 
-                followers="1-100 followers" 
+                title="Macro-influencer" 
+                followers="100K-1M followers" 
+                container={3}
+                ratings={{
+                    "Reach": 4,
+                    "Engagement": 2,
+                    "Complexity": 4,
+                    "Trust": 2,
+                    "Cost": 4,
+                }}  
+            />
+
+            <InfluencerBox 
+                title="Mega-influencer" 
+                followers="+1M followers" 
                 container={4}
                 ratings={{
                     "Reach": 5,
                     "Engagement": 1,
-                    "Complexity": 3,
-                    "Trust": 5,
-                    "Cost": 4,
+                    "Complexity": 5,
+                    "Trust": 1,
+                    "Cost": 5,
                 }}  
             />        
         </div>

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import InfluencerInfo from './InfluencerInfo';
 
-const InfluencerInfos = ({shown}) => {
+const InfluencerInfos = ({shown, info}) => {
     useEffect(() => {
         const info = document.getElementsByClassName('influencer-info');
 
@@ -17,24 +17,24 @@ const InfluencerInfos = ({shown}) => {
     return (
         <div className="influencer-infos">
             <InfluencerInfo shown={shown} info={{
-                "title": "Wat is dit?",
-                "text": "Dit is plaatsvervangende tekst. Dat zie je wel zeker.",
+                "title": "Nano-influencer",
+                "text": info.nano,
             }}/>
             <InfluencerInfo shown={shown} info={{
-                "title": "Wat is dit?",
-                "text": "Dit is plaatsvervangende tekst. Dat zie je wel zeker.",
+                "title": "Micro-influencer",
+                "text": info.micro,
             }}/>
             <InfluencerInfo shown={shown} info={{
-                "title": "Wat is dit?",
-                "text": "Dit is plaatsvervangende tekst. Dat zie je wel zeker.",
+                "title": "Meso-influencer",
+                "text": info.meso,
             }}/>
             <InfluencerInfo shown={shown} info={{
-                "title": "Wat is dit?",
-                "text": "Dit is plaatsvervangende tekst. Dat zie je wel zeker.",
+                "title": "Macro-influencer",
+                "text": info.macro,
             }}/>
             <InfluencerInfo shown={shown} info={{
-                "title": "Wat is dit?",
-                "text": "Dit is plaatsvervangende tekst. Dat zie je wel zeker.",
+                "title": "Mega-influencer",
+                "text": info.mega,
             }}/>
         </div>
     )

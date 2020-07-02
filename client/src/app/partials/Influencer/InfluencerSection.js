@@ -1,31 +1,25 @@
-import React, { useState } from 'react';
-import { InfluencerButtons } from '../Buttons';
+import React from 'react';
 
-import InfluencerBoxes from './InfluencerBoxes';
-import InfluencerInfos from './InfluencerInfos';
+import { Container, CenterRow, Col } from '../Layout';
+import { SectionTitle } from '../../components';
 
-const InfluencerSection = () => {
-    const [ shownIndex, setShowIndex ] = useState(2);
+import InfluencerContainer from './InfluencerContainer';
 
-    const toggleInfluencer = (index) => {
-        setShowIndex(index);
-    };
-
+const InfluencerSection = ({text, info}) => {
     return (
-        <div className="influencer-section">
-            <InfluencerButtons 
-                handle={toggleInfluencer}
-                shown={shownIndex}  
-            />
-
-            <InfluencerBoxes
-                shown={shownIndex}
-            />
-
-            <InfluencerInfos
-                shown={shownIndex}
-            />
-        </div>
+        <Container section="influencer-container">
+            <CenterRow>
+                <Col sizes="col-12 col-md-6">
+                    <SectionTitle 
+                        color="title-blue" 
+                        text={text}
+                    />
+                </Col>
+                <Col sizes="col-12 col-md-9">
+                    <InfluencerContainer info={info} />
+                </Col>
+            </CenterRow>
+        </Container>
     )
 };
 

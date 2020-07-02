@@ -1,13 +1,9 @@
 import React from 'react';
 import Parser from 'html-react-parser';
 
-import { SectionTwo, Head, PageContainer, Container, Row, Col, DownloadButtons, CenterRow, Partner, SectionEnd, InfluencerSection, SectionOne } from '../partials';
-import { HeadTitle, Text, DownloadButton, EmptyMockup, Logo, SectionTitle, SmallTitle } from '../components';
+import { SectionTwo, Head, PageContainer, Partner, SectionEnd, SectionOne, InfluencerSection } from '../partials';
 
 import { useLanguage, useToolbox } from '../services';
-
-import IosDownload from '../assets/icons/download-ios.png';
-import AndroidDownload from '../assets/icons/download-android.png';
 
 import AdvertisementSection from '../partials/AdvertisementSection/AdvertisementSection';
 
@@ -32,79 +28,43 @@ const HomeInfluencer = () => {
 
     return (
         <PageContainer>
-            <Head>
-                <Container>
-                    <Row>
-                        <Col sizes="col-12 col-md-8">
-                            <HeadTitle
-                                text={Parser(text["header_one_title"])}
-                            />
+            <Head 
+                title={Parser(text["header_one_title"])}
+                text={Parser(text["header_one_text"])}
+            />
 
-                            <Text 
-                                color="white-font" 
-                                text={Parser(text["header_one_text"])}
-                            />
-                        </Col>
-
-                        <Col sizes="col-12 col-md-8 justify-content-md-center">
-                            <DownloadButtons>
-                                <DownloadButton 
-                                    size="big" 
-                                    img={IosDownload} 
-                                />
-
-                                <DownloadButton 
-                                    size="big" 
-                                    img={AndroidDownload} 
-                                />
-                            </DownloadButtons>
-                        </Col>
-
-                        <Col sizes="col-md-4 col-12">
-                            <EmptyMockup>
-                                <Logo />
-                            </EmptyMockup>
-                        </Col>
-                    </Row>
-                </Container>
-            </Head>
-
-
-            <SectionOne page="influencer" />
+            <SectionOne 
+                page="influencer" 
+            />
             
-            <SectionTwo page="influencer" />
-            <Container section="influencer-container">
-                <CenterRow>
-                    <Col sizes="col-12 col-md-6">
-                        <SectionTitle 
-                            color="title-blue" 
-                            text={Parser(text["section_three_title"])}
-                        />
-                    </Col>
-                    <Col sizes="col-12 col-md-9">
-                        <InfluencerSection />
-                    </Col>
-                </CenterRow>
-            </Container>
+            <SectionTwo 
+                page="influencer" 
+            />
+
+            <InfluencerSection 
+                text={Parser(text["section_three_title"])}
+                info={{
+                    "nano": Parser(text["section_three_nano"]),
+                    "micro": Parser(text["section_three_micro"]),
+                    "meso": Parser(text["section_three_meso"]),
+                    "macro": Parser(text["section_three_macro"]),
+                    "mega": Parser(text["section_three_mega"]),
+                }}
+            />
 
             <AdvertisementSection 
                 title={Parser(text["section_five_title"])}
                 text={Parser(text["section_five_content"])}
             />
-            <Partner page={"brand"}>
-                <SmallTitle 
-                    text={Parser(text["section_six_proudPartner"])}
-                    color="title-white"
-                />
-            </Partner>
+            
+            <Partner 
+                page={"influencer"} 
+                text={Parser(text["section_six_proudPartner"])}
+            />
 
-            <Container>
-                <CenterRow>
-                    <Col sizes="col-12 col-lg-9">
-                        <SectionEnd title={Parser(text["section_six_download_title"])} />
-                    </Col>
-                </CenterRow>
-            </Container>
+            <SectionEnd 
+                title={Parser(text["section_six_download_title"])} 
+            />
         </PageContainer>
     )
 };

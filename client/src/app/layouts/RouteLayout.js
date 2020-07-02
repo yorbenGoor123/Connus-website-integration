@@ -12,7 +12,6 @@ import {
 import { 
     FullLogo, 
     HeaderChoice,
-    LanguageButton,
     LightButton,
     SocialButton,
 } from '../components';
@@ -42,10 +41,7 @@ const RouteLayout = ({ children }) => {
             <Footer>
                 <Row>
                     <Col sizes="col-12 col-md-6">
-                        <LanguageButtons>
-                            <LanguageButton text="Nederlands" />
-                            <LanguageButton text="English" used={true} />
-                        </LanguageButtons>
+                        <LanguageButtons />
                     </Col>
 
                     <Col sizes="col-12 col-md-4 d-md-flex justify-content-md-end">

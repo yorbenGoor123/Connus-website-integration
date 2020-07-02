@@ -66,6 +66,11 @@
 
 .used-button {
     opacity: 1;
+    cursor: auto !important;
+}
+
+.used-button:hover {
+    text-decoration: none;
 }
 
 .light-button {

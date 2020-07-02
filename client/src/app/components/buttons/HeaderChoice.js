@@ -4,18 +4,20 @@ import ArrowDown from '../../assets/icons/arrow-down.png';
 import { useToolbox } from '../../services/toolbox.service';
 
 const HeaderChoice = ({ choice }) => {
-    const { getCookie } = useToolbox();
-    const [ page, setPage ] = useState();
+    const { getCookie, setPage} = useToolbox();
+    const [ prefPage, setPrefPage ] = useState();
     const [ oppositePage, setOppositePage ] = useState();
 
     const toggle = (state) => {
+        setPage(state);
 
+        window.location.reload();
     };
 
     const callback = useCallback(() => {
         const retrieveCookie = () => {
             const cookie = getCookie('preferedPage');
-            setPage(cookie);
+            setPrefPage(cookie);
             
             if (cookie === 'brand') {
                 setOppositePage('influencer')
@@ -35,7 +37,7 @@ const HeaderChoice = ({ choice }) => {
             <div className="choice-button" onClick={() => toggle(false)}>
                 <p className="choice-button__text">
                     I'm a <strong>
-                        {page}
+                        {prefPage}
                     </strong>
                 </p>
         
@@ -43,7 +45,7 @@ const HeaderChoice = ({ choice }) => {
                     <img src={ArrowDown} alt="arrow-down" />
                 </div>
             </div>
-            <div className="choice-button-option">
+            <div className="choice-button-option" onClick={() => toggle(oppositePage)}>
                 <p className="choice-button-option__text">
                     No, i'm a <strong>
                         {oppositePage}

@@ -33,7 +33,7 @@ const ToolboxProvider = ({children}) => {
 	* @param prefPage which page you want to retrieve
 	**/ 
 	const setPage = (prefPage) => {
-		const page = `page=${prefPage};`;
+		const page = `preferedPage=${prefPage};`;
 		document.cookie = page;
 	}; 
 
