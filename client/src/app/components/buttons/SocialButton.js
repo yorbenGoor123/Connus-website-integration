@@ -1,11 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
-const SocialButton = ({img, ref}) => {
+const SocialButton = ({img, pageRef}) => {
     return (
-        <NavLink className="social-button" target="_blank" to={`${ref}`}>
+        <a className="social-button" target="_blank" href={pageRef} rel="noopener noreferrer">
             <img src={img} alt="social-media" />
-        </NavLink>
+        </a>
     )
 };
 

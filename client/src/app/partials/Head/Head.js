@@ -27,12 +27,14 @@ const Head = ({ title, text }) => {
                             <DownloadButtons>
                                 <DownloadButton 
                                     size="big" 
-                                    img={IosDownload} 
+                                    img={IosDownload}
+                                    pageRef={"https://apps.apple.com/gb/app/connus/id1490442304?l=en"} 
                                 />
 
                                 <DownloadButton 
                                     size="big" 
                                     img={AndroidDownload} 
+                                    pageRef={"https://play.google.com/store/apps/details?id=com.nebulae.connus"}
                                 />
                             </DownloadButtons>
                         </Col>

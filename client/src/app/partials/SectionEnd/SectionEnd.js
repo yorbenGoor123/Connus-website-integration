@@ -27,11 +27,13 @@ const SectionEnd = ({title}) => {
                                 <DownloadButton 
                                     size="big" 
                                     img={IosDownload} 
+                                    pageRef={"https://apps.apple.com/gb/app/connus/id1490442304?l=en"} 
                                 />
 
                                 <DownloadButton 
                                     size="big" 
                                     img={AndroidDownload} 
+                                    pageRef={"https://play.google.com/store/apps/details?id=com.nebulae.connus"}
                                 />
                             </DownloadButtons>
                         </div>

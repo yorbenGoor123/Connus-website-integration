@@ -1,8 +1,10 @@
 import React from 'react';
 
-const DownloadButton = ({size, img}) => {
+const DownloadButton = ({size, img, pageRef}) => {
     return (
-        <img src={img} alt="download" className={`download-button download-${size}`} />
+        <a href={pageRef} target="_blank" rel="noopener noreferrer">
+            <img src={img} alt="download" className={`download-button download-${size}`} />
+        </a>
     )
 };
 

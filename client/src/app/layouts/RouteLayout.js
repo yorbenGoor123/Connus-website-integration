@@ -50,10 +50,10 @@ const RouteLayout = ({ children }) => {
 
                     <Col sizes="col-12 col-md-2 d-md-flex align-items-center">
                         <SocialButtons>
-                            <SocialButton img={Linkedin} />
-                            <SocialButton img={Facebook} />
-                            <SocialButton img={Instagram} />
-                            <SocialButton img={Twitter} />
+                            <SocialButton img={Linkedin} pageRef={"https://www.linkedin.com/company/connus-be/?originalSubdomain=be"} />
+                            <SocialButton img={Facebook} pageRef={"https://www.facebook.com/pages/category/Computer-Company/Connus-104463651083787/"} />
+                            <SocialButton img={Instagram} pageRef={"https://www.instagram.com/connus_be/"}/>
+                            <SocialButton img={Twitter} pageRef={"/"} />
                         </SocialButtons>
                     </Col>
                 </Row>
