@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const LightButton = ({text, ref}) => {
+const LightButton = ({text, pageRef}) => {
     return (
-        <NavLink className="light-button" to={`${ref}`}>
+        <NavLink className="light-button" to={pageRef}>
             { text }
         </NavLink>
     )

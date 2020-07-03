@@ -7,6 +7,15 @@
     align-items: center;
 }
 
+.thin-head {
+    background-image: url("../../assets//bgImages/header_thin_bg.png");
+    background-size:  cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 992px) {  
     .head {
         height: 110vh;

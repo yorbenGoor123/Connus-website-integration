@@ -158,5 +158,25 @@ export default {
         section_six_proudPartner: "Trotse partner van",
 
         section_six_download_title: "Ben je klaar om je influencer carrière nu te beginnen?",
-    }
+    },
+    "en_privacy-policy": {
+        header_one_title: "Privacy Policy",
+        section_one_title: "Privacy Policy",
+        content: "<h4>This is a test for plain text</h4><p>We can fill this in with all content we want.</p>"
+    },
+    "nl_privacy-policy": {
+        header_one_title: "Privacy Policy",
+        section_one_title: "Privacy Policy",
+        content: "<h4>Dit is een test voor plain tekst</h4><p>Je kan hier invullen wat je maar wil.</p>"
+    },
+    "en_404": {
+        header_one_title: "Woops, not found!",
+        content: "It seems like this page doesn't exist. Head over to the homepage to find all other pages.",
+        button_title: "Go home",
+    },
+    "nl_404": {
+        header_one_title: "Oeps, niet gevonden!",
+        content: "Het lijkt erop dat deze pagina niet bestaat. Ga terug naar de homepage om alle andere pagina's terug te vinden",
+        button_title: "Ga terug",
+    },
 }

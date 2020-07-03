@@ -21,7 +21,7 @@ import Instagram from '../assets/icons/instagram.png';
 import Twitter from '../assets/icons/twitter.png';
 import Linkedin from '../assets/icons/linkedin.png';
 
-const RouteLayout = ({ children }) => {
+const PlainLayout = ({ children }) => {
     return (
         <div className="App">
             <Header>
@@ -62,4 +62,4 @@ const RouteLayout = ({ children }) => {
     )
 };
 
-export default RouteLayout;
+export default PlainLayout;
