@@ -7,6 +7,7 @@ import { useLanguage, useToolbox } from '../services';
 
 import SectionOne from '../partials/SectionOne/SectionOne';
 import AdvertisementSection from '../partials/AdvertisementSection/AdvertisementSection';
+import EngagementRate from '../partials/EngagementRate/EngagementRate';
 
 const HomeBrand = () => {
     const { getText } = useLanguage(); 
@@ -48,6 +49,8 @@ const HomeBrand = () => {
                     "mega": Parser(text["section_three_mega"]),
                 }}
             />
+
+            <EngagementRate />
 
             <AdvertisementSection 
                 title={Parser(text["section_five_title"])}

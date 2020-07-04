@@ -31,7 +31,11 @@ export default {
         section_three_mega: "They often have a very mixed audience with various areas of interest. They have the most significant reach but can sometimes have lower engagements and trust as their relationship with followers can become more distant at some point, compared to other groups of influencers.",
         
         more_info: "Want to learn more about this?",
-        
+       
+        engagement_rate_title: "Engagement Rate",
+        engagement_rate_text: "The engagement rate reflects in what extent your influencer connects to it's followers. It show the interaction between influencer and audience. What we see is that:",
+        engagement_rate_highlight: "Micro influencers have an ER of 2,93% while Nano-influencers has an ER over 6.44%.",
+
         section_five_title: "Get payed to use our app",
         section_five_content: "This ‘click-based’ advertising gives you the security that you pay when your brand raises it’s brand-awareness or when you connect to influencers.",
 
@@ -111,7 +115,11 @@ export default {
         section_three_mega: "Ze hebben vaak een zeer gemengd publiek met verschillende interessegebieden. Ze hebben het grootste bereik, maar hebben soms minder betrokkenheid en vertrouwen, omdat hun relatie met volgers op een bepaald moment afstandelijker kan worden dan die van andere groepen influencers.",
         
         more_info: "Wil je meer leren over dit?",
-        
+
+        engagement_rate_title: "Engagement Rate",
+        engagement_rate_text: "The engagement rate reflects in what extent your influencer connects to it's followers. It show the interaction between influencer and audience. What we see is that:",
+        engagement_rate_highlight: "Micro influencers have an ER of 2,93% while Nano-influencers has an ER over 6.44%.",
+
         section_five_title: "Betaald worden om onze app te gebruiken",
         section_five_content: "Deze 'click-based' reclame geeft u de zekerheid dat u betaalt wanneer uw merk zijn naamsbekendheid vergroot of wanneer u verbinding maakt met influencers.",
 
