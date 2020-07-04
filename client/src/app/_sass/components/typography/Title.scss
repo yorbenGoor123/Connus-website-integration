@@ -3,15 +3,22 @@
     color: $white;
 
     transition: ease-in-out 0.5s;
-    -webkit-animation: fadetext 2s;
-       -moz-animation: fadetext 2s;
-        -ms-animation: fadetext 2s; 
-         -o-animation: fadetext 2s; 
-            animation: fadetext 2s;
+    -webkit-animation: fadein 2s;
+       -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s; 
+            animation: fadein 2s;
 }
 
 .small-title {
    @include font-small-title;
+
+   transition: ease-in-out 0.5s;
+   -webkit-animation: fadein 2s;
+   -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s; 
+     -o-animation: fadein 2s; 
+        animation: fadein 2s;
 }
 
 .title-blue {

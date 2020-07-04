@@ -2,6 +2,13 @@
     @include font-title;
     text-align: center;
     margin-bottom: 40px;
+
+    transition: ease-in-out 0.5s;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+     -ms-animation: fadein 2s; 
+      -o-animation: fadein 2s; 
+         animation: fadein 2s;
 }
 
 .blue-font {

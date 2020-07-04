@@ -1,22 +1,13 @@
 import React, { useEffect } from 'react';
 
 import { Container } from '../Layout';
+import { useAnimation } from '../../services';
 
 const Header = ({ children }) => {
+    const { startHomeAnimation } = useAnimation();
+    
     useEffect(() => {
-        window.onscroll = () => {
-            headerdisplay();
-        };
-
-        const headerdisplay = () => {
-            const headerstyle = document.getElementsByClassName('header')[0];
-   
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                headerstyle.classList.add("header-scrolled");
-            } else {
-                headerstyle.classList.remove("header-scrolled");
-            }
-        };
+        startHomeAnimation();
     });
 
     return (
