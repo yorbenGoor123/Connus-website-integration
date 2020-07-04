@@ -31,6 +31,7 @@ const HeaderChoice = ({ choice }) => {
 
     useEffect(() => {
         callback();
+        
     }, [callback]);
     return (
         <div className="choice-button-container">
