@@ -9,6 +9,13 @@
     margin-top: 20px;
     display: none;
 
+    transition: ease-in-out 0.5s;
+    -webkit-animation: fadein 2s;
+       -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s; 
+            animation: fadein 2s;
+
     .small-title {
         margin-bottom: 20px;
     }
@@ -46,10 +53,18 @@
 .influencer-info {
     margin-top: 20px;
 
+    transition: ease-in-out 0.5s;
+    -webkit-animation: fadein 2s;
+       -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s; 
+            animation: fadein 2s;
+
     &__button {
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: ease-in-out 0.5s;
 
         p {
             font-family: $primary-font;

@@ -19,36 +19,11 @@
     }
 
     transition: ease-in-out 0.5s;
-    -webkit-animation: fadein 2s;
-       -moz-animation: fadein 2s;
-        -ms-animation: fadein 2s; 
-         -o-animation: fadein 2s; 
-            animation: fadein 2s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; transform: translate3d(0,40px,0) rotate(0deg);}
-    to   { opacity: 1; transform: translate3d(0,0,0) rotate(5deg);}
-}
-
-@-moz-keyframes fadein {
-    from { opacity: 0; transform: translate3d(0,40px,0) rotate(0deg);}
-    to   { opacity: 1; transform: translate3d(0,0,0) rotate(5deg);}
-}
-
-@-webkit-keyframes fadein {
-    from { opacity: 0; transform: translate3d(0,40px,0) rotate(0deg);}
-    to   { opacity: 1; transform: translate3d(0,0,0) rotate(5deg);}
-}
-
-@-ms-keyframes fadein {
-    from { opacity: 0; transform: translate3d(0,40px,0) rotate(0deg);}
-    to   { opacity: 1; transform: translate3d(0,0,0) rotate(5deg);}
-}
-
-@-o-keyframes fadein {
-    from { opacity: 0; transform: translate3d(0,40px,0) rotate(0deg);}
-    to   { opacity: 1; transform: translate3d(0,0,0) rotate(5deg);}
+    -webkit-animation: fadeinwithrotate 2s;
+       -moz-animation: fadeinwithrotate 2s;
+        -ms-animation: fadeinwithrotate 2s; 
+         -o-animation: fadeinwithrotate 2s; 
+            animation: fadeinwithrotate 2s;
 }
 
 @media (max-width: 992px) {  
@@ -63,5 +38,11 @@
         display: flex;
         align-items: flex-start;
         padding: 110px 20px 0px 0px;
+
+        -webkit-animation: fadein 2s;
+        -moz-animation: fadein 2s;
+         -ms-animation: fadein 2s; 
+          -o-animation: fadein 2s; 
+             animation: fadein 2s;
     }
 }

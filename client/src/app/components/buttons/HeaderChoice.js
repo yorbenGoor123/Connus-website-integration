@@ -3,7 +3,7 @@ import React, {useEffect, useState, useCallback } from 'react';
 import ArrowDown from '../../assets/icons/arrow-down.png';
 import { useToolbox } from '../../services/toolbox.service';
 
-const HeaderChoice = ({ choice }) => {
+const HeaderChoice = () => {
     const { getCookie, setPage} = useToolbox();
     const [ prefPage, setPrefPage ] = useState();
     const [ oppositePage, setOppositePage ] = useState();
@@ -31,11 +31,11 @@ const HeaderChoice = ({ choice }) => {
 
     useEffect(() => {
         callback();
-        
+
     }, [callback]);
     return (
         <div className="choice-button-container">
-            <div className="choice-button" onClick={() => toggle(false)}>
+            <div className="choice-button">
                 <p className="choice-button__text">
                     I'm a <strong>
                         {prefPage}

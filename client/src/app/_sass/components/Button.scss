@@ -42,7 +42,12 @@
 .download-button {
     height: 50px;
     margin: 50px 20px 20px 0px;
-    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    -webkit-animation: fadein 2s;
+       -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s; 
+            animation: fadein 2s;
 }
 
 .language-buttons {
@@ -101,6 +106,13 @@
 .influencer-buttons {
     display: flex;
     justify-content: space-around;
+
+    transition: ease-in-out 0.5s;
+    -webkit-animation: fadein 2s;
+       -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s; 
+            animation: fadein 2s;
 
     .influencer-button {
         opacity: 0.5;

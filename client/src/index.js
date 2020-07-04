@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './app/App';
 import * as serviceWorker from './serviceWorker';
 
+import 'jquery/dist/jquery.slim';
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

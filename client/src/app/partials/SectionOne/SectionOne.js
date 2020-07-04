@@ -2,8 +2,7 @@ import React from 'react';
 import Parser from 'html-react-parser';
 
 import { SectionTitle, Text } from '../../components';
-import {useLanguage} from '../../services';
-
+import {useLanguage } from '../../services';
 
 import '../../_sass/partials/SectionOne.scss';
 

@@ -19,6 +19,7 @@ const InfluencerInfo = ({ shown, info }) => {
 
         setTimeout(() => {
             infoCard.style.opacity = "1";
+            infoButton.style.opacity = "0";
         }, 100);
     };
 
@@ -26,8 +27,17 @@ const InfluencerInfo = ({ shown, info }) => {
         const infoCard = document.getElementsByClassName('influencer-info')[shown].children[1];
         const infoButton = document.getElementsByClassName('influencer-info')[shown].children[0];
 
-        infoCard.style.display = "none";
-        infoButton.style.display = "flex";
+        infoCard.style.opacity = "0";
+
+
+        setTimeout(() => {
+            infoCard.style.display = "none";
+            infoButton.style.display = "flex";
+
+            setTimeout(() => {
+                infoButton.style.opacity = "1";
+            }, 100);
+        }, 500);
     };
 
     return (
