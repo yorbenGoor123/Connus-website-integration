@@ -1,42 +1,88 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="906" height="329" viewBox="0 0 906 329">
   <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_2);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #008fff;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3, .cls-4, .cls-8 {
+        fill: #bd19be;
+      }
+
+      .cls-3 {
+        font-size: 48.082px;
+      }
+
+      .cls-3, .cls-5, .cls-8 {
+        font-family: Tenon-X-Bold, Tenon;
+        font-weight: 700;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        fill: #ebf2f5;
+      }
+
+      .cls-5 {
+        font-size: 70px;
+      }
+
+      .cls-6, .cls-8 {
+        font-size: 30px;
+      }
+
+      .cls-6 {
+        font-family: Tenon-X-Light, Tenon;
+        font-weight: 300;
+      }
+
+      .cls-9 {
+        fill: #fff;
+      }
+    </style>
     <clipPath id="clip-Artboard_2">
       <rect width="906" height="329"/>
     </clipPath>
   </defs>
-  <g id="Artboard_2" data-name="Artboard – 2" clip-path="url(#clip-Artboard_2)">
-    <rect width="906" height="329" fill="#fff"/>
+  <g id="Artboard_2" data-name="Artboard – 2" class="cls-1">
+    <rect class="cls-9" width="906" height="329"/>
     <g id="equation" transform="translate(-230.716 -3922.5)">
       <g id="Group_36" data-name="Group 36" transform="translate(-135.776 3347.888)">
-        <line id="Line_5" data-name="Line 5" x2="18" transform="translate(887.397 650.42)" fill="none" stroke="#008fff" stroke-miterlimit="10" stroke-width="2"/>
-        <line id="Line_6" data-name="Line 6" y2="18" transform="translate(896.397 642.578)" fill="none" stroke="#008fff" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Line_5" data-name="Line 5" class="cls-2" x2="18" transform="translate(887.397 650.42)"/>
+        <line id="Line_6" data-name="Line 6" class="cls-2" y2="18" transform="translate(896.397 642.578)"/>
       </g>
-      <line id="Line_7" data-name="Line 7" x2="473.868" transform="translate(524.251 4086.5)" fill="none" stroke="#008fff" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="Line_7" data-name="Line 7" class="cls-2" x2="473.868" transform="translate(524.251 4086.5)"/>
       <g id="Group_37" data-name="Group 37" transform="translate(-135.776 3347.888)">
-        <line id="Line_8" data-name="Line 8" x2="18" transform="translate(608.185 733.895)" fill="none" stroke="#008fff" stroke-miterlimit="10" stroke-width="2"/>
-        <line id="Line_9" data-name="Line 9" x2="18" transform="translate(608.185 743.329)" fill="none" stroke="#008fff" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Line_8" data-name="Line 8" class="cls-2" x2="18" transform="translate(608.185 733.895)"/>
+        <line id="Line_9" data-name="Line 9" class="cls-2" x2="18" transform="translate(608.185 743.329)"/>
       </g>
-      <text id="_100" data-name="* 100" transform="translate(1029.284 4097.953)" fill="#bd19be" font-size="48.082" font-family="Tenon-X-Bold, Tenon" font-weight="700"><tspan x="0" y="0">* 100</tspan></text>
+      <text id="_100" data-name="* 100" class="cls-3" transform="translate(1029.284 4097.953)"><tspan x="0" y="0">* 100</tspan></text>
       <g id="Group_64" data-name="Group 64">
-        <rect id="Rectangle_65" data-name="Rectangle 65" width="214.456" height="328" rx="48" transform="translate(230.716 3922.5)" fill="#bd19be"/>
-        <text id="ER" transform="translate(339 4059)" fill="#ebf2f5" font-size="70" font-family="Tenon-X-Bold, Tenon" font-weight="700"><tspan x="-41.72" y="0">ER</tspan></text>
+        <rect id="Rectangle_65" data-name="Rectangle 65" class="cls-4" width="214.456" height="328" rx="48" transform="translate(230.716 3922.5)"/>
+        <text id="ER" class="cls-5" transform="translate(339 4059)"><tspan x="-41.72" y="0">ER</tspan></text>
         <text id="Engagement_rate" data-name="Engagement 
-rate" transform="translate(339 4138)" fill="#ebf2f5" font-size="30" font-family="Tenon-X-Light, Tenon" font-weight="300"><tspan x="-88.155" y="0">Engagement </tspan><tspan x="-26.505" y="36">rate</tspan></text>
+rate" class="cls-6" transform="translate(339 4138)"><tspan x="-88.155" y="0">Engagement </tspan><tspan x="-26.505" y="36">rate</tspan></text>
       </g>
       <g id="Group_65" data-name="Group 65">
-        <rect id="Rectangle_62" data-name="Rectangle 62" width="214.456" height="153.612" rx="38" transform="translate(524.251 3922.5)" fill="#ebf2f5"/>
-        <path id="heart-solid" d="M43.98,34.882c-5.215-4.444-12.97-3.645-17.756,1.294l-1.875,1.932-1.875-1.932C17.7,31.237,9.933,30.438,4.718,34.882a13.664,13.664,0,0,0-.942,19.783L22.189,73.678a2.983,2.983,0,0,0,4.311,0L44.913,54.665a13.655,13.655,0,0,0-.933-19.783Z" transform="translate(607.291 3936.717)" fill="#bd19be"/>
-        <text id="Likes" transform="translate(631 4056)" fill="#bd19be" font-size="30" font-family="Tenon-X-Bold, Tenon" font-weight="700"><tspan x="-34.342" y="0">Likes</tspan></text>
+        <rect id="Rectangle_62" data-name="Rectangle 62" class="cls-7" width="214.456" height="153.612" rx="38" transform="translate(524.251 3922.5)"/>
+        <path id="heart-solid" class="cls-4" d="M43.98,34.882c-5.215-4.444-12.97-3.645-17.756,1.294l-1.875,1.932-1.875-1.932C17.7,31.237,9.933,30.438,4.718,34.882a13.664,13.664,0,0,0-.942,19.783L22.189,73.678a2.983,2.983,0,0,0,4.311,0L44.913,54.665a13.655,13.655,0,0,0-.933-19.783Z" transform="translate(607.291 3936.717)"/>
+        <text id="Likes" class="cls-8" transform="translate(631 4056)"><tspan x="-34.342" y="0">Likes</tspan></text>
       </g>
       <g id="Group_66" data-name="Group 66">
-        <rect id="Rectangle_63" data-name="Rectangle 63" width="214.456" height="153.612" rx="38" transform="translate(782.853 3922.5)" fill="#ebf2f5"/>
-        <path id="comment-alt-solid" d="M5.5,0h33A5.5,5.5,0,0,1,44,5.5V30.248a5.5,5.5,0,0,1-5.5,5.5h-8.25v7.218a1.033,1.033,0,0,1-1.641.834L17.874,35.748H5.5a5.5,5.5,0,0,1-5.5-5.5V5.5A5.5,5.5,0,0,1,5.5,0Z" transform="translate(868 3967.316)" fill="#bd19be"/>
-        <text id="Comments" transform="translate(890 4051)" fill="#bd19be" font-size="30" font-family="Tenon-X-Bold, Tenon" font-weight="700"><tspan x="-73.268" y="0">Comments</tspan></text>
+        <rect id="Rectangle_63" data-name="Rectangle 63" class="cls-7" width="214.456" height="153.612" rx="38" transform="translate(782.853 3922.5)"/>
+        <path id="comment-alt-solid" class="cls-4" d="M5.5,0h33A5.5,5.5,0,0,1,44,5.5V30.248a5.5,5.5,0,0,1-5.5,5.5h-8.25v7.218a1.033,1.033,0,0,1-1.641.834L17.874,35.748H5.5a5.5,5.5,0,0,1-5.5-5.5V5.5A5.5,5.5,0,0,1,5.5,0Z" transform="translate(868 3967.316)"/>
+        <text id="Comments" class="cls-8" transform="translate(890 4051)"><tspan x="-73.268" y="0">Comments</tspan></text>
       </g>
       <g id="Group_67" data-name="Group 67">
-        <rect id="Rectangle_66" data-name="Rectangle 66" width="214.456" height="153.612" rx="38" transform="translate(654.251 4099.5)" fill="#ebf2f5"/>
-        <text id="Followers" transform="translate(761 4233)" fill="#bd19be" font-size="30" font-family="Tenon-X-Bold, Tenon" font-weight="700"><tspan x="-64.98" y="0">Followers</tspan></text>
-        <path id="users-solid" d="M9.135,50.271a6.09,6.09,0,1,0-6.09-6.09A6.1,6.1,0,0,0,9.135,50.271Zm42.631,0a6.09,6.09,0,1,0-6.09-6.09A6.1,6.1,0,0,0,51.767,50.271Zm3.045,3.045h-6.09a6.072,6.072,0,0,0-4.292,1.77A13.919,13.919,0,0,1,51.576,65.5h6.281A3.042,3.042,0,0,0,60.9,62.451V59.406A6.1,6.1,0,0,0,54.812,53.316Zm-24.361,0A10.658,10.658,0,1,0,19.793,42.658,10.652,10.652,0,0,0,30.451,53.316Zm7.308,3.045h-.79a14.715,14.715,0,0,1-13.037,0h-.79A10.965,10.965,0,0,0,12.18,67.323v2.741a4.569,4.569,0,0,0,4.568,4.568H44.154a4.569,4.569,0,0,0,4.568-4.568V67.323A10.965,10.965,0,0,0,37.759,56.361ZM16.472,55.086a6.072,6.072,0,0,0-4.292-1.77H6.09A6.1,6.1,0,0,0,0,59.406v3.045A3.042,3.042,0,0,0,3.045,65.5H9.316a13.954,13.954,0,0,1,7.156-10.41Z" transform="translate(731.254 4113.684)" fill="#bd19be"/>
+        <rect id="Rectangle_66" data-name="Rectangle 66" class="cls-7" width="214.456" height="153.612" rx="38" transform="translate(654.251 4099.5)"/>
+        <text id="Followers" class="cls-8" transform="translate(761 4233)"><tspan x="-64.98" y="0">Followers</tspan></text>
+        <path id="users-solid" class="cls-4" d="M9.135,50.271a6.09,6.09,0,1,0-6.09-6.09A6.1,6.1,0,0,0,9.135,50.271Zm42.631,0a6.09,6.09,0,1,0-6.09-6.09A6.1,6.1,0,0,0,51.767,50.271Zm3.045,3.045h-6.09a6.072,6.072,0,0,0-4.292,1.77A13.919,13.919,0,0,1,51.576,65.5h6.281A3.042,3.042,0,0,0,60.9,62.451V59.406A6.1,6.1,0,0,0,54.812,53.316Zm-24.361,0A10.658,10.658,0,1,0,19.793,42.658,10.652,10.652,0,0,0,30.451,53.316Zm7.308,3.045h-.79a14.715,14.715,0,0,1-13.037,0h-.79A10.965,10.965,0,0,0,12.18,67.323v2.741a4.569,4.569,0,0,0,4.568,4.568H44.154a4.569,4.569,0,0,0,4.568-4.568V67.323A10.965,10.965,0,0,0,37.759,56.361ZM16.472,55.086a6.072,6.072,0,0,0-4.292-1.77H6.09A6.1,6.1,0,0,0,0,59.406v3.045A3.042,3.042,0,0,0,3.045,65.5H9.316a13.954,13.954,0,0,1,7.156-10.41Z" transform="translate(731.254 4113.684)"/>
       </g>
     </g>
   </g>
