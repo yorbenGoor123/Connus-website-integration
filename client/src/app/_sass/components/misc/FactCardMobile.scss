@@ -17,12 +17,12 @@
 
     .fact-card-mobile__dot--influencer {
         background: linear-gradient(180deg, rgba(152,103,0,1) 0%, rgba(242,172,25,1) 100%);
-
     }
 
     .fact-card {
         cursor: pointer;
         position: absolute;
+        z-index: 1000;
     }
 
     .fact-card-mobile__dot--small {
@@ -36,4 +36,49 @@
         width: 40px;
         border: 9px solid white;
     }
+
+    // Animation
+
+    .fact-card-mobile__dot--brand {
+        animation: pulsePurple 3s infinite;
+    }
+
+    .fact-card-mobile__dot--influencer {
+        animation: pulseYellow 3s infinite;
+    }
+}
+
+
+@keyframes pulseYellow {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(242,172,25, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(242,172,25, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(242,172,25, 0);
+	}
+}
+
+@keyframes pulsePurple {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(119,8,167, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(119,8,167, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(119,8,167, 0);
+	}
 }

@@ -23,12 +23,12 @@ const FactCardMobile = (props) => {
         },
 
         'top-left': {
-            leftOffset: '-540%',
+            leftOffset: '-440%',
             topOffset: '-200%',
         },
 
         'top-left-large': {
-            leftOffset: '-650%',
+            leftOffset: '-220px',
             topOffset: '-150%',
         }
     }
@@ -37,7 +37,8 @@ const FactCardMobile = (props) => {
         <div className={`fact-card-mobile`} id={props.id} style={postionStyle}>
             {
                 (props.active === "true")
-                ? <FactCard 
+                ?   <div className=""> 
+                <FactCard 
                     page={props.page ?? "brand"}
                     icon={props.icon}
                     img={props.img}
@@ -47,12 +48,13 @@ const FactCardMobile = (props) => {
                     leftOffset={cardPosition[props.unfoldDirection].leftOffset}
                     topOffset={cardPosition[props.unfoldDirection].topOffset}
                 />
+                </div>
                 : null
             }
             
 
             <div className={`fact-card-mobile__dot fact-card-mobile__dot--${props.page} fact-card-mobile__dot--${props.size}`}></div>
-            
+
         </div>
     );
 };

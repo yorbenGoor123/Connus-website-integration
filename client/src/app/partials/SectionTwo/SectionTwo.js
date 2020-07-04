@@ -35,7 +35,7 @@ function SectionTwo(props) {
             {/* correct typographic components have to be implemented */} 
 
             <div className="section-two__text-container container">
-                <div className="col-12 col-md-8 col-lg-6" >
+                <div className="col-12 col-sm-8 col-md-8 col-lg-6" >
                     <SectionTitle 
                         color="white-font" 
                         text={Parser(text["section_two_title"])}
@@ -148,7 +148,7 @@ function SectionTwo(props) {
                                     id="fact-card-mobile-5"
 
                                     icon="comment-dollar-solid.svg"
-                                    numberSmall="+€101" 
+                                    numberSmall="€101" 
 
                                     unfoldDirection="top-right"
                                     size="small"
