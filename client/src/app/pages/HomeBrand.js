@@ -8,6 +8,7 @@ import { useLanguage, useToolbox } from '../services';
 import SectionOne from '../partials/SectionOne/SectionOne';
 import AdvertisementSection from '../partials/AdvertisementSection/AdvertisementSection';
 import EngagementRate from '../partials/EngagementRate/EngagementRate';
+import Popup from '../components/misc/Popup'
 
 const HomeBrand = () => {
     const { getText } = useLanguage(); 
@@ -26,6 +27,7 @@ const HomeBrand = () => {
 
     return (
         <PageContainer>
+            <Popup />
             <Head 
                 title={Parser(text["header_one_title"])}
                 text={Parser(text["header_one_text"])}
