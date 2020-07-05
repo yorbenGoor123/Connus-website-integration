@@ -1,22 +1,22 @@
 export default {
     "en_brand" : {
-        header_one_title: "More business. More customers. More sales. More revenue.",
-        header_one_text: "A breakthrough in creating intuitive new opportunities to inspire others through influencer marketing.",
+        header_one_title: "More awareness. More sales. More revenue. More Everything",
+        header_one_text: "A breakthrough in exploring digital marketing and finding new potential customers, all in one handy tool.",
 
-        section_one_title: "Everybody influences",
-        section_one_text_one: "In a society where social media is more present than ever, it’s not the question who the influencers are. These days you don’t need 10.000 followers to call yourself an  influencer.",
+        section_one_title: "Looks brand new. Feels like home.",
+        section_one_text_one: "Connus brings a fresh look in exploring digital marketing, making it easier than ever. Smart features help you get what you need in the moment with ease. Discover new content creators to work with and build long term relationships. And become even closer to new customers who are interested in your company in an even more intelligent, more personal, and more private way. Experience the simplicity and efficiency today.",
         section_one_highlight: "Even if you have only 800 or 900 influencers you can use our app.",
         section_one_text_two: "Connus helps you to grow your influencing carreer by connecting you with a brand or  product who fits your content.",
 
-        section_two_title: "Developed for entrepreneurs like you",
-        section_two_text_one: "Nation against nation, different kinds of nationality.",
-        section_two_text_two: "People are proud  of being part of an eco-system (I am proud to be a Belgian) à I want to buy things  that has an influence on other ones. This is not about you, but it’s about the influence you have.  We see you and how you can change the world. ",
+        section_two_title: "Developed for entrepreneurs like you.",
+        section_two_text_one: "As entrepreneur you need an avenue to accelerate. Creating this avenue is difficult and costs time, right? Not with Connus. A remarkable system, we’d love to call the Connus Integration System (CIS), does the work for you. Through an intuitive interface content creator, who are also potential customers, can express their interest in your company.",
+        section_two_text_two: "Power to the entrepreneur, it’s up to you to decide what you are going to do with all this interested people in your company with the ease of Connus. You can choose to do digital marketing with these content creators, sell them a product, or keep the relationship on hold. And in the meanwhile you learn more about your audience, so you can advertise cost-efficiently and more targeted.",
         section_two_text_three: "Connecting, seeing you …  We need each other! Growing together, building together, everything together …",
         section_two_bubble_two_text: "<strong>Merken</strong> zijn al geregistreerd",
         section_two_bubble_four_text: "<strong>Influencers</strong> zijn al geregistreerd",
         section_two_bubble_five_text: "Geregistreerde <strong>matches</strong>",
 
-        section_three_title: "Find out what influencer you want",
+        section_three_title: "Find out what content creator you need.",
         section_three_followers: "followers",
         section_three_reach: "Reach",
         section_three_engagement: "Engagement",
@@ -24,43 +24,43 @@ export default {
         section_three_trust: "Trust",
         section_three_cost: "Cost",
 
-        section_three_nano: "Nano-influencers often cultivate niche communities and can tap into audiences with specific interests. Because they post to a smaller audience, they may receive more engagement per post.",
-        section_three_micro: "They have more niche audiences that are highly engaged with a deeper connection. Micro-influencers are present in almost every sector: health and fitness, food, entrepreneurship, fashion and beauty to name just a few prominent categories",
-        section_three_meso: "Their quantitative range is much smaller, but on the other hand, their engagement is often much higher. Because the number of followers is lower, it is easier for a meso influencer to maintain direct contact with their following.",
-        section_three_macro: 'They are famous in a local community, so you can think of them as "mini-celebrities". Their content is usually of high-quality and comprises a specific passion or topic.',
-        section_three_mega: "They often have a very mixed audience with various areas of interest. They have the most significant reach but can sometimes have lower engagements and trust as their relationship with followers can become more distant at some point, compared to other groups of influencers.",
+        section_three_nano: "They have a cultivate niche community and can tap into their audience with specific interests. With a smaller audience, they receive more engagement and they are more authentic. Nano content creators are the future of digital marketing and have a lot of value.",
+        section_three_micro: "hey have a deeper connection with a specific niche audience. Receiving a lot of engagement means that they are picture perfect to bring your message. These content creators are eager to work with companies of all sizes, and are trustworthy.",
+        section_three_meso: "These content creators are the perfect combination of reach, engagement and trust within digital marketing. They can spread your message with ease to a big audience and their conversion is very big. They have the most balanced price-quality ratio.",
+        section_three_macro: 'hey are famous in a local community. Perfect when you want to send a message to a specific niche on global scale. Their content is from high quality and comprises a specific passion or topic. They are perfect to spread an important message, and let’s be honest: they deserve it after all of the hard work.',
+        section_three_mega: "They have a diverse audience with various areas of interest. With a significant reach, we can say for sure that they are a celebrity. These content creators have inspired thousands and more to come. The most expensive and complex content creator, but with significant results.",
         
         more_info: "Want to learn more about this?",
        
-        engagement_rate_title: "Engagement Rate",
-        engagement_rate_text: "The engagement rate reflects in what extent your influencer connects to it's followers. It show the interaction between influencer and audience. What we see is that:",
-        engagement_rate_highlight: "Micro influencers have an ER of 2,93% while Nano-influencers has an ER over 6.44%.",
+        engagement_rate_title: "Power to the smaller ones.",
+        engagement_rate_text: "The engagement rate, a metric that shows how much people interact with specific content, is very high for these content creators. With a low cost to advertise, less complexity and high credibility they are a perfect match for every entrepreneur. And the future of digital marketing.",
+        engagement_rate_highlight: "Nano and micro content creators have a quality that can’t be equalled: authenticity.",
 
-        section_five_title: "Get payed to use our app",
-        section_five_content: "This ‘click-based’ advertising gives you the security that you pay when your brand raises it’s brand-awareness or when you connect to influencers.",
+        section_five_title: "Elevate your business with more ease than ever.",
+        section_five_content: "Every aspect of Connus was designed with entrepreneurs in mind. Our believe is that you should be able to focus on the one thing that really matters, expanding your business. Therefore, you can experience all of Connus for free, at all time. Learn more about your potential customer, advertise more targeted, decide and negotiate yourself with content creators to work with and gain insights about these content creators that only Connus offers. A powerful partnership can change everything.",
 
         section_six_proudPartner: "Proud partner of",
 
         section_six_download_title: "Find your perfect influencer right now!",
     },
     "en_influencer" : {
-        header_one_title: "The right person for your business",
-        header_one_text: "A breakthrough in creating intuitive new opportunities to inspire others through influencer marketing.",
+        header_one_title: "We see you and how you can change the world",
+        header_one_text: "A breakthrough in connecting content creators worldwide and creating intuitive new opportunities to inspire others through influencer marketing.",
 
-        section_one_title: "Everybody influences",
-        section_one_text_one: "In a society where social media is more present than ever, it’s not the question who the influencers are. These days you don’t need 10.000 followers to call yourself an  influencer.",
-        section_one_highlight: "Even if you have only 800 or 900 influencers you can use our app.",
-        section_one_text_two: "Connus helps you to grow your influencing carreer by connecting you with a brand or  product who fits your content.",
+        section_one_title: "Doing it all, in all new ways.",
+        section_one_text_one: "Connus elevates your career by helping you expanding your professional network on social media. Experience the ease of creating opportunities with companies and connecting with other content creators. Discover all of the features such as our data-driven swipe system or our unique way of representing yourself with only elements you want other content creators or companies to see.",
+        section_one_highlight: "You are fully in control. And get even more transparency on how much value your personal brand really has.",
+        section_one_text_two: "",
 
         section_two_title: "Nothing like an agency",
-        section_two_text_one: "Nation against nation, different kinds of nationality.",
-        section_two_text_two: "People are proud  of being part of an eco-system (I am proud to be a Belgian) à I want to buy things  that has an influence on other ones. This is not about you, but it’s about the influence you have.  We see you and how you can change the world. ",
-        section_two_text_three: "Connecting, seeing you …  We need each other! Growing together, building together, everything together …",
+        section_two_text_one: "Connus allows you to be the owner of your personal brand. No more domination, all room to negotiate with companies for a fair remuneration. Yes, you read that right. There are no boundaries in connecting. It’s about how fantastic we can make influencer marketing together.",
+        section_two_text_two: "",
+        section_two_text_three: "",
         section_two_bubble_two_text: "<strong>Merken</strong> zijn al geregistreerd",
         section_two_bubble_four_text: "<strong>Influencers</strong> zijn al geregistreerd",
         section_two_bubble_five_text: "Geregistreerde <strong>matches</strong>",
 
-        section_three_title: "Find out what influencer you are",
+        section_three_title: "Find out what type of content creator you are",
         section_three_followers: "followers",
         section_three_reach: "Reach",
         section_three_engagement: "Engagement",
@@ -68,16 +68,16 @@ export default {
         section_three_trust: "Trust",
         section_three_cost: "Cost",
 
-        section_three_nano: "Nano-influencers often cultivate niche communities and can tap into audiences with specific interests. Because they post to a smaller audience, they may receive more engagement per post.",
-        section_three_micro: "They have more niche audiences that are highly engaged with a deeper connection. Micro-influencers are present in almost every sector: health and fitness, food, entrepreneurship, fashion and beauty to name just a few prominent categories",
-        section_three_meso: "Their quantitative range is much smaller, but on the other hand, their engagement is often much higher. Because the number of followers is lower, it is easier for a meso influencer to maintain direct contact with their following.",
-        section_three_macro: 'They are famous in a local community, so you can think of them as "mini-celebrities". Their content is usually of high-quality and comprises a specific passion or topic.',
-        section_three_mega: "They often have a very mixed audience with various areas of interest. They have the most significant reach but can sometimes have lower engagements and trust as their relationship with followers can become more distant at some point, compared to other groups of influencers.",
+        section_three_nano: "You have a cultivate niche community and can tap into your audience with specific interests. With a smaller audience, you receive more engagement and you are more authentic. Nano content creators are the future of digital marketing and have a lot of value.",
+        section_three_micro: "You have a deeper connection with a specific niche audience. Receiving a lot of engagement means that you are picture perfect to bring a message. Stick true to your interests and your passion to inspire your community. Digital marketeers are looking for you.",
+        section_three_meso: "You are the perfect combination of reach, engagement and trust within digital marketing. You can spread your message with ease to a big audience and your conversion is very big. You are inspiring not only your community, but also companies to work with you.",
+        section_three_macro: 'You are famous in a local community. It’s safe to say you are a mini celebrity. Your content is from high quality and comprises a specific passion or topic. You’re perfect to spread an important message, and let’s be honest: you deserve it after all of the hard work.',
+        section_three_mega: "You have a diverse audience with various areas of interest. With a significant reach, we can say for sure that you are a celebrity. You have created content that inspired thousands and together we’re giving content creators the possibilities they need to grow.",
 
         more_info: "Want to learn more about this?",
         
-        section_five_title: "Get payed to use our app",
-        section_five_content: "This ‘click-based’ advertising gives you the security that you pay when your brand raises it’s brand-awareness or when you connect to influencers.",
+        section_five_title: "Bold new experience. It’s love at first site.",
+        section_five_content: "Whether you’re creating new opportunities, discussing your next collaboration, or just connecting to other content creators, Connus is the best way to do it. As we know that security and privacy is very important for everyone on Connus, we strive to protect all of our data in the safest way. Want to know more? ",
 
         section_six_proudPartner: "Proud partner of",
 

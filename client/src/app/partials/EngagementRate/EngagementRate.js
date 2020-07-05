@@ -18,11 +18,11 @@ const EngagementRate = () => {
                     color="blue-font" 
                 />
                 <Text
-                    text={Parser(text["engagement_rate_text"])}
-                />
-                <Text
                     text={Parser(text["engagement_rate_highlight"])}
                     color="blue-font"
+                />
+                <Text
+                    text={Parser(text["engagement_rate_text"])}
                 />
                 <div className="engagement-rate__image--lg d-none d-sm-block"></div>
                 <div className="engagement-rate__image--sm d-sm-none"></div>
