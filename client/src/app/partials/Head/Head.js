@@ -23,7 +23,7 @@ const Head = ({ title, text }) => {
                             />
                         </Col>
 
-                        <Col sizes="col-12 col-md-8 justify-content-md-center">
+                        <Col sizes="col-12 col-lg-8 justify-content-md-center">
                             <DownloadButtons>
                                 <DownloadButton 
                                     size="big" 
@@ -39,7 +39,7 @@ const Head = ({ title, text }) => {
                             </DownloadButtons>
                         </Col>
 
-                        <Col sizes="col-md-4 col-12">
+                        <Col sizes="col-lg-4 col-12">
                             <EmptyMockup>
                                 <Logo />
                             </EmptyMockup>

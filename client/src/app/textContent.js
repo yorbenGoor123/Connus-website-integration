@@ -42,6 +42,10 @@ export default {
         section_six_proudPartner: "Proud partner of",
 
         section_six_download_title: "Find your perfect influencer right now!",
+        
+        newsletter_title: "Keep up with Connus",
+        newsletter_info: "When signing up for this newsletter you automatically agree with our <a href='/privacy-policy'>Privacy Policy</a>.",
+        newsletter_button: "Subscribe",
     },
     "en_influencer" : {
         header_one_title: "We see you and how you can change the world",
@@ -82,6 +86,10 @@ export default {
         section_six_proudPartner: "Proud partner of",
 
         section_six_download_title: "Are your ready to start your influencer carreer right now?",
+
+        newsletter_title: "Keep up with Connus",
+        newsletter_info: "When signing up for this newsletter you automatically agree with our <a href='/privacy-policy'>Privacy Policy</a>.",
+        newsletter_button: "Subscribe",
     },
     "nl_brand" : {
         header_one_title: "Meer zaken. Meer klanten. Meer verkoop. Meer omzet.",

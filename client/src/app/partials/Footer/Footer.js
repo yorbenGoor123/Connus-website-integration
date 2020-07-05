@@ -1,18 +1,38 @@
 import React from 'react';
+import Parser from 'html-react-parser';
 
-import { Container, Row, Col } from '../Layout';
+import { useLanguage, useToolbox } from '../../services';
+
+import { Container, Row, Col, CenterRow } from '../Layout';
 import { LanguageButtons, SocialButtons } from '../Buttons';
 import { LightButton, SocialButton } from '../../components';
+import { NewsletterForm } from '../Newsletter';
 
 import Facebook from '../../assets/icons/facebook.png';
 import Instagram from '../../assets/icons/instagram.png';
 import Twitter from '../../assets/icons/twitter.png';
 import Linkedin from '../../assets/icons/linkedin.png';
 
-const Footer = () => {
+const Footer = ({target}) => {
+    const { getCookie } = useToolbox();
+    const { getText } = useLanguage(); 
+
+    const preferedPage = getCookie('preferedPage');
+    const text = getText(preferedPage);
+
     return (
         <div className="footer">
             <Container>
+                <CenterRow>
+                    <Col sizes="col-12 col-md-6">
+                        <NewsletterForm 
+                            target={preferedPage}
+                            title={Parser(text["newsletter_title"])}
+                            text={Parser(text["newsletter_info"])}
+                            button={Parser(text["newsletter_button"])}
+                        />
+                    </Col>
+                </CenterRow>
                 <Row>
                     <Col sizes="col-12 col-md-6">
                         <LanguageButtons />
