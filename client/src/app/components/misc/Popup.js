@@ -9,7 +9,7 @@ import InputField from './InputField';
 import '../../_sass/components/misc/Popup.scss';
 
 const Popup = (props) => {
-    const {setPage} = useToolbox();
+    const {setPage, getCookie} = useToolbox();
 
     const switchAction = (status) => {
         setPage(status);
@@ -34,6 +34,7 @@ const Popup = (props) => {
                             valueOne="brand"
                             valueTwo="influencer"
                             onSwitch={switchAction}
+                            defaultValue="0"
                         />
 
                     </div>

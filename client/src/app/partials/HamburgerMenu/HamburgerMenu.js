@@ -8,7 +8,7 @@ import { useToolbox } from '../../services';
 import { NavLink } from 'react-router-dom';
 
 const HamburgerMenu = ({click}) => {
-    const {setPage} = useToolbox();
+    const {setPage, getCookie} = useToolbox();
 
     const switchAction = (status) => {
         setPage(status);
@@ -40,6 +40,7 @@ const HamburgerMenu = ({click}) => {
                                 valueOne="brand"
                                 valueTwo="influencer"
                                 onSwitch={switchAction}
+                                defaultValue={(getCookie('preferedPage') === "brand" ? 0 : 1 )}
                             />
                         </Col>
                     </Row>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Switch = (props) => {
-    const [status, setStatus] = useState(0);
+    const [status, setStatus] = useState((props.defaultValue) ? parseInt(props.defaultValue) : 0);
 
     const switchStatus = () => {
         if (status === 1) {
