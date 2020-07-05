@@ -26,11 +26,14 @@ const AnimateProvider = ({children}) => {
 
     const animateHeader = () => {
         const headerstyle = document.getElementsByClassName('header')[0];
+        const showButton = document.getElementsByClassName('hamburger-button')[0];
    
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             headerstyle.classList.add("header-scrolled");
+            if (showButton) showButton.style.top = "33px";
         } else {
             headerstyle.classList.remove("header-scrolled");
+            if (showButton) showButton.style.top = "43px";
         }
     };
 

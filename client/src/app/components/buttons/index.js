@@ -5,6 +5,7 @@ import LightButton from './LightButton';
 import SocialButton from './SocialButton';
 import InfluencerButton from './InfluencerButton';
 import Switch from './Switch';
+import HamburgerButton from './HamburgerButton';
 
 export {
     HeaderChoice,
@@ -14,4 +15,5 @@ export {
     SocialButton,
     InfluencerButton,
     Switch,
+    HamburgerButton,
 };
