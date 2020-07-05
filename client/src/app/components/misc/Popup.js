@@ -1,11 +1,20 @@
 import React, { Fragment } from 'react';
+import Parser from 'html-react-parser';
 
+import { useToolbox } from '../../services';
 import { SectionTitle, Text } from '../typography';
-import { PageTypeSwitch } from '../buttons';
+import { Switch } from '../buttons';
+import InputField from './InputField';
 
 import '../../_sass/components/misc/Popup.scss';
 
 const Popup = (props) => {
+    const {setPage} = useToolbox();
+
+    const switchAction = (status) => {
+        setPage(status);
+    }
+
     return (
         <Fragment>
             <div className="popup-fullscreen"></div>
@@ -18,15 +27,28 @@ const Popup = (props) => {
 
                     <div className="popup__page-type">
                         <Text 
-                            text="I am"
+                            text="I am a"
                             color="blue-font"
                         />
-                        <PageTypeSwitch/>
+                        <Switch
+                            valueOne="brand"
+                            valueTwo="influencer"
+                            onSwitch={switchAction}
+                        />
 
                     </div>
 
                     <div className="popup__email">
+                        <Text 
+                            text="Stay up-to-date!"
+                            color="blue-font"
+                        />
 
+                        <Text 
+                            text={Parser("Our platform is rapidly developing. <br> Always stay up-to-date by signing up for our emails.")}
+                        />   
+
+                        <InputField placeholder="name@example.com" id="email-input" />      
                     </div>
                 </div>
             </div>

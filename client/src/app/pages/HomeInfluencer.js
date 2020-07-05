@@ -6,6 +6,7 @@ import { SectionTwo, Head, PageContainer, Partner, SectionEnd, SectionOne, Influ
 import { useLanguage, useToolbox } from '../services';
 
 import AdvertisementSection from '../partials/AdvertisementSection/AdvertisementSection';
+import Popup from '../components/misc/Popup'
 
 const HomeInfluencer = () => {
     const { getText } = useLanguage(); 
@@ -16,7 +17,7 @@ const HomeInfluencer = () => {
     const redirectToCorrectHomePage = () => {
         const preferedPage = getCookie('preferedPage');
         if (!preferedPage) {
-            setDefaultCookie();
+            // setDefaultCookie();
         };
 
         if (preferedPage === 'brand' ) {
@@ -28,6 +29,11 @@ const HomeInfluencer = () => {
 
     return (
         <PageContainer>
+            {
+                (getCookie("preferedPage"))
+                ? null
+                : <Popup />
+            }
             <Head 
                 title={Parser(text["header_one_title"])}
                 text={Parser(text["header_one_text"])}

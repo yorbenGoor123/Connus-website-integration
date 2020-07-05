@@ -27,7 +27,11 @@ const HomeBrand = () => {
 
     return (
         <PageContainer>
-            <Popup />
+            {
+                (getCookie("preferedPage"))
+                ? null
+                : <Popup />
+            }
             <Head 
                 title={Parser(text["header_one_title"])}
                 text={Parser(text["header_one_text"])}

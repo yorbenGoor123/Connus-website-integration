@@ -145,7 +145,7 @@
     }
  }
 
- .page-switch {
+ .switch {
      display:flex;
      justify-content: space-between;
      width: 200px;
@@ -173,7 +173,7 @@
          font-weight: 800;
      }
      
-    .page-switch__brand {
+    .page-switch__value-one {
         text-align: center;
         width:100%;
     }
@@ -191,16 +191,16 @@
         transition: left 0.15s ease-out;
     }
 
-    .page-switch__bg--influencer {
+    .page-switch__bg--value-two {
         left: 50%;
         box-shadow: -3px 0 6px rgba(0, 0, 0, 0.2) ;
     }
-    .page-switch__bg--brand {
+    .page-switch__bg--value-one {
         left: 0%;
         box-shadow: 3px 0 6px rgba(0, 0, 0, 0.2) ;
     }
 
-    .page-switch__influencer {
+    .page-switch__value-two {
         text-align: center;
         width:100%;
     }
