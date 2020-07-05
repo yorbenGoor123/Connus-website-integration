@@ -1,0 +1,76 @@
+.hamburger-menu {
+    overflow: scroll;
+    padding: 100px 30px;
+    opacity: 0;
+    background-color: $white;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+
+    transition: cubic-bezier(0.95, 0.05, 0.795, 0.035) 1s;
+
+    &__logo {
+        width: 50px;
+        opacity: 0;
+        transition: ease-in-out 0.8s;
+    }
+
+    &__exit {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+
+        img {
+            width: 20px;
+            cursor: pointer;
+
+            transition: ease-in-out 0.8s;
+            -webkit-animation: spin 2s;
+            -moz-animation: spin 2s;
+             -ms-animation: spin 2s; 
+              -o-animation: spin 2s; 
+                 animation: spin 2s;
+        }
+    }
+
+    &__content {
+        margin-top: 80px;
+
+        opacity: 0;
+        transition: ease-in-out 0.8s;
+        -webkit-animation: fadein 2s 1s;
+        -moz-animation: fadein 2s 1s;
+         -ms-animation: fadein 2s 1s; 
+          -o-animation: fadein 2s 1s; 
+             animation: fadein 2s 1s;
+    }
+
+    .text {
+        margin-bottom: -10px !important;
+    }
+
+    &__link {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 30px;
+        text-align: center;
+
+        color: $black;
+        font-size: $font-size-smalltext;
+        font-family: $primary-font;
+        text-decoration: underline;
+
+        opacity: 0;
+
+        transition: ease-in-out 2s;
+    }
+    
+    &__link:hover {
+        color: $blue;
+    }
+}
