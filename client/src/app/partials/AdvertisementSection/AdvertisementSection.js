@@ -8,7 +8,7 @@ const AdvertisementSection = (props) => {
         <section className ={`advertisement-section`}>
             <div className="advertisement-section__content-container row">
                 <div className="d-none d-lg-block col-2"></div>
-                <div className="col col-8 col-sm-6 col-md-5 col-lg-3 advertisement-container__text ">
+                <div className="col col-8 col-sm-6 col-md-5 col-lg-4 advertisement-container__text ">
                     <SmallTitle
                         text={Parser(props.title ?? '')}
                         color="title-white"

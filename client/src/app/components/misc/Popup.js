@@ -34,7 +34,7 @@ const Popup = (props) => {
                             valueOne="brand"
                             valueTwo="influencer"
                             onSwitch={switchAction}
-                            defaultValue="0"
+                            defaultValue={(getCookie('preferedPage') === "brand" ? 0 : 1 )}
                         />
 
                     </div>

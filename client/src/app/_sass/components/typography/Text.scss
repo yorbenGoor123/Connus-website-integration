@@ -5,6 +5,7 @@ p {
 
 .text {
     @include font-text;
+    padding-bottom:15px;
 
     transition: ease-in-out 0.5s;
     -webkit-animation: fadein 2s;

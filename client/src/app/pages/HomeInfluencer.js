@@ -10,7 +10,7 @@ import Popup from '../components/misc/Popup'
 
 const HomeInfluencer = () => {
     const { getText } = useLanguage(); 
-    const { getCookie, setDefaultCookie } = useToolbox();
+    const { getCookie } = useToolbox();
 
     const text = getText("influencer");
 
