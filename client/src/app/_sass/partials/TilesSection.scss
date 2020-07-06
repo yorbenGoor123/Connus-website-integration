@@ -1,1 +1,31 @@
 @import '../variables';
+
+.tiles-section-container-lg {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+
+    .tiles-section {
+        position: relative;
+
+        .tile-container:nth-child(2) {
+            margin-left:50%;
+            top: -60px;
+        }
+
+        .tile-container:nth-child(3) {
+            top: -150px;
+        }
+    }
+}   
+
+.tiles-section-container {
+
+    .tiles-section {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+        max-height: 1200px;
+    }
+}   
