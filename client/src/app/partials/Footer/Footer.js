@@ -4,7 +4,7 @@ import Parser from 'html-react-parser';
 import { useLanguage, useToolbox } from '../../services';
 
 import { Container, Row, Col, CenterRow } from '../Layout';
-import { LanguageButtons, SocialButtons } from '../Buttons';
+import { SocialButtons } from '../Buttons';
 import { LightButton, SocialButton } from '../../components';
 import { NewsletterForm } from '../Newsletter';
 
@@ -36,7 +36,7 @@ const Footer = ({target}) => {
                 </CenterRow>
                 <Row>
                     <Col sizes="col-12 col-md-6">
-                        <LanguageButtons />
+                        {/* <LanguageButtons /> */}
                     </Col>
 
                     <Col sizes="col-12 col-md-4 d-md-flex justify-content-md-end">
