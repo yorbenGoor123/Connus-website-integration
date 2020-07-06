@@ -30,6 +30,7 @@ const Footer = ({target}) => {
                             title={Parser(text["newsletter_title"])}
                             text={Parser(text["newsletter_info"])}
                             button={Parser(text["newsletter_button"])}
+                            subscribed={Parser(text["newsletter_subscribed"])}
                         />
                     </Col>
                 </CenterRow>

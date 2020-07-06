@@ -1,5 +1,5 @@
 import AdvertisementSection from './AdvertisementSection';
 
-export default {
+export {
     AdvertisementSection
-}
+};

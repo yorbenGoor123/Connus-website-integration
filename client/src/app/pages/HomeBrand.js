@@ -1,14 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Parser from 'html-react-parser';
 
-import { SectionTwo, Head, PageContainer, InfluencerSection, Partner, SectionEnd } from '../partials';
+import { SectionTwo, Head, PageContainer, InfluencerSection, Partner, SectionEnd, SectionOne, AdvertisementSection, EngagementRate } from '../partials';
+import { Popup } from '../components';
 
 import { useLanguage, useToolbox } from '../services';
-
-import SectionOne from '../partials/SectionOne/SectionOne';
-import AdvertisementSection from '../partials/AdvertisementSection/AdvertisementSection';
-import EngagementRate from '../partials/EngagementRate/EngagementRate';
-import Popup from '../components/misc/Popup'
 
 const HomeBrand = () => {
     const { getText } = useLanguage(); 
@@ -23,6 +19,9 @@ const HomeBrand = () => {
         };
     };
 
+    useEffect(() => {
+        document.title = "Connus | Brand"
+    });
 
     redirectToCorrectHomePage();
 

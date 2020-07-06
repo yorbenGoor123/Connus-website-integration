@@ -46,6 +46,7 @@ export default {
         newsletter_title: "Keep up with Connus",
         newsletter_info: "When signing up for this newsletter you automatically agree with our <a href='/privacy-policy'>Privacy Policy</a>.",
         newsletter_button: "Subscribe",
+        newsletter_subscribed: "You are subscribed!",
     },
     "en_influencer" : {
         header_one_title: "We see you and how you can change the world",
@@ -90,6 +91,7 @@ export default {
         newsletter_title: "Keep up with Connus",
         newsletter_info: "When signing up for this newsletter you automatically agree with our <a href='/privacy-policy'>Privacy Policy</a>.",
         newsletter_button: "Subscribe",
+        newsletter_subscribed: "You are subscribed!",
     },
     "nl_brand" : {
         header_one_title: "Meer zaken. Meer klanten. Meer verkoop. Meer omzet.",

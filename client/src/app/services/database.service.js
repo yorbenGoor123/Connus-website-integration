@@ -21,8 +21,6 @@ const DatabaseProvider = ({ children }) => {
                     influencer: data.target,
                     date: Date.now(),
                 });
-            } else {
-                return false;
             };
         });
     };

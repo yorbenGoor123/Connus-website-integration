@@ -16,6 +16,16 @@
         }
     }
 
+    &__subscribed {
+        margin-top: 20px;
+        transition: ease-in-out 0.5s;
+        
+        p {
+            color: $white;
+            font-family: $primary-font;
+        }
+    }
+
     &__input {
         &--email {
             margin-top: 40px;

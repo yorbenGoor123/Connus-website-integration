@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Parser from 'html-react-parser';
 
 import { SectionTwo, Head, PageContainer, Partner, SectionEnd, SectionOne, InfluencerSection } from '../partials';
@@ -24,6 +24,10 @@ const HomeInfluencer = () => {
             window.location.replace("/home-brand");
         };
     }
+
+    useEffect(() => {
+        document.title = "Connus | Influencer"
+    });
 
     redirectToCorrectHomePage();
 

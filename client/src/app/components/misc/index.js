@@ -3,7 +3,7 @@ import FactCardMobile from './FactCardMobile';
 import Popup from './Popup'
 import InputField from './InputField';
 
-export default {
+export {
     FactCard,
     FactCardMobile,
     Popup,
