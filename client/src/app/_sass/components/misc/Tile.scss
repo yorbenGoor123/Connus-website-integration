@@ -1,0 +1,18 @@
+.tile {
+    border-radius: 22px;
+    background-color: $grey;
+    padding: 20px;
+
+    p .tile__number {
+        background-color:green;
+        position: relative;
+        left: -20px;
+        font-size: 120px;
+        weight: 800;
+        color: $blue;
+    }
+
+    .tile__title {
+        color:$blue;
+    }
+} 

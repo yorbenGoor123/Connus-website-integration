@@ -7,6 +7,7 @@ import { useLanguage, useToolbox } from '../services';
 
 import AdvertisementSection from '../partials/AdvertisementSection/AdvertisementSection';
 import Popup from '../components/misc/Popup'
+import TilesSection from '../partials/TilesSection/TilesSection';
 
 const HomeInfluencer = () => {
     const { getText } = useLanguage(); 
@@ -57,6 +58,8 @@ const HomeInfluencer = () => {
                     "mega": Parser(text["section_three_mega"]),
                 }}
             />
+
+            <TilesSection />
 
             <AdvertisementSection 
                 title={Parser(text["section_five_title"])}

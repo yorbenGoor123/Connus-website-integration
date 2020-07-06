@@ -76,6 +76,13 @@ export default {
 
         more_info: "Want to learn more about this?",
         
+        tile_one_title: "Get payed to use our app",
+        tile_one_text: "Fair is fair: we collect interest data from you, that we resell to companies to give them more insights. For every time we sell your data anonymously, we pay you a part of the earnings. Major tech companies could learn something from this approach.",
+        tile_two_title: "Register and collaborate with us",
+        tile_two_text: "Connus is always looking for content creators from all type all around the world. Connect with us on the platform and you’ll have your first payed collaboration straight away. See you on the platform!",
+        tile_three_title: "Introduce us to new content creators",
+        tile_three_text: "Relationships are the beginning of your career and business. And at Connus we are aware of this. We would love to connect with as many content creators all over the world. For every content creator that registers with your unique code, we’ll pay you as a sign of gratitude to differentiate our network.",
+
         section_five_title: "Bold new experience. It’s love at first site.",
         section_five_content: "Whether you’re creating new opportunities, discussing your next collaboration, or just connecting to other content creators, Connus is the best way to do it. As we know that security and privacy is very important for everyone on Connus, we strive to protect all of our data in the safest way. Want to know more? ",
 
