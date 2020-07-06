@@ -6,6 +6,7 @@ import SocialButton from './SocialButton';
 import InfluencerButton from './InfluencerButton';
 import Switch from './Switch';
 import HamburgerButton from './HamburgerButton';
+import PrimaryButton from './PrimaryButton';
 
 export {
     HeaderChoice,
@@ -16,4 +17,5 @@ export {
     InfluencerButton,
     Switch,
     HamburgerButton,
+    PrimaryButton,
 };

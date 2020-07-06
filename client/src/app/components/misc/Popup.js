@@ -1,18 +1,24 @@
 import React, { Fragment } from 'react';
 import Parser from 'html-react-parser';
 
-import { useToolbox } from '../../services';
+import { useToolbox, useDatabase } from '../../services';
 import { SectionTitle, Text } from '../typography';
-import { Switch } from '../buttons';
+import { Switch, PrimaryButton } from '../buttons';
 import InputField from './InputField';
 
 import '../../_sass/components/misc/Popup.scss';
 
 const Popup = (props) => {
-    const {setPage, getCookie} = useToolbox();
+    const { setPage, getCookie } = useToolbox();
+    const { newsletterSignUp } = useDatabase();
 
     const switchAction = (status) => {
         setPage(status);
+    }
+
+    const onSubmit = () => {
+        const email = document.getElementById('email-input').value;
+        newsletterSignUp({email});
     }
 
     return (
@@ -20,6 +26,10 @@ const Popup = (props) => {
             <div className="popup-fullscreen"></div>
             <div className="popup-container">
                 <div className="popup"> 
+
+                <div className="popup-exit">
+                    x
+                </div>
                     <SectionTitle 
                         text="Welcome"
                         color="blue-font"
@@ -51,6 +61,7 @@ const Popup = (props) => {
 
                         <InputField placeholder="name@example.com" id="email-input" />      
                     </div>
+                    <PrimaryButton onClick={onSubmit} text="Submit" />
                 </div>
             </div>
         </Fragment>

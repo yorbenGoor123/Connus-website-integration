@@ -2,7 +2,9 @@ import React from 'react';
 
 const InputField = (props) => {
     return (
-        <input type="text" placeholder={props.placeholder} id={props.id}/>
+        <div className="input-field">
+            <input  type="text" placeholder={props.placeholder} id={props.id}/>
+        </div>
     );
 }
 
