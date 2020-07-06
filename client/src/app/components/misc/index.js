@@ -4,7 +4,7 @@ import Popup from './Popup'
 import InputField from './InputField';
 import Tile from './Tile';
 
-export default {
+export {
     FactCard,
     FactCardMobile,
     Popup,

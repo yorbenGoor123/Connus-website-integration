@@ -1,5 +1,5 @@
 import EngagementRate from './EngagementRate';
 
-export default {
+export {
     EngagementRate
-}
+};

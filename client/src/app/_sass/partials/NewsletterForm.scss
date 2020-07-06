@@ -1,0 +1,95 @@
+.newsletter-form {
+    margin-bottom: 50px;
+
+    h2 {
+        animation: none;
+    }
+
+    p {
+        text-align: center;
+        color: $white;
+        font-family: $primary-font;
+
+        a {
+            color: $white;
+            font-weight: bold;
+        }
+    }
+
+    &__subscribed {
+        margin-top: 20px;
+        transition: ease-in-out 0.5s;
+        
+        p {
+            color: $white;
+            font-family: $primary-font;
+        }
+    }
+
+    &__input {
+        &--email {
+            margin-top: 40px;
+
+            label {
+                color: $white;
+                font-family: $primary-font;
+                font-size: $font-size-button;
+                font-weight: 100;
+            }
+
+            input, label {
+                display: block;
+            }
+
+            input {
+                width: 100%;
+                background: none;
+                border: none;
+                font-size: $font-size-input;
+                color: $white;
+                font-family: $primary-font;
+
+                margin-top: -10px;
+            }
+        }
+
+        &--submit {
+            margin-top: 30px;
+            button {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                background: none;
+
+                .line {
+                    background-color: $white;
+                    width: 60px;
+                    height: 0.5px;
+                }
+
+                h5 {
+                    font-size: $font-size-subscribe;
+                    color: $white;
+                    font-family: $primary-font;
+                    margin: 0;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {  
+    .newsletter-form {
+        &__input {
+            &--email {
+                padding: 0px 30px;
+                input {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}

@@ -5,7 +5,7 @@ import { useAnimation } from '../../services';
 import { FullLogo, HeaderChoice, HamburgerButton } from '../../components';
 import { HamburgerMenu } from '../HamburgerMenu';
 
-const Header = ({ }) => {
+const Header = () => {
     const { startHomeAnimation } = useAnimation();
     const [ hamburger, setHamburger ] = useState();
     
