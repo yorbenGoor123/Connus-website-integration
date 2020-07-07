@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import Parser from 'html-react-parser';
 
 import { useToolbox, useDatabase } from '../../services';
@@ -23,6 +23,7 @@ const Popup = (props) => {
             "email": email,
             "target": getCookie("preferedPage") || "influencer",
         });
+        document.getElementById('subscribe-feedback').innerHTML = "Subscribed!"
     };
 
     const exit = () => {
@@ -71,7 +72,11 @@ const Popup = (props) => {
                             text={Parser("Our platform is rapidly developing. <br> Always stay up-to-date by signing up for our emails.")}
                         />   
 
-                        <InputField placeholder="name@example.com" id="email-input" />      
+                        <InputField placeholder="name@example.com" id="email-input" />
+                        <div className="popup-email__feedback" >
+                            <p id="subscribe-feedback"></p>
+                        </div>
+                              
                     </div>
                     <PrimaryButton onClick={onSubmit} text="Submit" />
                 </div>

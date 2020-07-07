@@ -66,5 +66,14 @@
                 width: 20px;
             }
         }
+
+        .popup__email {
+            .popup-email__feedback {
+                text-align: center;
+                color: $blue;
+                @include font-text;
+                padding: 10px;
+            }
+        }
     }
 }
