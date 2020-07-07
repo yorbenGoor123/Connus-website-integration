@@ -41,7 +41,7 @@ export default {
 
         section_six_proudPartner: "Proud partner of",
 
-        section_six_download_title: "Find your perfect influencer right now!",
+        section_six_download_title: "Find your perfect content creator right now!",
         
         newsletter_title: "Keep up with Connus",
         newsletter_info: "When signing up for this newsletter you automatically agree with our <a href='/privacy-policy'>Privacy Policy</a>.",
@@ -93,7 +93,7 @@ export default {
 
         section_six_proudPartner: "Proud partner of",
 
-        section_six_download_title: "Are your ready to start your influencer carreer right now?",
+        section_six_download_title: "Are your ready to start your content creator carreer right now?",
 
         newsletter_title: "Keep up with Connus",
         newsletter_info: "When signing up for this newsletter you automatically agree with our <a href='/privacy-policy'>Privacy Policy</a>.",

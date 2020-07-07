@@ -1,5 +1,9 @@
 .newsletter-form {
     margin-bottom: 50px;
+    background-color: $blue;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: $standard-shadow;
 
     h2 {
         animation: none;
@@ -48,6 +52,8 @@
                 font-size: $font-size-input;
                 color: $white;
                 font-family: $primary-font;
+                -webkit-text-fill-color: $white;
+                opacity: 1; /* required on iOS */
 
                 margin-top: -10px;
             }

@@ -5,8 +5,9 @@
     background-size: contain;
     position: absolute;
     right: 0;
-    top: -20vh;
+    top: -10vh;
     transform: rotate(5deg);
+    background-repeat: no-repeat;
 
     display: flex;
     align-items: center;
@@ -44,5 +45,33 @@
          -ms-animation: fadein 2s; 
           -o-animation: fadein 2s; 
              animation: fadein 2s;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .empty-mockup {
+        img {
+            width: 80px;
+        }
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .container {
+        max-width: 1900px !important;
+    }
+
+    .head {
+        .empty-mockup {
+            top: -20vh;
+        }
+
+        .head-title {
+            font-size: $font-size-extralargehead;
+        }
+
+        .text {
+            font-size: $font-size-smalltitle;
+        }
     }
 }

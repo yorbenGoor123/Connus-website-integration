@@ -8,7 +8,7 @@
 }
 
 .thin-head {
-    background-image: url("../../assets//bgImages/header_thin_bg.png");
+    background-image: url("../../assets/bgImages/header_thin_bg.png");
     background-size:  cover;
     background-repeat: no-repeat;
     height: 70vh;
@@ -16,14 +16,58 @@
     align-items: center;
 }
 
+// Media for mobile devices
 @media (max-width: 992px) {  
     .head {
-        height: 110vh;
+        height: 130vh;
         align-items: flex-start;
         padding-top: 150px;
 
         .text {
             @include font-lighttext;
+        }
+    }
+}
+
+// Media for large desktop devices
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: 1600px !important;
+    }
+
+    .head {
+        .empty-mockup {
+            width: 500px;
+            height: 900px;
+            top: -30vh;
+        }
+
+        .head-title {
+            font-size: $font-size-largehead;
+        }
+
+        .text {
+            font-size: $font-size-read;
+        }
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .container {
+        max-width: 1900px !important;
+    }
+
+    .head {
+        .empty-mockup {
+            top: -20vh;
+        }
+
+        .head-title {
+            font-size: $font-size-extralargehead;
+        }
+
+        .text {
+            font-size: $font-size-smalltitle;
         }
     }
 }

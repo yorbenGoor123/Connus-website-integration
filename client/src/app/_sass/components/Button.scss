@@ -286,3 +286,41 @@
 .read-more:hover {
     text-decoration: none;
 }
+
+@media screen and (min-width: 1600px) {
+    .download-button {
+        height: 60px;
+    }
+
+    .choice-button {
+        &__text {
+            font-size: $font-size-text;
+        }
+    }
+
+    .choice-button-option {
+        border-radius: 50px;
+        &__text {
+            font-size: $font-size-text;
+        }
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .download-button {
+        height: 80px;
+    }
+
+    .choice-button {
+        &__text {
+            font-size: $font-size-subscribe;
+        }
+    }
+
+    .choice-button-option {
+        border-radius: 50px;
+        &__text {
+            font-size: $font-size-subscribe;
+        }
+    }
+}
