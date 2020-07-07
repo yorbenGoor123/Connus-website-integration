@@ -18,7 +18,7 @@ const DatabaseProvider = ({ children }) => {
             if(!doc.exists) {
                 firebase.firestore().collection('contacts').doc(data.email).set({
                     email: data.email,
-                    influencer: data.target,
+                    target: data.target,
                     date: Date.now(),
                 });
             };

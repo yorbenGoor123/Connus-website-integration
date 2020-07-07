@@ -1,7 +1,7 @@
 import React from 'react';
 import Parser from 'html-react-parser';
 
-import { SmallTitle, Text } from '../../components';
+import { SmallTitle, Text, ReadMoreButton } from '../../components';
 
 const AdvertisementSection = (props) => {
     return (
@@ -18,6 +18,16 @@ const AdvertisementSection = (props) => {
                         text={Parser(props.text ?? '')}
                         color="white-font"
                     />
+
+                    {
+                        props.readmore ? (
+                            <ReadMoreButton
+                                link="/advertisement-influencer"
+                            />
+                        ) : (
+                            ''
+                        )
+                    }
                 </div>
                 <div className="col col-6 col-md-3 col-lg-4 d-none d-md-flex justify-content-center align-items-center">
                     <div className="advertisement-container__mockup"></div>

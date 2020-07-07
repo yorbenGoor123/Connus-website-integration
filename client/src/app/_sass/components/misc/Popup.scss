@@ -1,5 +1,3 @@
-@import '../../variables';
-
 .popup-fullscreen {
     height: 100vh;
     width: 100vw;
@@ -42,12 +40,13 @@
 
         .popup-exit {
             position: absolute;
-            left: 0;
-            top:0;
-            width: 30px;
-            height: 30px;
-            background-color: #94CBF5;
-            border-radius: 50%;
+            left: 20px;
+            top: 20px;
+            cursor: pointer;
+
+            img {
+                width: 20px;
+            }
         }
     }
 }
