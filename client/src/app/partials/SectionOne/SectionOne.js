@@ -20,13 +20,13 @@ const SectionOne = (props) => {
                 <Text
                     text={Parser(text["section_one_text_one"])}
                 />
-                <Text
+                {/* <Text
                     text={Parser(text["section_one_highlight"])}
                     color="blue-font"
                 />
                 <Text
                     text={Parser(text["section_one_text_two"])}
-                />
+                /> */}
             </div>
         </section>
         

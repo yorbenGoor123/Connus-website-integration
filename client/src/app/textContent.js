@@ -5,13 +5,13 @@ export default {
 
         section_one_title: "Looks brand new. Feels like home.",
         section_one_text_one: "Connus brings a fresh look in exploring digital marketing, making it easier than ever. Smart features help you get what you need in the moment with ease. Discover new content creators to work with and build long term relationships. And become even closer to new customers who are interested in your company in an even more intelligent, more personal, and more private way. Experience the simplicity and efficiency today.",
-        section_one_highlight: "Even if you have only 800 or 900 influencers you can use our app.",
-        section_one_text_two: "Connus helps you to grow your influencing carreer by connecting you with a brand or  product who fits your content.",
+        // section_one_highlight: "Even if you have only 800 or 900 influencers you can use our app.",
+        // section_one_text_two: "Connus helps you to grow your influencing carreer by connecting you with a brand or  product who fits your content.",
 
         section_two_title: "Developed for entrepreneurs like you.",
         section_two_text_one: "As entrepreneur you need an avenue to accelerate. Creating this avenue is difficult and costs time, right? Not with Connus. A remarkable system, we’d love to call the Connus Integration System (CIS), does the work for you. Through an intuitive interface content creator, who are also potential customers, can express their interest in your company.",
         section_two_text_two: "Power to the entrepreneur, it’s up to you to decide what you are going to do with all this interested people in your company with the ease of Connus. You can choose to do digital marketing with these content creators, sell them a product, or keep the relationship on hold. And in the meanwhile you learn more about your audience, so you can advertise cost-efficiently and more targeted.",
-        section_two_text_three: "Connecting, seeing you …  We need each other! Growing together, building together, everything together …",
+        // section_two_text_three: "Connecting, seeing you …  We need each other! Growing together, building together, everything together …",
         section_two_bubble_two_text: "<strong>Brands</strong> already registered",
         section_two_bubble_four_text: "<strong>Influencers</strong> already registered",
         section_two_bubble_five_text: "Registered <strong>matches</strong>",
@@ -54,8 +54,8 @@ export default {
 
         section_one_title: "Doing it all, in all new ways.",
         section_one_text_one: "Connus elevates your career by helping you expanding your professional network on social media. Experience the ease of creating opportunities with companies and connecting with other content creators. Discover all of the features such as our data-driven swipe system or our unique way of representing yourself with only elements you want other content creators or companies to see.",
-        section_one_highlight: "You are fully in control. And get even more transparency on how much value your personal brand really has.",
-        section_one_text_two: "",
+        // section_one_highlight: "You are fully in control. And get even more transparency on how much value your personal brand really has.",
+        // section_one_text_two: "",
 
         section_two_title: "Nothing like an agency",
         section_two_text_one: "Connus allows you to be the owner of your personal brand. No more domination, all room to negotiate with companies for a fair remuneration. Yes, you read that right. There are no boundaries in connecting. It’s about how fantastic we can make influencer marketing together.",

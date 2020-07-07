@@ -48,10 +48,10 @@ function SectionTwo(props) {
                         color="white-font" 
                         text={Parser(text["section_two_text_two"])} 
                     />
-                    <Text
+                    {/* <Text
                         color="white-font" 
                         text={Parser(text["section_two_text_three"])} 
-                    />
+                    /> */}
                 </div>
             </div>
 
