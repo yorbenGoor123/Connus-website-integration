@@ -16,13 +16,21 @@ const Popup = (props) => {
         setPage(status);
     };
 
-    const onSubmit = async () => {
+    const onSubmit = () => {
         const email = document.getElementById('email-input').value;
 
         newsletterSignUp({
             "email": email,
             "target": getCookie("preferedPage") || "influencer",
         });
+    };
+
+    const exit = () => {
+        if (!getCookie('preferedPage')) {
+            setPage("influencer");
+        };
+
+        window.location.reload();
     };
 
     return (
@@ -32,7 +40,7 @@ const Popup = (props) => {
                 <div className="popup"> 
 
                 <div className="popup-exit">
-                    <img src={Exit} alt="exit" />
+                    <img src={Exit} alt="exit" onClick={exit}/>
                 </div>
                     <SectionTitle 
                         text="Welcome"

@@ -16,6 +16,24 @@
     position: fixed;
     z-index: 1001;
     
+    .section-title {
+        transition: none;
+        -webkit-animation: none;
+        -moz-animation: none;
+         -ms-animation: none; 
+          -o-animation: none; 
+             animation: none;
+    }
+
+    .text {
+        transition: none;
+        -webkit-animation: none;
+        -moz-animation: none;
+         -ms-animation: none; 
+          -o-animation: none; 
+             animation: none;
+    }
+
     .popup {
         background-color: $white;
         z-index: 1000;
@@ -40,8 +58,8 @@
 
         .popup-exit {
             position: absolute;
-            left: 20px;
-            top: 20px;
+            left: 30px;
+            top: 30px;
             cursor: pointer;
 
             img {

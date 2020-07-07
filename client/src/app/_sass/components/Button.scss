@@ -253,7 +253,8 @@
         color: $white;
         padding: 10px 20px;
         text-transform: uppercase;
-        @include font-text;
+        font-weight: bold;
+        font-size: $font-size-smalltext;
 
         -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
         -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);

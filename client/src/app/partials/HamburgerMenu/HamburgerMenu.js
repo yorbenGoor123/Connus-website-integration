@@ -13,6 +13,7 @@ const HamburgerMenu = ({click}) => {
     const switchAction = (status) => {
         setPage(status);
     }
+    
     return (
         <div className="hamburger-menu">
             <Container>
