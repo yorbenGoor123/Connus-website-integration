@@ -18,7 +18,8 @@ const Popup = (props) => {
 
     const onSubmit = () => {
         const email = document.getElementById('email-input').value;
-        newsletterSignUp({email});
+        // const target = getCookie();
+        newsletterSignUp({email, target: });
     }
 
     return (
