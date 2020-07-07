@@ -6,7 +6,7 @@ import { SectionTitle, Text } from '../typography';
 import { Switch, PrimaryButton } from '../buttons';
 import InputField from './InputField';
 
-import '../../_sass/components/misc/Popup.scss';
+import Exit from '../../assets/icons/exit.png';
 
 const Popup = (props) => {
     const { setPage, getCookie } = useToolbox();
@@ -14,13 +14,24 @@ const Popup = (props) => {
 
     const switchAction = (status) => {
         setPage(status);
-    }
+    };
 
     const onSubmit = () => {
         const email = document.getElementById('email-input').value;
-        // const target = getCookie();
-        newsletterSignUp({email, target: });
-    }
+
+        newsletterSignUp({
+            "email": email,
+            "target": getCookie("preferedPage") || "influencer",
+        });
+    };
+
+    const exit = () => {
+        if (!getCookie('preferedPage')) {
+            setPage("influencer");
+        };
+
+        window.location.reload();
+    };
 
     return (
         <Fragment>
@@ -29,7 +40,7 @@ const Popup = (props) => {
                 <div className="popup"> 
 
                 <div className="popup-exit">
-                    x
+                    <img src={Exit} alt="exit" onClick={exit}/>
                 </div>
                     <SectionTitle 
                         text="Welcome"

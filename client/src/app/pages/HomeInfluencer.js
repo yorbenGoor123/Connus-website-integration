@@ -47,6 +47,10 @@ const HomeInfluencer = () => {
             <SectionOne 
                 page="influencer" 
             />
+
+            <div className="d-md-none d-block">
+                <TilesSection />
+            </div>
             
             <SectionTwo 
                 page="influencer" 
@@ -63,11 +67,14 @@ const HomeInfluencer = () => {
                 }}
             />
 
-            <TilesSection />
+            <div className="d-md-block d-none">
+                <TilesSection />
+            </div>
 
             <AdvertisementSection 
                 title={Parser(text["section_five_title"])}
                 text={Parser(text["section_five_content"])}
+                readmore={true}
             />
             
             <Partner 

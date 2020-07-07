@@ -47,35 +47,9 @@ const Header = () => {
         }, 500);
     };
 
-    const hideHamburger = (state) => {
-        const menu = document.getElementsByClassName('hamburger-menu')[0];
-        const hideButton = document.getElementsByClassName('hamburger-menu__exit')[0];
-        const logo = document.getElementsByClassName('hamburger-menu__logo')[0];
-        const content = document.getElementsByClassName('hamburger-menu__content')[0];
-        const link = document.getElementsByClassName('hamburger-menu__link')[0];
-
-        hideButton.style.opacity = "0";
-
-        setTimeout(() => {
-            logo.style.opacity = "0";
-            content.style.opacity = "0";
-            link.style.opacity = "0";
-
-            setTimeout(() => {
-                menu.style.top = "-100vh";
-
-                setTimeout(() => {
-                    menu.style.opacity = "0";
-
-                    setTimeout(() => {
-                        setHamburger(state);
-
-                        const showButton = document.getElementsByClassName('hamburger-button')[0];
-                        showButton.style.opacity = "1";
-                    }, 500);
-                }, 500);
-            }, 500);
-        }, 500);
+    const hideHamburger = (state) => {        
+        setHamburger(state);
+        window.location.reload();
     };
 
     return (

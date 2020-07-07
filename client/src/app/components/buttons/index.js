@@ -7,6 +7,7 @@ import InfluencerButton from './InfluencerButton';
 import Switch from './Switch';
 import HamburgerButton from './HamburgerButton';
 import PrimaryButton from './PrimaryButton';
+import ReadMoreButton from './ReadMoreButton';
 
 export {
     HeaderChoice,
@@ -18,4 +19,5 @@ export {
     Switch,
     HamburgerButton,
     PrimaryButton,
+    ReadMoreButton,
 };

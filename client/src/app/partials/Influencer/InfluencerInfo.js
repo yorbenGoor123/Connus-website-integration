@@ -42,8 +42,8 @@ const InfluencerInfo = ({ shown, info }) => {
 
     return (
         <div className="influencer-info">
-            <div className="influencer-info__button">
-                <p onClick={showInfo}>{Parser(text["more_info"])}</p>
+            <div className="influencer-info__button" onClick={showInfo}>
+                <p>{Parser(text["more_info"])}</p>
                 <img src={Info} alt="info-button" />
             </div>
 

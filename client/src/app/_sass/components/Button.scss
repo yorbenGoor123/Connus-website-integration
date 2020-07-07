@@ -253,10 +253,74 @@
         color: $white;
         padding: 10px 20px;
         text-transform: uppercase;
-        @include font-text;
+        font-weight: bold;
+        font-size: $font-size-smalltext;
 
         -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
         -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
         box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
      }
  }
+
+.read-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    &__line {
+        background-color: $white;
+        width: 60px;
+        height: 0.5px;
+    }
+
+    h4 {
+        font-size: $font-size-read;
+        color: $white;
+        font-family: $primary-font;
+        margin: 0;
+        margin-left: 10px;
+    }
+}
+
+.read-more:hover {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1600px) {
+    .download-button {
+        height: 60px;
+    }
+
+    .choice-button {
+        &__text {
+            font-size: $font-size-text;
+        }
+    }
+
+    .choice-button-option {
+        border-radius: 50px;
+        &__text {
+            font-size: $font-size-text;
+        }
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .download-button {
+        height: 80px;
+    }
+
+    .choice-button {
+        &__text {
+            font-size: $font-size-subscribe;
+        }
+    }
+
+    .choice-button-option {
+        border-radius: 50px;
+        &__text {
+            font-size: $font-size-subscribe;
+        }
+    }
+}
