@@ -59,7 +59,6 @@ const Popup = (props) => {
                             onSwitch={switchAction}
                             defaultValue={(getCookie('preferedPage') === "brand" ? 0 : 1 )}
                         />
-
                     </div>
 
                     <div className="popup__email">

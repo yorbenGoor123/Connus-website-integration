@@ -1,33 +1,37 @@
 @import '../variables';
 
-.tiles-section-container-lg {
-    display: flex;
-    justify-content: center;
-    margin-top: 150px;
 
+.tiles-section-container {
+    display:flex;
+    justify-content: center;
+
+    margin-top: 200px;
     .tiles-section {
-        position: relative;
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // align-items: center;
 
         .tile-container:nth-child(2) {
-            margin-left:50%;
-            top: -60px;
         }
 
-        .tile-container:nth-child(3) {
-            top: -150px;
+        .tile:nth-child(3) {
+            width: 100%;
         }
     }
 }   
 
-.tiles-section-container {
 
+.tiles-section-container-sm {
+    display:flex;
+    justify-content: center;
+    
+    margin-top: 200px;
     .tiles-section {
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        justify-content:center;
-        max-height: 1200px;
-        .tile-container {
+        .tile {
+            width: 100%;
         }
     }
+
 }   

@@ -10,44 +10,44 @@ function TilesSection(props) {
 
     return (
         <Fragment>
-            <div className="tiles-section-container-lg d-none d-lg-flex">
-                <section className="tiles-section col-12 col-md-8">
+                <section className="tiles-section-container d-none d-lg-flex">
+                    <div className="tiles-section col-12 col-md-8 flex-column flex-md-row ">
                     <Tile
-                        number="1"
+                        icon="money-blue"
                         title={Parser(text["tile_one_title"])}
                         text={Parser(text["tile_one_text"])}
                     /> 
                     <Tile 
-                        number="2"
+                        icon="handshake"
                         title={Parser(text["tile_two_title"])}
                         text={Parser(text["tile_two_text"])}
                     /> 
                     <Tile 
-                        number="3"
+                        icon="connect"
                         title={Parser(text["tile_three_title"])}
                         text={Parser(text["tile_three_text"])}
                     /> 
+                    </div>
                 </section>
-            </div>
-            <div className="tiles-section-container d-lg-none">
-                <section className="tiles-section  col-12 ">
+                <section className="tiles-section-container-sm d-lg-none">
+                    <div className="tiles-section col-12 col-md-8 flex-column ">
                     <Tile
-                        number="1"
+                        icon="money-blue"
                         title={Parser(text["tile_one_title"])}
                         text={Parser(text["tile_one_text"])}
                     /> 
                     <Tile 
-                        number="2"
+                        icon="handshake"
                         title={Parser(text["tile_two_title"])}
                         text={Parser(text["tile_two_text"])}
                     /> 
                     <Tile 
-                        number="3"
+                        icon="connect"
                         title={Parser(text["tile_three_title"])}
                         text={Parser(text["tile_three_text"])}
                     /> 
+                    </div>
                 </section>
-            </div>
          </Fragment>
     );
 }
