@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SmallTitle, DownloadButton } from '../../components';
+import { DownloadButton, SectionTitle } from '../../components';
 
 import UserMock from '../../assets/mock/user-phone.png';
 import IosDownload from '../../assets/icons/download-ios.png';
@@ -13,12 +13,12 @@ const SectionEnd = ({title}) => {
     return (
         <Container>
             <CenterRow>
-                <Col sizes="col-12 col-lg-9">
+                <Col sizes="col-12 col-lg-12">
                     <div className="section-end">
                         <img src={UserMock} alt="user-mock" className="section-end__mock d-lg-flex d-none" />
 
                         <div className="section-end__content">
-                            <SmallTitle
+                            <SectionTitle
                                 text={title}
                                 color="title-blue"
                             />

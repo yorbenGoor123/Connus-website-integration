@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 350px;
+    margin-top: 450px;
     position: relative;
     border-radius: 50px;
 
@@ -15,14 +15,19 @@
             animation: fadein 2s;
 
     &__mock {
-        width: 260px;
+        width: 360px;
         position: absolute;
-        top: -200px;
+        top: -270px;
         transform: rotate(-5deg);
     }
 
     &__content {
-        padding: 50px 50px 50px 300px;
+        padding: 50px 50px 50px 400px;
+
+        .section-title {
+            text-align: left;
+            margin-bottom: 0;
+        }
 
         .download-button {
             margin: 20px 10px 0px 0px;
@@ -37,8 +42,9 @@
         &__content {
             padding: 50px 10px 50px 10px;
 
-            h2 {
+            .section-title {
                 text-align: center;
+                margin-bottom: 0;
             }
 
             .download-buttons {
@@ -46,6 +52,26 @@
                 justify-content: center;
                 margin: 20px 10px 0px 10px;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .section-end {
+        margin-top: 600px;
+        &__mock {
+            width: 460px;
+            position: absolute;
+            top: -450px;
+            transform: rotate(-5deg);
+        }
+
+        &__content {
+            padding: 50px 10px 50px 500px;
+        }
+
+        .section-title {
+            font-size: $font-size-head;
         }
     }
 }
