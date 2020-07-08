@@ -18,3 +18,10 @@
 .white-font {
     color: $white;
 }
+
+
+@media (max-width: 768px) {
+    .section-title {  
+        font-size: $font-size-title-sm;
+    }
+ }
