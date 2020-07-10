@@ -27,10 +27,11 @@ export default {
         section_three_nano: "They have a cultivate niche community and can tap into their audience with specific interests. With a smaller audience, they receive more engagement and they are more authentic. Nano content creators are the future of digital marketing and have a lot of value.",
         section_three_micro: "They have a deeper connection with a specific niche audience. Receiving a lot of engagement means that they are picture perfect to bring your message. These content creators are eager to work with companies of all sizes, and are trustworthy.",
         section_three_meso: "These content creators are the perfect combination of reach, engagement and trust within digital marketing. They can spread your message with ease to a big audience and their conversion is very big. They have the most balanced price-quality ratio.",
-        section_three_macro: 'hey are famous in a local community. Perfect when you want to send a message to a specific niche on global scale. Their content is from high quality and comprises a specific passion or topic. They are perfect to spread an important message, and let’s be honest: they deserve it after all of the hard work.',
+        section_three_macro: 'They are famous in a local community. Perfect when you want to send a message to a specific niche on global scale. Their content is from high quality and comprises a specific passion or topic. They are perfect to spread an important message, and let’s be honest: they deserve it after all of the hard work.',
         section_three_mega: "They have a diverse audience with various areas of interest. With a significant reach, we can say for sure that they are a celebrity. These content creators have inspired thousands and more to come. The most expensive and complex content creator, but with significant results.",
         
         more_info: "Want to learn more about this?",
+        info_source:"* information from Stellar HypeAuditor",
        
         engagement_rate_title: "Power to the smaller ones.",
         engagement_rate_text: "The engagement rate, a metric that shows how much people interact with specific content, is very high for these content creators. With a low cost to advertise, less complexity and high credibility they are a perfect match for every entrepreneur. And the future of digital marketing.",
@@ -48,9 +49,9 @@ export default {
         newsletter_button: "Subscribe",
         newsletter_subscribed: "You are subscribed!",
     },
-    "en_influencer" : {
+    "en_content-creator" : {
         header_one_title: "We see you and how you can change the world",
-        header_one_text: "A breakthrough in connecting content creators worldwide and creating intuitive new opportunities to inspire others through influencer marketing.",
+        header_one_text: "A breakthrough in connecting content creators worldwide and creating intuitive new opportunities to inspire others through content-creator marketing.",
 
         section_one_title: "Doing it all, in all new ways.",
         section_one_text_one: "Connus elevates your career by helping you expanding your professional network on social media. Experience the ease of creating opportunities with companies and connecting with other content creators. Discover all of the features such as our data-driven swipe system or our unique way of representing yourself with only elements you want other content creators or companies to see.",
@@ -58,7 +59,7 @@ export default {
         // section_one_text_two: "",
 
         section_two_title: "Nothing like an agency",
-        section_two_text_one: "Connus allows you to be the owner of your personal brand. No more domination, all room to negotiate with companies for a fair remuneration. Yes, you read that right. There are no boundaries in connecting. It’s about how fantastic we can make influencer marketing together.",
+        section_two_text_one: "Connus allows you to be the owner of your personal brand. No more domination, all room to negotiate with companies for a fair remuneration. Yes, you read that right. There are no boundaries in connecting. It’s about how fantastic we can make content-creator marketing together.",
         section_two_text_two: "",
         section_two_text_three: "",
         section_two_bubble_two_text: "<strong>Brands</strong> already registered",
@@ -80,12 +81,13 @@ export default {
         section_three_mega: "You have a diverse audience with various areas of interest. With a significant reach, we can say for sure that you are a celebrity. You have created content that inspired thousands and together we’re giving content creators the possibilities they need to grow.",
 
         more_info: "Want to learn more about this?",
+        info_source:"* information from Stellar HypeAuditor",
         
-        tile_one_title: "1. Get payed to use our app",
+        tile_one_title: "Get payed to use our app",
         tile_one_text: "Fair is fair: we collect interest data from you, that we resell to companies to give them more insights. For every time we sell your data anonymously, we pay you a part of the earnings. Major tech companies could learn something from this approach.",
-        tile_two_title: "2. Register and collaborate with us",
+        tile_two_title: "Register and collaborate with us",
         tile_two_text: "Connus is always looking for content creators from all type all around the world. Connect with us on the platform and you’ll have your first payed collaboration straight away. See you on the platform!",
-        tile_three_title: "3. Introduce us to new content creators",
+        tile_three_title: "Introduce us to new content creators",
         tile_three_text: "Relationships are the beginning of your career and business. And at Connus we are aware of this. We would love to connect with as many content creators all over the world. For every content creator that registers with your unique code, we’ll pay you as a sign of gratitude to differentiate our network.",
 
         section_five_title: "Bold new experience. It’s love at first site.",
@@ -102,10 +104,10 @@ export default {
     },
     "nl_brand" : {
         header_one_title: "Meer zaken. Meer klanten. Meer verkoop. Meer omzet.",
-        header_one_text: "Een doorbraak in het creëren van intuïtieve nieuwe mogelijkheden om anderen te inspireren door influencer marketing.",
+        header_one_text: "Een doorbraak in het creëren van intuïtieve nieuwe mogelijkheden om anderen te inspireren door content-creator marketing.",
 
         section_one_title: "Iedereen beïnvloed",
-        section_one_text_one: "In een maatschappij waar sociale media meer dan ooit aanwezig zijn, is het niet de vraag wie de influencers zijn. Tegenwoordig heb je geen 10.000 volgers meer nodig om jezelf een influencer te noemen.",
+        section_one_text_one: "In een maatschappij waar sociale media meer dan ooit aanwezig zijn, is het niet de vraag wie de influencers zijn. Tegenwoordig heb je geen 10.000 volgers meer nodig om jezelf een content-creator te noemen.",
         section_one_highlight: "Zelfs als u slechts 800 of 900 influencers heeft, kunt u onze app gebruiken.",
         section_one_text_two: "Connus helpt u om uw influencers carrière te laten groeien door u te verbinden met een merk of product dat past bij uw content.",
 
@@ -117,7 +119,7 @@ export default {
         section_two_bubble_four_text: "<strong>Influencers</strong> zijn al geregistreerd",
         section_two_bubble_five_text: "Geregistreerde <strong>matches</strong>",
 
-        section_three_title: "Vind welke influencer jij bent",
+        section_three_title: "Vind welke content-creator jij bent",
         section_three_followers: "volgens",
         section_three_reach: "Bereik",
         section_three_engagement: "Verbintenis",
@@ -127,14 +129,14 @@ export default {
 
         section_three_nano: "Nano-influencers cultiveren vaak niche-gemeenschappen en kunnen een publiek aanboren met specifieke interesses. Omdat ze voor een kleiner publiek posten, kunnen ze per post meer betrokkenheid krijgen.",
         section_three_micro: "Ze hebben meer nichepubliek dat zeer betrokken is bij een diepere verbinding. Micro-influencers zijn in bijna elke sector aanwezig: gezondheid en fitness, voeding, ondernemerschap, mode en schoonheid om maar een paar prominente categorieën te noemen.",
-        section_three_meso: "Hun kwantitatief bereik is veel kleiner, maar aan de andere kant is hun betrokkenheid vaak veel groter. Omdat het aantal aanhangers lager is, is het voor een meso-influencer gemakkelijker om direct contact te houden met hun aanhangers.",
+        section_three_meso: "Hun kwantitatief bereik is veel kleiner, maar aan de andere kant is hun betrokkenheid vaak veel groter. Omdat het aantal aanhangers lager is, is het voor een meso-content-creator gemakkelijker om direct contact te houden met hun aanhangers.",
         section_three_macro: 'Ze zijn beroemd in een lokale gemeenschap, dus je kunt ze zien als "mini-celebrities". Hun inhoud is meestal van hoge kwaliteit en bestaat uit een specifieke passie of onderwerp.',
         section_three_mega: "Ze hebben vaak een zeer gemengd publiek met verschillende interessegebieden. Ze hebben het grootste bereik, maar hebben soms minder betrokkenheid en vertrouwen, omdat hun relatie met volgers op een bepaald moment afstandelijker kan worden dan die van andere groepen influencers.",
         
         more_info: "Wil je meer leren over dit?",
 
         engagement_rate_title: "Engagement Rate",
-        engagement_rate_text: "The engagement rate reflects in what extent your influencer connects to it's followers. It show the interaction between influencer and audience. What we see is that:",
+        engagement_rate_text: "The engagement rate reflects in what extent your content-creator connects to it's followers. It show the interaction between content-creator and audience. What we see is that:",
         engagement_rate_highlight: "Micro influencers have an ER of 2,93% while Nano-influencers has an ER over 6.44%.",
 
         section_five_title: "Betaald worden om onze app te gebruiken",
@@ -142,14 +144,14 @@ export default {
 
         section_six_proudPartner: "Trotse partner van",
 
-        section_six_download_title: "Ben je klaar om je influencer carrière nu te beginnen?",
+        section_six_download_title: "Ben je klaar om je content-creator carrière nu te beginnen?",
     },
     "nl_influencer" : {
         header_one_title: "De juiste persoon voor uw bedrijf",
-        header_one_text: "Een doorbraak in het creëren van intuïtieve nieuwe mogelijkheden om anderen te inspireren door influencer marketing.",
+        header_one_text: "Een doorbraak in het creëren van intuïtieve nieuwe mogelijkheden om anderen te inspireren door content-creator marketing.",
 
         section_one_title: "Iedereen beïnvloed",
-        section_one_text_one: "In een maatschappij waar sociale media meer dan ooit aanwezig zijn, is het niet de vraag wie de influencers zijn. Tegenwoordig heb je geen 10.000 volgers meer nodig om jezelf een influencer te noemen.",
+        section_one_text_one: "In een maatschappij waar sociale media meer dan ooit aanwezig zijn, is het niet de vraag wie de influencers zijn. Tegenwoordig heb je geen 10.000 volgers meer nodig om jezelf een content-creator te noemen.",
         section_one_highlight: "Zelfs als u slechts 800 of 900 influencers heeft, kunt u onze app gebruiken.",
         section_one_text_two: "Connus helpt u om uw influencers carrière te laten groeien door u te verbinden met een merk of product dat past bij uw content.",
 
@@ -161,7 +163,7 @@ export default {
         section_two_bubble_four_text: "<strong>Influencers</strong> zijn al geregistreerd",
         section_two_bubble_five_text: "Geregistreerde <strong>matches</strong>",
 
-        section_three_title: "Vind welke influencer jij nodig hebt",
+        section_three_title: "Vind welke content-creator jij nodig hebt",
         section_three_followers: "volgens",
         section_three_reach: "Bereik",
         section_three_engagement: "Verbintenis",
@@ -171,7 +173,7 @@ export default {
 
         section_three_nano: "Nano-influencers cultiveren vaak niche-gemeenschappen en kunnen een publiek aanboren met specifieke interesses. Omdat ze voor een kleiner publiek posten, kunnen ze per post meer betrokkenheid krijgen.",
         section_three_micro: "Ze hebben meer nichepubliek dat zeer betrokken is bij een diepere verbinding. Micro-influencers zijn in bijna elke sector aanwezig: gezondheid en fitness, voeding, ondernemerschap, mode en schoonheid om maar een paar prominente categorieën te noemen.",
-        section_three_meso: "Hun kwantitatief bereik is veel kleiner, maar aan de andere kant is hun betrokkenheid vaak veel groter. Omdat het aantal aanhangers lager is, is het voor een meso-influencer gemakkelijker om direct contact te houden met hun aanhangers.",
+        section_three_meso: "Hun kwantitatief bereik is veel kleiner, maar aan de andere kant is hun betrokkenheid vaak veel groter. Omdat het aantal aanhangers lager is, is het voor een meso-content-creator gemakkelijker om direct contact te houden met hun aanhangers.",
         section_three_macro: 'Ze zijn beroemd in een lokale gemeenschap, dus je kunt ze zien als "mini-celebrities". Hun inhoud is meestal van hoge kwaliteit en bestaat uit een specifieke passie of onderwerp.',
         section_three_mega: "Ze hebben vaak een zeer gemengd publiek met verschillende interessegebieden. Ze hebben het grootste bereik, maar hebben soms minder betrokkenheid en vertrouwen, omdat hun relatie met volgers op een bepaald moment afstandelijker kan worden dan die van andere groepen influencers.",
         
@@ -182,7 +184,7 @@ export default {
 
         section_six_proudPartner: "Trotse partner van",
 
-        section_six_download_title: "Ben je klaar om je influencer carrière nu te beginnen?",
+        section_six_download_title: "Ben je klaar om je content-creator carrière nu te beginnen?",
     },
     "en_privacy-policy": {
         header_one_title: "Privacy Policy",
@@ -194,7 +196,7 @@ export default {
         section_one_title: "Privacy Policy",
         content: "<h4>Dit is een test voor plain tekst</h4><p>Je kan hier invullen wat je maar wil.</p>"
     },
-    "en_advertisement-influencer": {
+    "en_advertisement-content-creator": {
         header_one_title: "Advertisement",
         section_one_title: "Bold new experience. It’s love at first site.",
         content: '<p>At Connus we believe that everyone has an influence. We see your value and how you inspire others all day by sharing the things you are passionate about or love to share with others. To stand together, we must stand up for one another. Therefore, our mission is, and will always be, create technology that empowers content creators to inspire others for the better. We draw strength from diversity, we welcome content creators from all over the world, and strive to build a platform that is accessible for every content creator, doesn’t matter how big or small your audience is. <br><br>But we must do more. We commit to continuing our work to bring a fair platform for content creators and companies. A platform where our content creators experience equality and receive a fair remuneration for the input they do on a day to day basis. <br><br>To realize this mission, we’ve introduced Connus Payout. Through Payout you get payed for the insights that you give us. By interacting with companies and co-creators, we collect valuable information about the target audience of companies. We process data from our users in completely anonymous statistics that we sell to companies. In this way entrepreneurs gain more insight in who is interested in their company, they can adjust their offer to potential customers and advertise in a more cost-efficient way on other social media. All because of you. <br><br>To create change, we have to reexamine our own view on digital marketing. At Connus we want to realize this change by admitting that we sell a small part of the data that we collect through the interaction that our users have with the platform. Not only do we admit that we sell new insights, we do this in a two-way street. As a content creator you want to know which companies are interested in working with you. We offer the same possibilities for our content creators, as we offer to our business side. In this way we want to create a contrast with the big social media players and technology giants, who sell your data without giving you anything for it. We believe that a new digital model is required, where the user has to be paid for his or her data and where he or she chooses which information is shown on the platform and which is not. But it doesn’t stop there. <br><br>As a believer in content creator marketing and digital marketing, we see value in your personal brand. Therefore, we would love to connect with our content creators on the platform. Relationships matter. They are the beginning of a career and business. This is a moment when many people may want nothing more than to be heard an to be treated equal. No more domination of agencies, the power lies within your hands. <br><br>Finally, we would like to encourage our content creators to invite as much other content creators or people who are on social media that are interested in becoming a content creator. By inviting other people to strengthen our network, we reward you for diversifying the network. We’ve designed the platform by listing to many of you, with the result of continuously developing a platform that offers solutions on the needs that content creators experience. On Connus you can connect with other content creators all over the world, sharing skills, helping each other out, give opinions on content, recommend companies to work with. And there is so much more to showcase and to discover. By listing to our users, we adjust our software in order to fine-tune it as much as possible. <br><br>Only in this way we can make a change in the industry that lasts. In the words of Martin Luther King Jr., “Today, our very survival depends on our ability to stay awake, to adjust to new ideas, to remain vigilant and to face the challenge of change."<p>'

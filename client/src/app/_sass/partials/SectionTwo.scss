@@ -59,9 +59,19 @@
         position: absolute;
         top: 0;
     }
+
+    .text-container__disclaimer {
+        font-size: 14px;
+        opacity: 0.25;
+        font-weight: 100;
+    }
+
+    .text-container__disclaimer--brand {
+        color: white;
+    }
 }
 
-.section-two--influencer {
+.section-two--content-creator {
     background-image: url("../../assets/bgImages/sectionTwoYellow.svg");
     background-size: 100% 100%;
 }
@@ -77,7 +87,7 @@
         background-image: url("../../assets/bgImages/sectionTwoYellowSmall.svg");
     }
 
-    .section-two--influencer {
+    .section-two--content-creator {
         background-image: url("../../assets/bgImages/sectionTwoYellow.svg");
         background-size: cover;
     }

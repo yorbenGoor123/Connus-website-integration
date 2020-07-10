@@ -6,7 +6,7 @@ import Tile from '../../components/misc/Tile'
 
 function TilesSection(props) {
     const { getText } = useLanguage(); 
-    const text = getText("influencer");
+    const text = getText("content-creator");
 
     return (
         <Fragment>

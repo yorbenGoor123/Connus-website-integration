@@ -9,12 +9,9 @@ const useLanguage = () => useContext(LanguageContext);
 const LanguageProvider = ({children}) => {
 	const { getCookie } = useToolbox();
 
-	/**
-	 * @param page values: "brand", "influencer"
-	 */
 	const getText = (page) => {
 		const language = getCookie('language');
-		return text[`${language ?? 'en'}_${page ?? 'brand'}`];
+		return text[`${language ?? 'en'}_${page ?? 'content-creator'}`];
 	};
 
 	return (

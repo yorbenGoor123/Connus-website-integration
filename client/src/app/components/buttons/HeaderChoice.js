@@ -20,7 +20,7 @@ const HeaderChoice = () => {
             setPrefPage(cookie);
             
             if (cookie === 'brand') {
-                setOppositePage('influencer')
+                setOppositePage('content-creator')
             } else {
                 setOppositePage('brand');
             };

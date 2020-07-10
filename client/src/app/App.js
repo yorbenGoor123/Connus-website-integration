@@ -17,8 +17,8 @@ function App() {
           <AnimateProvider>
               <Router basename="/">
                 <Switch>
-                  <Redirect exact path="/" to='/home-influencer'/>
-                  <StandardRoute exact path="/home-influencer" component={HomeInfluencer} layout={RouteLayout} />
+                  <Redirect exact path="/" to='/home-content-creator'/>
+                  <StandardRoute exact path="/home-content-creator" component={HomeInfluencer} layout={RouteLayout} />
                   <StandardRoute exact path="/home-brand" component={HomeBrand} layout={RouteLayout} />
                   <StandardRoute path="/:page" component={PlainPage} layout={PlainLayout} />
                 </Switch>

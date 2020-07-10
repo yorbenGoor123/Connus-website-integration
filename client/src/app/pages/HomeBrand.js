@@ -14,8 +14,8 @@ const HomeBrand = () => {
 
     const redirectToCorrectHomePage = () => {
         const preferedPage = getCookie('preferedPage');
-        if (preferedPage === 'influencer' ) {
-            window.location.replace("/home-influencer");
+        if (preferedPage === 'content-creator' ) {
+            window.location.replace("/home-content-creator");
         };
     };
 

@@ -17,7 +17,7 @@ const InfluencerBoxes = ({shown}) => {
     return (
         <div className="influencer-boxes">
             <InfluencerBox 
-                title="Nano-influencer" 
+                title="Nano content-creator" 
                 followers="1K-5K followers" 
                 container={0}
                 ratings={{
@@ -30,7 +30,7 @@ const InfluencerBoxes = ({shown}) => {
             />
 
             <InfluencerBox 
-                title="Micro-influencer" 
+                title="Micro content-creator" 
                 followers="5K-20K followers" 
                 container={1}
                 ratings={{
@@ -43,7 +43,7 @@ const InfluencerBoxes = ({shown}) => {
             />
 
             <InfluencerBox 
-                title="Meso-influencer" 
+                title="Meso content-creator" 
                 followers="20K-100K followers" 
                 container={2}
                 ratings={{
@@ -56,7 +56,7 @@ const InfluencerBoxes = ({shown}) => {
             />
 
             <InfluencerBox 
-                title="Macro-influencer" 
+                title="Macro content-creator" 
                 followers="100K-1M followers" 
                 container={3}
                 ratings={{
@@ -69,7 +69,7 @@ const InfluencerBoxes = ({shown}) => {
             />
 
             <InfluencerBox 
-                title="Mega-influencer" 
+                title="Mega content-creator" 
                 followers="+1M followers" 
                 container={4}
                 ratings={{

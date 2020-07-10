@@ -13,7 +13,7 @@ const HomeInfluencer = () => {
     const { getText } = useLanguage(); 
     const { getCookie } = useToolbox();
 
-    const text = getText("influencer");
+    const text = getText("content-creator");
 
     const redirectToCorrectHomePage = () => {
         const preferedPage = getCookie('preferedPage');
@@ -27,7 +27,7 @@ const HomeInfluencer = () => {
     }
 
     useEffect(() => {
-        document.title = "Connus | Influencer"
+        document.title = "Connus | Content-creator  "
     });
 
     redirectToCorrectHomePage();
@@ -45,12 +45,12 @@ const HomeInfluencer = () => {
             />
 
             <SectionOne 
-                page="influencer" 
+                page="content-creator" 
             />
 
             
             <SectionTwo 
-                page="influencer" 
+                page="content-creator" 
             />
 
             <InfluencerSection 

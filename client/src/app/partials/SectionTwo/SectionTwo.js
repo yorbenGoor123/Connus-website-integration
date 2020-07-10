@@ -17,7 +17,7 @@ function SectionTwo(props) {
     const [activeDotNr, setActiveDotNr] = useState(undefined);
 
     useEffect (() => {
-        const limit = (props.page === 'influencer') ? '8' : (props.page === 'brand') ? '9' : 0;
+        const limit = (props.page === 'content-creator') ? '8' : (props.page === 'brand') ? '9' : 0;
         for (let i = 1; i < limit; i ++) {
             if (document.getElementById(`fact-card-mobile-${i}`)) document.getElementById(`fact-card-mobile-${i}`)
             .addEventListener('click', () => {
@@ -51,13 +51,14 @@ function SectionTwo(props) {
                     {/* <Text
                         color="white-font" 
                         text={Parser(text["section_two_text_three"])} 
-                    /> */}
+                    /> */}            
+                    <p className={`text-container__disclaimer text-container__disclaimer--${props.page}`}>* This data has been collected during the early acces beta test phase of the connus app.</p>
                 </div>
             </div>
 
             <div className="section-two__phone-container container">
                 {
-                    (props.page === "influencer")
+                    (props.page === "content-creator")
                     ?
                     <Row>
                         <div className="col d-none d-lg-block"><div className="column-left">
@@ -69,7 +70,7 @@ function SectionTwo(props) {
                             />
                             <FactCard
                                 page={props.page}
-                                numberBig="103"
+                                numberBig="144"
                                 text={Parser(text["section_two_bubble_two_text"])} 
                             />
                             <FactCard
@@ -105,7 +106,7 @@ function SectionTwo(props) {
                                     active={(activeDotNr === "2") ? "true": "false"}
                                     id="fact-card-mobile-2"
 
-                                    numberBig="103"
+                                    numberBig="144"
                                     text={Parser(text["section_two_bubble_two_text"])} 
 
                                     unfoldDirection="top-left-large"
@@ -133,7 +134,7 @@ function SectionTwo(props) {
                                     active={(activeDotNr === "4") ? "true": "false"}
                                     id="fact-card-mobile-4"
 
-                                    numberBig="93"
+                                    numberBig="604"
                                     text={Parser(text["section_two_bubble_four_text"])} 
 
                                     unfoldDirection="top-right-large"
@@ -161,7 +162,7 @@ function SectionTwo(props) {
                                     active={(activeDotNr === "6") ? "true": "false"}
                                     id="fact-card-mobile-6"
 
-                                    numberBig="186"
+                                    numberBig="760"
                                     text={Parser(text["section_two_bubble_five_text"])} 
 
                                     unfoldDirection="top-left-large"
@@ -190,7 +191,7 @@ function SectionTwo(props) {
                         <div className="col d-none d-lg-block"><div className="column-right">
                             <FactCard
                                 page={props.page}
-                                numberBig="93"
+                                numberBig="604"
                                 text={Parser(text["section_two_bubble_four_text"])} 
                                 leftOffset="3vw"
                                 topOffset="-3vh"
@@ -203,7 +204,7 @@ function SectionTwo(props) {
                             />
                             <FactCard
                                 page={props.page}
-                                numberBig="186"
+                                numberBig="760"
                                 text={Parser(text["section_two_bubble_five_text"])} 
                                 topOffset="3vh"
                                 leftOffset="-8vw"
@@ -233,7 +234,7 @@ function SectionTwo(props) {
                             />
                             <FactCard
                                 page={props.page}
-                                numberBig="103"
+                                numberBig="144"
                                 text={Parser(text["section_two_bubble_two_text"])} 
                                 leftOffset="7vw"
                             />
@@ -273,7 +274,7 @@ function SectionTwo(props) {
                                     active={(activeDotNr === "2") ? "true": "false"}
                                     id="fact-card-mobile-2"
 
-                                    numberBig="103"
+                                    numberBig="144"
                                     text={Parser(text["section_two_bubble_two_text"])} 
 
                                     unfoldDirection="top-left-large"
@@ -313,7 +314,7 @@ function SectionTwo(props) {
                                     active={(activeDotNr === "5") ? "true": "false"}
                                     id="fact-card-mobile-5"
 
-                                    numberBig="93"
+                                    numberBig="604"
                                     text={Parser(text["section_two_bubble_four_text"])} 
 
                                     unfoldDirection="top-right-large"
@@ -340,7 +341,7 @@ function SectionTwo(props) {
                                     active={(activeDotNr === "7") ? "true": "false"}
                                     id="fact-card-mobile-7"
 
-                                    numberBig="186"
+                                    numberBig="760"
                                     text={Parser(text["section_two_bubble_five_text"])} 
 
                                     unfoldDirection="top-left-large"
@@ -368,7 +369,7 @@ function SectionTwo(props) {
                         <div className="col d-none d-lg-block"><div className="column-right">
                             <FactCard
                                 page={props.page}
-                                numberBig="93"
+                                numberBig="604"
                                 text={Parser(text["section_two_bubble_four_text"])} 
                                 leftOffset="3vw"
                                 topOffset="-3vh"
@@ -380,7 +381,7 @@ function SectionTwo(props) {
                             />
                             <FactCard
                                 page={props.page}
-                                numberBig="186"
+                                numberBig="760"
                                 text={Parser(text["section_two_bubble_five_text"])} 
                                 topOffset="3vh"
                                 leftOffset="-8vw"

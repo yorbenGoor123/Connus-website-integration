@@ -55,13 +55,13 @@ const Popup = (props) => {
                         />
                         <Switch
                             valueOne="brand"
-                            valueTwo="influencer"
+                            valueTwo="content-creator"
                             onSwitch={switchAction}
                             defaultValue={(getCookie('preferedPage') === "brand" ? 0 : 1 )}
                         />
                     </div>
 
-                    <div className="popup__email">
+                    {/* <div className="popup__email">
                         <Text 
                             text="Stay up-to-date!"
                             color="blue-font"
@@ -77,7 +77,7 @@ const Popup = (props) => {
                         </div>
                               
                     </div>
-                    <PrimaryButton onClick={onSubmit} text="Submit" />
+                    <PrimaryButton onClick={onSubmit} text="Submit" /> */}
                 </div>
             </div>
         </Fragment>

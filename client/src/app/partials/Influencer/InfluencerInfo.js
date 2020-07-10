@@ -53,6 +53,7 @@ const InfluencerInfo = ({ shown, info }) => {
                 </div>
                 <h4>{info.title}</h4>
                 <p>{info.text}</p>
+                <p className="info-card__center">{Parser(text["info_source"])}</p>
             </div>
         </div>
     )
