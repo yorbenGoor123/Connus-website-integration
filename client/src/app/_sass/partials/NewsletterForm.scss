@@ -1,9 +1,6 @@
 .newsletter-form {
     margin-bottom: 50px;
-    background-color: $blue;
     padding: 40px;
-    border-radius: 10px;
-    box-shadow: $standard-shadow;
 
     h2 {
         animation: none;
@@ -39,6 +36,8 @@
                 font-family: $primary-font;
                 font-size: $font-size-button;
                 font-weight: 100;
+                margin-left: 20px;
+                margin-bottom: 10px;
             }
 
             input, label {
@@ -47,13 +46,17 @@
 
             input {
                 width: 100%;
+                padding: 10px 20px;
+                border-radius: 50px;
+                box-shadow: $standard-shadow;
                 background: none;
                 border: none;
-                font-size: $font-size-input;
-                color: $white;
+                font-size: $font-size-lighttext;
+                color: $black;
                 font-family: $primary-font;
-                -webkit-text-fill-color: $white;
-                opacity: 1; /* required on iOS */
+                background-color: $lightblue;
+                -webkit-text-fill-color: $black;
+                opacity: 1;
 
                 margin-top: -10px;
             }

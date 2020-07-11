@@ -39,7 +39,7 @@ const HamburgerMenu = ({click}) => {
                         <Col sizes="col-12 d-flex justify-content-center">
                             <Switch
                                 valueOne="brand"
-                                valueTwo="influencer"
+                                valueTwo="content-creator"
                                 onSwitch={switchAction}
                                 defaultValue={(getCookie('preferedPage') === "brand" ? 0 : 1 )}
                             />

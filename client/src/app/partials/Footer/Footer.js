@@ -10,7 +10,6 @@ import { NewsletterForm } from '../Newsletter';
 
 import Facebook from '../../assets/icons/facebook.png';
 import Instagram from '../../assets/icons/instagram.png';
-import Twitter from '../../assets/icons/twitter.png';
 import Linkedin from '../../assets/icons/linkedin.png';
 
 const Footer = ({target}) => {
@@ -48,7 +47,6 @@ const Footer = ({target}) => {
                             <SocialButton img={Linkedin} pageRef={"https://www.linkedin.com/company/connus-be/?originalSubdomain=be"} />
                             <SocialButton img={Facebook} pageRef={"https://www.facebook.com/pages/category/Computer-Company/Connus-104463651083787/"} />
                             <SocialButton img={Instagram} pageRef={"https://www.instagram.com/connus_be/"}/>
-                            <SocialButton img={Twitter} pageRef={"/"} />
                         </SocialButtons>
                     </Col>
                 </Row>

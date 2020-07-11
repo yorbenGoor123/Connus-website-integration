@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { DownloadButton, SectionTitle } from '../../components';
+import { DownloadButton, SmallTitle } from '../../components';
 
 import UserMock from '../../assets/mock/user-phone.png';
 import IosDownload from '../../assets/icons/download-ios.png';
@@ -18,7 +18,7 @@ const SectionEnd = ({title}) => {
                         <img src={UserMock} alt="user-mock" className="section-end__mock d-lg-flex d-none" />
 
                         <div className="section-end__content">
-                            <SectionTitle
+                            <SmallTitle
                                 text={title}
                                 color="title-blue"
                             />

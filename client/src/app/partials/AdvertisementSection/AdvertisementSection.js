@@ -22,7 +22,7 @@ const AdvertisementSection = (props) => {
                     {
                         props.readmore ? (
                             <ReadMoreButton
-                                link="/advertisement-influencer"
+                                link="/advertisement-content-creator"
                             />
                         ) : (
                             ''

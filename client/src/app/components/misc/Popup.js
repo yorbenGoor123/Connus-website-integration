@@ -1,34 +1,21 @@
-import React, { Fragment, useState } from 'react';
-import Parser from 'html-react-parser';
+import React, { Fragment } from 'react';
 
-import { useToolbox, useDatabase } from '../../services';
+import { useToolbox } from '../../services';
 import { SectionTitle, Text } from '../typography';
-import { Switch, PrimaryButton } from '../buttons';
-import InputField from './InputField';
+import { Switch } from '../buttons';
 
 import Exit from '../../assets/icons/exit.png';
 
 const Popup = (props) => {
     const { setPage, getCookie } = useToolbox();
-    const { newsletterSignUp } = useDatabase();
 
     const switchAction = (status) => {
         setPage(status);
     };
 
-    const onSubmit = () => {
-        const email = document.getElementById('email-input').value;
-
-        newsletterSignUp({
-            "email": email,
-            "target": getCookie("preferedPage") || "influencer",
-        });
-        document.getElementById('subscribe-feedback').innerHTML = "Subscribed!"
-    };
-
     const exit = () => {
         if (!getCookie('preferedPage')) {
-            setPage("influencer");
+            setPage("content-creator");
         };
 
         window.location.reload();
