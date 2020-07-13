@@ -20,8 +20,23 @@
     }
 }
 
-// Media for mobile devices
-@media (max-width: 992px) {  
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (max-device-height: 667px) {
+    .head {
+        padding-top: 150px;
+        height: 150vh;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (min-device-height: 668px) {
+    .head {
+        padding-top: 150px;
+        height: 125vh;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-device-width : 480px) and (max-device-width : 992px) {  
     .head {
         height: 130vh;
         align-items: flex-start;

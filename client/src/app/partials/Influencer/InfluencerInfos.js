@@ -17,23 +17,23 @@ const InfluencerInfos = ({shown, info}) => {
     return (
         <div className="influencer-infos">
             <InfluencerInfo shown={shown} info={{
-                "title": "Nano-influencer",
+                "title": "Nano content creator",
                 "text": info.nano,
             }}/>
             <InfluencerInfo shown={shown} info={{
-                "title": "Micro-influencer",
+                "title": "Micro content creator",
                 "text": info.micro,
             }}/>
             <InfluencerInfo shown={shown} info={{
-                "title": "Meso-influencer",
+                "title": "Meso content creator",
                 "text": info.meso,
             }}/>
             <InfluencerInfo shown={shown} info={{
-                "title": "Macro-influencer",
+                "title": "Macro content creator",
                 "text": info.macro,
             }}/>
             <InfluencerInfo shown={shown} info={{
-                "title": "Mega-influencer",
+                "title": "Mega content creator",
                 "text": info.mega,
             }}/>
         </div>
