@@ -1,6 +1,6 @@
 .empty-mockup {
     background-image: url("../../assets/mock/empty-phone.png");
-    width: 330px;
+    max-width: 330px;
     height: 530px;
     background-size: contain;
     position: absolute;
@@ -8,6 +8,7 @@
     top: -15vh;
     transform: rotate(5deg);
     background-repeat: no-repeat;
+    background-position: center;
 
     display: flex;
     align-items: center;
@@ -49,6 +50,7 @@
 
 @media screen and (min-width: 1600px) {
     .empty-mockup {
+        max-width: 430px;
         img {
             width: 80px;
         }
