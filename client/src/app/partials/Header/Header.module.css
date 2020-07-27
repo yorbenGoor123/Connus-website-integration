@@ -3,8 +3,14 @@
     
 }
 
+
+
 .menuItems {
     display: none;
+}
+
+.header__dropDown {
+    position: absolute;
 }
 
 
@@ -28,5 +34,10 @@
     .menuItem__dropDown::after {
         content: url('../../assets//icons/dropdown.svg');
         margin-left: .4rem;
+    }
+
+    .header__dropDown {
+        position: absolute;
+        left: 5rem;
     }
 }

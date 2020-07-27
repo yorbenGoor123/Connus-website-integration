@@ -8,10 +8,12 @@ import { useAnimation } from '../../services';
 import { FullLogo, HeaderChoice, HamburgerButton } from '../../components';
 import { HamburgerMenu } from '../HamburgerMenu';
 import style from './Header.module.css'
+import { useObserver } from 'mobx-react-lite';
 
 const Header = () => {
     const { startHomeAnimation } = useAnimation();
     const [ hamburger, setHamburger ] = useState();
+    console.log(uiStore.dropdown)
     
     useEffect(() => {
         startHomeAnimation();
@@ -58,18 +60,20 @@ const Header = () => {
 
     const handleMouseEnter = () => {
         uiStore.viewDropdown();  
-        console.log(uiStore.dropdown);
+        console.log(uiStore.dropdown)
+      
      
       }
     
       const handleMouseLeave = () => {
         uiStore.disableDropdown();
-        console.log(uiStore.dropdown);
+        console.log(uiStore.dropdown)
+        
         
       
       }
 
-    return (
+    return useObserver(() =>(
         <div className="header">
             <Container>
                 <Row>
@@ -81,10 +85,10 @@ const Header = () => {
                                 <li className={style.menuItem__dropDown}>functionalities</li>
                             </ul>
                             {uiStore.dropdown ? 
-                                <div >
+                                <div className={style.header__dropDown} >
                                 <DropDownMenu  />
                                 </div>
-                                : null}
+                                : null} 
                             </div>
                         </div>
                         
@@ -108,7 +112,7 @@ const Header = () => {
                 </Row>
             </Container>
         </div>
-    )
+    ))
 };
 
 export default Header;
