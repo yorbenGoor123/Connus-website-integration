@@ -4,6 +4,7 @@ import { Container, Row, Col } from '../Layout';
 import { useAnimation } from '../../services';
 import { FullLogo, HeaderChoice, HamburgerButton } from '../../components';
 import { HamburgerMenu } from '../HamburgerMenu';
+import style from './Header.module.css'
 
 const Header = () => {
     const { startHomeAnimation } = useAnimation();
@@ -57,7 +58,13 @@ const Header = () => {
             <Container>
                 <Row>
                     <Col sizes="col-12 col-md-6 d-md-block d-flex justify-content-center">
-                        <FullLogo />
+                        <div className={style.menuNav__wrapper}>
+                            <FullLogo />
+                            <ul className={style.menuItems}>
+                                <li className={style.menuItem__dropDown}>functionalities</li>
+                            </ul>
+                        </div>
+                        
                     </Col>
 
                     <Col sizes="col-md-6 d-md-flex d-none align-items-center justify-content-end">
