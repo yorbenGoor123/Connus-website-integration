@@ -4,6 +4,9 @@
     animation: fadeIn ease-in-out .5s;
     animation-fill-mode: forwards;
     position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 25rem;
 }
 
 .dropdown__menu__info {
@@ -17,6 +20,8 @@
 
 .dropdown__menu__title {
     color: black;
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 
 @keyframes fadeIn {

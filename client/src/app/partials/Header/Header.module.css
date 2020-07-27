@@ -3,14 +3,14 @@
     
 }
 
-
-
 .menuItems {
     display: none;
 }
 
 .header__dropDown {
     position: absolute;
+    margin-top: 1rem;
+    left: 6rem;
 }
 
 
@@ -38,6 +38,7 @@
 
     .header__dropDown {
         position: absolute;
-        left: 5rem;
+        left: 7rem;
+
     }
 }
