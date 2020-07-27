@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
+import { uiStore } from '../../../stores/UiStore';
+
+import DropDownMenu from '../../partials/DropDownMenu/DropDownMenu';
 import { Container, Row, Col } from '../Layout';
 import { useAnimation } from '../../services';
 import { FullLogo, HeaderChoice, HamburgerButton } from '../../components';
@@ -53,6 +56,19 @@ const Header = () => {
         window.location.reload();
     };
 
+    const handleMouseEnter = () => {
+        uiStore.viewDropdown();  
+        console.log(uiStore.dropdown);
+     
+      }
+    
+      const handleMouseLeave = () => {
+        uiStore.disableDropdown();
+        console.log(uiStore.dropdown);
+        
+      
+      }
+
     return (
         <div className="header">
             <Container>
@@ -60,9 +76,16 @@ const Header = () => {
                     <Col sizes="col-12 col-md-6 d-md-block d-flex justify-content-center">
                         <div className={style.menuNav__wrapper}>
                             <FullLogo />
+                            <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={style.navMenu}>
                             <ul className={style.menuItems}>
                                 <li className={style.menuItem__dropDown}>functionalities</li>
                             </ul>
+                            {uiStore.dropdown ? 
+                                <div >
+                                <DropDownMenu  />
+                                </div>
+                                : null}
+                            </div>
                         </div>
                         
                     </Col>
