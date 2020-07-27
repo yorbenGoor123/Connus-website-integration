@@ -1,5 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
+import ROUTES from '../consts/routes';
+import { BrowserRouter as Router, Switch, Redirect, Route } from 'react-router-dom';
+import DetailFunctionalities from './pages/detail/DetailFunctionalities';
 
 import { AnimateProvider, LanguageProvider, ToolboxProvider, DatabaseProvider } from './services';
 import { StandardRoute } from './utils';
@@ -10,6 +12,7 @@ import './_sass/index.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
+  
   return (
     <DatabaseProvider>
       <ToolboxProvider>
@@ -17,6 +20,9 @@ function App() {
           <AnimateProvider>
               <Router basename="/">
                 <Switch>
+                  <Route path = {ROUTES.functionality}>
+                      <DetailFunctionalities />
+                  </Route>
                   <Redirect exact path="/" to='/home-content-creator'/>
                   <StandardRoute exact path="/home-content-creator" component={HomeInfluencer} layout={RouteLayout} />
                   <StandardRoute exact path="/home-brand" component={HomeBrand} layout={RouteLayout} />

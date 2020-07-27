@@ -1,0 +1,48 @@
+.detailPageLanding {
+    display: flex;
+    justify-content: space-around;
+}
+
+.detailWrapper {
+    margin-top: 10rem;
+}
+
+.detailPageLanding__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: tenon, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    font-size: 3.5rem;
+}
+
+.detailPageLanding__info__title {
+    margin: 0;
+}
+
+.detailPageLanding__info__number {
+    margin: 0;
+}
+
+.detailPage__MenuItems {
+    margin-left: 30rem;
+    list-style-type: none;
+    line-height: 2.2rem;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    font-weight: 200;
+}
+
+
+.detailPage__MenuItem::before {
+    content: url('../../assets/icons/bulletpointDetail.svg');
+    margin-right: 1rem;
+}
+
+.detailPage__MenuItem::after {
+    content: url('../../assets/icons/goto.svg');
+    margin-left: .5rem;
+}
+
