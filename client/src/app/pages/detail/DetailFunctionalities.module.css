@@ -56,6 +56,11 @@
 
 
 @media screen and (min-width: 1200px) {
+    .detailPageLanding__info__title {
+        
+        text-align: left;
+    }
+
     .detailPageLanding {
         display: flex;
         justify-content: space-around;
