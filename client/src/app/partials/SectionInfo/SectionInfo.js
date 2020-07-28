@@ -9,7 +9,7 @@ const SectionInfo = ({direction, title, text, illustration, marginLeft, marginRi
                 <h2 className={style.detailPageSectionInfo__title}>{title}</h2>
                 <p className={style.detailPageSectionInfo__paragraph}>{text}</p>
             </div>
-            <img style={{marginLeft: `${marginLeft}`, marginRight:`${marginRight}`}} className={style.illustration} src={require(`../../assets/detailpages/01-content-creator/illustration${illustration}.svg`)} alt="imageConnect"></img>
+            <img  style={{marginLeft: `${marginLeft}`, marginRight:`${marginRight}`}} className={style.illustration}  src={require(`../../assets/detailpages/01-content-creator/illustration${illustration}.svg`)} alt="imageConnect"></img>
         </div>
     );
 };

@@ -12,6 +12,8 @@ import './_sass/index.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
+
+  
   
   return (
     <DatabaseProvider>
@@ -21,7 +23,10 @@ function App() {
               <Router basename="/">
                 <Switch>
                   <Route path = {`${ROUTES.functionality}/:id`}>
-                      <DetailFunctionalities />
+                    
+                       <DetailFunctionalities />
+                 
+                     
                   </Route>
                   <Redirect exact path="/" to='/home-content-creator'/>
                   <StandardRoute exact path="/home-content-creator" component={HomeInfluencer} layout={RouteLayout} />

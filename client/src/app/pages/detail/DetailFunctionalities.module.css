@@ -1,6 +1,6 @@
 .detailPageLanding {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 .detailWrapper {
@@ -9,18 +9,19 @@
 
 .detailPageLanding__info {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     font-family: tenon, sans-serif;
     font-weight: 800;
     font-style: normal;
     color: white;
     font-size: 3.5rem;
+    margin-bottom: 2rem;
 }
 
 .detailPageLanding__info__title {
     margin: 0;
     width: 40rem;
+    text-align: center;
 }
 
 .detailPageLanding__info__number {
@@ -28,12 +29,17 @@
 }
 
 .detailPage__MenuItems {
-    margin-left: 30rem;
+    margin-left: 0rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     list-style-type: none;
     line-height: 2.2rem;
     font-size: 1.2rem;
     text-decoration: underline;
     font-weight: 200;
+    margin-top: 5rem;
 }
 
 
@@ -45,5 +51,41 @@
 .detailPage__MenuItem::after {
     content: url('../../assets/icons/goto.svg');
     margin-left: .5rem;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .detailPageLanding {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .detailPage__MenuItems {
+        margin-left: 20%;
+        list-style-type: none;
+        line-height: 2.2rem;
+        font-size: 1.2rem;
+        text-decoration: underline;
+        font-weight: 200;
+        display: block;
+        margin-top: 0
+       
+    }
+    
+    .detailPageLanding__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: tenon, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        color: white;
+        font-size: 3.5rem;
+        margin-bottom: 15rem;
+        width: 40vw;
+    }
+    
 }
 

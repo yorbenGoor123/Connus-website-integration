@@ -69,8 +69,7 @@ const Header = () => {
       }
     
       const handleMouseLeave = () => {
-        uiStore.disableDropdown();
-        console.log(rootStore.functionalityStore.functionalities)      
+        uiStore.disableDropdown();    
       }
 
     return useObserver(() =>(

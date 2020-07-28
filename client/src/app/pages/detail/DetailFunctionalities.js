@@ -11,12 +11,17 @@ import { useParams } from 'react-router-dom';
 
 
 const DetailFunctionalities = () => {
+
     const { id } = useParams();
-    
     const selectedFunctionality = rootStore.functionalityStore.findFunctionalityById(id);
     
-    
+    console.log(rootStore.functionalityStore.functionalities);
+    setTimeout(() => {
+        
+    }, 500);
 
+
+    
     return useObserver(() => (
         <div className={style.detailWrapper}>
            <HeaderFunctionalities />
@@ -34,7 +39,7 @@ const DetailFunctionalities = () => {
             <ul className={style.detailPage__MenuItems}>
                 {selectedFunctionality.sections.map(section => (
                             <>
-                                <li className={style.detailPage__MenuItem}>{section.title}</li>
+                                <li key={section.id} className={style.detailPage__MenuItem}>{section.title}</li>
                             </>
                 ))}
 
@@ -42,7 +47,7 @@ const DetailFunctionalities = () => {
 
 
             {selectedFunctionality.sections.map(section => (
-                    <SectionInfo 
+                    <SectionInfo key={section.id}
                     title={section.title} 
                     text={section.text} 
                     illustration={section.image} 
