@@ -1,4 +1,4 @@
-import React, { useEffect, Component } from 'react';
+import React, { useEffect } from 'react';
 import style from './DetailFunctionalities.module.css'
 import HeaderFunctionalities from '../../partials/HeaderFunctionalities/HeaderFunctionalities';
 import HeaderImage from '../../assets/detailpages/01-content-creator/headerImage.svg'
@@ -27,6 +27,7 @@ const DetailFunctionalities = () => {
         }, 800);
         
     }));
+
     
             
 

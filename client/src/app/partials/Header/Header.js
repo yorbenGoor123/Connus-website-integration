@@ -9,7 +9,6 @@ import { FullLogo, HeaderChoice, HamburgerButton } from '../../components';
 import { HamburgerMenu } from '../HamburgerMenu';
 import style from './Header.module.css'
 import { useObserver } from 'mobx-react-lite';
-import { rootStore } from '../../../stores';
 
 const Header = () => {
     const { startHomeAnimation } = useAnimation();
@@ -24,7 +23,7 @@ const Header = () => {
         const menu = document.getElementsByClassName('hamburger-menu')[0];
         const logo = document.getElementsByClassName('hamburger-menu__logo')[0];
         const content = document.getElementsByClassName('hamburger-menu__content')[0];
-        const link = document.getElementsByClassName('hamburger-menu__link')[0];
+      
 
         if (hamburger === true) {
             menu.style.top = "0";

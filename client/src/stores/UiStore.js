@@ -32,6 +32,7 @@ class UiStore {
 decorate(UiStore, {
     dropdown: observable,
     isLoaded: observable,
+    selectedFunctionality: observable,
     viewDropdown: action,
     disableDropdown: action,
     setSorted: action,
