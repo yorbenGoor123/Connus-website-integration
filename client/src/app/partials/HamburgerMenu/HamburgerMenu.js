@@ -6,7 +6,7 @@ import Exit from '../../assets/icons/exit.png';
 import { Switch, Text } from '../../components';
 import { useToolbox } from '../../services';
 import { NavLink } from 'react-router-dom';
-import style from './HamburgerMenu.module.css';
+
 
 const HamburgerMenu = ({click}) => {
     const {setPage, getCookie} = useToolbox();

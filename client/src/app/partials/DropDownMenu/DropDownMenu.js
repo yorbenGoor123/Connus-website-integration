@@ -5,7 +5,7 @@ import Dropdown from '../../components/DropDown/Dropdown';
 import style from './DropDownMenu.module.css';
 import {useStore} from '../../../hooks/index';
 import { Link } from 'react-router-dom';
-import { rootStore } from '../../../stores';
+
 
 
 const DropDownMenu = () => {
