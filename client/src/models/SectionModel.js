@@ -10,6 +10,7 @@ class SectionModel {
         this.direction = direction;
         this.image = image;
         rootStore.sectionStore.addSection(this);
+        rootStore.functionalityStore.findFunctionalityById(this.functionalityId).linkSection(this);
         
         
     }
