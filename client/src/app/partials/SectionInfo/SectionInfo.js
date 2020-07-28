@@ -15,7 +15,7 @@ const SectionInfo = ({direction, title, text, illustration, marginLeft, marginRi
     });
     return (
         <>
-        <div data-aos={(direction === "left" ? "fade-left": "fade-right" )} data-aos-delay="500" data-aos-offset="600"  className= {(direction === "left" ? style.detailPageSectionInfo__wrapper: style.directionLeft)}>
+        <div data-aos={(direction === "left" ? "fade-left": "fade-right" )} data-aos-offset="300"  className= {(direction === "left" ? style.detailPageSectionInfo__wrapper: style.directionLeft)}>
             <div  className={style.detailPageSectionInfo__paragraphs}>
                 <h2 className={style.detailPageSectionInfo__title}>{title}</h2>
                 <p className={style.detailPageSectionInfo__paragraph}>{text}</p>
