@@ -57,7 +57,8 @@ const Header = () => {
 
     const hideHamburger = (state) => {        
         setHamburger(state);
-        window.location.reload();
+        window.location.reload()
+    
     };
 
     const handleMouseEnter = () => {
@@ -71,6 +72,8 @@ const Header = () => {
         uiStore.disableDropdown();    
       }
 
+
+
     return useObserver(() =>(
         <div className="header">
             <Container>
@@ -83,7 +86,7 @@ const Header = () => {
                                 <li className={style.menuItem__dropDown}>functionalities</li>
                             </ul>
                             {uiStore.dropdown ? 
-                                <div className={style.header__dropDown} >
+                                <div  className={style.header__dropDown}>
                                 <DropDownMenu  />
                                 </div>
                                 : null} 
