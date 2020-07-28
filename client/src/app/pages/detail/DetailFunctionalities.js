@@ -45,34 +45,13 @@ const DetailFunctionalities = () => {
             </ul>
 
 
-            
-            <SectionInfo 
-            title="What are other content creators up to?" 
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." 
-            illustration={imageConnect} 
-            direction="right" />
-
-            <SectionInfo 
-            title="Connect with the world. " 
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." 
-            illustration={imageWorld} 
-            direction="left"
-            marginLeft="10rem" />
-
-            <SectionInfo 
-            title="Share tips, tricks and insights" 
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." 
-            illustration={imageInsights} 
-            direction="right"
-            marginRight="10rem" />
-
-            <SectionInfo 
-            title="On the road or at your desk" 
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." 
-            illustration={imageDesk} 
-            direction="left"
-            marginLeft="10rem" />
-           
+            {selectedFunctionality.sections.map(section => (
+                    <SectionInfo 
+                    title={section.title} 
+                    text={section.text} 
+                    illustration={section.image} 
+                    direction={section.direction} />
+            ))}
            <Footer />
            </>
            ): null}
