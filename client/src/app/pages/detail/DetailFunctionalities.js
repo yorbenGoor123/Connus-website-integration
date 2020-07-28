@@ -10,19 +10,27 @@ import SectionInfo from '../../partials/SectionInfo/SectionInfo';
 import Footer from '../../partials/Footer/Footer';
 import { rootStore } from '../../../stores';
 import { useObserver } from 'mobx-react-lite';
+import { useParams } from 'react-router-dom';
 
 
 
 const DetailFunctionalities = () => {
-    console.log(rootStore.functionalityStore.functionalities[1].sections);
+    const { id } = useParams();
+    
+    const selectedFunctionality = rootStore.functionalityStore.findFunctionalityById(id);
+
+    console.log(rootStore.functionalityStore.functionalities[0])
+    
+
     return useObserver(() => (
         <div className={style.detailWrapper}>
            <HeaderFunctionalities />
-           
-           <div className={style.detailPageLanding}>
+           {selectedFunctionality ? (
+               <>
+               <div className={style.detailPageLanding}>
                <div className={style.detailPageLanding__info}>
-                    <p className={style.detailPageLanding__info__number}>01</p>
-                    <p className={style.detailPageLanding__info__title}>Professional network</p>
+                    
+                    <p className={style.detailPageLanding__info__title}>{selectedFunctionality.title}</p>
                </div>
                 <img className={style.detailPageLanding__headerImage} src={HeaderImage} alt="headerImage"></img>
            </div>
@@ -63,6 +71,10 @@ const DetailFunctionalities = () => {
             marginLeft="10rem" />
            
            <Footer />
+           </>
+           ): null}
+        
+           
         </div>
 
         

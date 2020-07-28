@@ -3,7 +3,12 @@ import {decorate, action, observable} from 'mobx'
 class UiStore {
     constructor () {
         this.dropdown = false;
+        this.selectedFunctionality = undefined;
     
+    }
+
+    setFunctionality (functionality) {
+        this.selectedFunctionality = functionality;
     }
 
     viewDropdown () {

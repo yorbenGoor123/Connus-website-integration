@@ -20,7 +20,7 @@ function App() {
           <AnimateProvider>
               <Router basename="/">
                 <Switch>
-                  <Route path = {ROUTES.functionality}>
+                  <Route path = {`${ROUTES.functionality}/:id`}>
                       <DetailFunctionalities />
                   </Route>
                   <Redirect exact path="/" to='/home-content-creator'/>
