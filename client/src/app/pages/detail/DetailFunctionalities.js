@@ -19,7 +19,6 @@ const DetailFunctionalities = () => {
     
     const selectedFunctionality = rootStore.functionalityStore.findFunctionalityById(id);
 
-    console.log(rootStore.functionalityStore.functionalities)
     
 
     return useObserver(() => (
@@ -37,12 +36,16 @@ const DetailFunctionalities = () => {
 
            
             <ul className={style.detailPage__MenuItems}>
-                <li className={style.detailPage__MenuItem}>What are other content creators up to?</li>
-                <li className={style.detailPage__MenuItem}>Connect with the world. </li>
-                <li className={style.detailPage__MenuItem}>Share tips, tricks, and insights.</li>
-                <li className={style.detailPage__MenuItem}>On the road or at your desk?</li>
+                {selectedFunctionality.sections.map(section => (
+                            <>
+                                <li className={style.detailPage__MenuItem}>{section.title}</li>
+                            </>
+                ))}
+
             </ul>
 
+
+            
             <SectionInfo 
             title="What are other content creators up to?" 
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." 

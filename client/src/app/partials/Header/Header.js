@@ -16,7 +16,7 @@ const Header = () => {
     const [ hamburger, setHamburger ] = useState();
     console.log(uiStore.dropdown)
 
-    console.log(rootStore.functionalityStore.functionalities)
+    
     
     useEffect(() => {
         startHomeAnimation();
@@ -70,10 +70,7 @@ const Header = () => {
     
       const handleMouseLeave = () => {
         uiStore.disableDropdown();
-       
-        
-        
-      
+        console.log(rootStore.functionalityStore.functionalities)      
       }
 
     return useObserver(() =>(
