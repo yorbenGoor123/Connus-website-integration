@@ -10,6 +10,7 @@ class FunctionalityStore {
 
     addFunctionality(functionality) {
         this.functionalities.push(functionality);
+
     }
 
 

@@ -4,11 +4,18 @@ class UiStore {
     constructor () {
         this.dropdown = false;
         this.selectedFunctionality = undefined;
+        this.isLoaded = false;
     
+    }
+
+    loaded () {
+        this.isLoaded = true;
     }
 
     setFunctionality (functionality) {
         this.selectedFunctionality = functionality;
+        console.log("hello");
+       
     }
 
     viewDropdown () {
@@ -24,9 +31,12 @@ class UiStore {
 
 decorate(UiStore, {
     dropdown: observable,
+    isLoaded: observable,
     viewDropdown: action,
     disableDropdown: action,
-    setSorted: action
+    setSorted: action,
+    loaded: action,
+    setFunctionality: action
 })
 
 const uiStore = new UiStore();

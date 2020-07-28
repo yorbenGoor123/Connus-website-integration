@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, Component } from 'react';
 import style from './DetailFunctionalities.module.css'
 import HeaderFunctionalities from '../../partials/HeaderFunctionalities/HeaderFunctionalities';
 import HeaderImage from '../../assets/detailpages/01-content-creator/headerImage.svg'
@@ -7,37 +7,54 @@ import Footer from '../../partials/Footer/Footer';
 import { rootStore } from '../../../stores';
 import { useObserver } from 'mobx-react-lite';
 import { useParams } from 'react-router-dom';
+import { uiStore } from '../../../stores/UiStore';
+import { autorun } from 'mobx';
+
+
 
 
 
 const DetailFunctionalities = () => {
 
+
     const { id } = useParams();
-    const selectedFunctionality = rootStore.functionalityStore.findFunctionalityById(id);
-    
-    console.log(rootStore.functionalityStore.functionalities);
-    setTimeout(() => {
+
         
-    }, 500);
+    
+    useEffect (() => autorun(() => {
+        setTimeout(() => {
+            uiStore.loaded();
+        }, 800);
+        
+    }));
+    
+            
 
+            uiStore.setFunctionality(rootStore.functionalityStore.findFunctionalityById(id));
+            console.log(rootStore.functionalityStore.functionalities);
+  
 
+    
+
+  
     
     return useObserver(() => (
         <div className={style.detailWrapper}>
            <HeaderFunctionalities />
-           {selectedFunctionality ? (
+        
+           {uiStore.isLoaded && uiStore.selectedFunctionality ? (
                <>
                <div className={style.detailPageLanding}>
                <div className={style.detailPageLanding__info}>
                     
-                    <p className={style.detailPageLanding__info__title}>{selectedFunctionality.title}</p>
+                    <p className={style.detailPageLanding__info__title}>{uiStore.selectedFunctionality.title}</p>
                </div>
                 <img className={style.detailPageLanding__headerImage} src={HeaderImage} alt="headerImage"></img>
            </div>
 
            
             <ul className={style.detailPage__MenuItems}>
-                {selectedFunctionality.sections.map(section => (
+                {uiStore.selectedFunctionality.sections.map(section => (
                             <>
                                 <li key={section.id} className={style.detailPage__MenuItem}>{section.title}</li>
                             </>
@@ -46,7 +63,7 @@ const DetailFunctionalities = () => {
             </ul>
 
 
-            {selectedFunctionality.sections.map(section => (
+            {uiStore.selectedFunctionality.sections.map(section => (
                     <SectionInfo key={section.id}
                     title={section.title} 
                     text={section.text} 
