@@ -6,6 +6,7 @@ import Exit from '../../assets/icons/exit.png';
 import { Switch, Text } from '../../components';
 import { useToolbox } from '../../services';
 import { NavLink } from 'react-router-dom';
+import style from './HamburgerMenu.module.css';
 
 
 const HamburgerMenu = ({click}) => {
@@ -24,6 +25,14 @@ const HamburgerMenu = ({click}) => {
                 <Row>
                     <Col sizes="col-12 d-flex justify-content-center">
                         <img src={Logo} alt="logo-blue" className="hamburger-menu__logo" />
+                    </Col>
+                </Row>
+
+                <Row>
+                    <Col sizes="col-12 d-flex justify-content-center">
+                        <ul className={style.menuItemsHamburger}>
+                            <li className={style.menuItemHamburger}>Functionalities</li>
+                        </ul>
                     </Col>
                 </Row>
                 
