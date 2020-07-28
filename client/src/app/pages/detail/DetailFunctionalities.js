@@ -18,7 +18,7 @@ const DetailFunctionalities = () => {
     const { id } = useParams();
     
     const selectedFunctionality = rootStore.functionalityStore.findFunctionalityById(id);
-
+    
     
 
     return useObserver(() => (
@@ -50,7 +50,9 @@ const DetailFunctionalities = () => {
                     title={section.title} 
                     text={section.text} 
                     illustration={section.image} 
-                    direction={section.direction} />
+                    direction={section.direction}
+                    marginLeft={section.marginLeft}
+                    marginRight = {section.marginRight} />
             ))}
            <Footer />
            </>
