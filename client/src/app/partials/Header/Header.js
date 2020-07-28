@@ -40,7 +40,7 @@ const Header = () => {
                     }, 500);
 
                     setTimeout(() => {
-                        link.style.opacity = "1";
+                        
                     }, 2000);
                 }, 1500);
             }, 100);

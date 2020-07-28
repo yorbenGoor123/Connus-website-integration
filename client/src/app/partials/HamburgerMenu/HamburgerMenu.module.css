@@ -1,12 +1,20 @@
-.menuItemsHamburger {
-    list-style-type: none;
-    color: #4098E6;
-    padding:0;
-    margin:0;
+.accordion {
     margin-top: 4rem;
+    
 }
 
-.menuItemHamburger::after{
-    content: url('../../assets/icons/HamburgerMenuFunDrop.svg');
-    margin-left: .4rem;
+.heading {
+    color: #4098E6;
+}
+
+.dropDownMenuHamburger {
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger__menu__link {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin-top: 5rem;
 }
