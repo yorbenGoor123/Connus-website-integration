@@ -19,7 +19,7 @@ const DetailFunctionalities = () => {
     
     const selectedFunctionality = rootStore.functionalityStore.findFunctionalityById(id);
 
-    console.log(rootStore.functionalityStore.functionalities[0])
+    console.log(rootStore.functionalityStore.functionalities)
     
 
     return useObserver(() => (

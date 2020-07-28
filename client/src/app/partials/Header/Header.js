@@ -9,11 +9,14 @@ import { FullLogo, HeaderChoice, HamburgerButton } from '../../components';
 import { HamburgerMenu } from '../HamburgerMenu';
 import style from './Header.module.css'
 import { useObserver } from 'mobx-react-lite';
+import { rootStore } from '../../../stores';
 
 const Header = () => {
     const { startHomeAnimation } = useAnimation();
     const [ hamburger, setHamburger ] = useState();
     console.log(uiStore.dropdown)
+
+    console.log(rootStore.functionalityStore.functionalities)
     
     useEffect(() => {
         startHomeAnimation();

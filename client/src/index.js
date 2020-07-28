@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './app/App';
 import * as serviceWorker from './serviceWorker';
 import 'jquery/dist/jquery.slim';
+import 'mobx-react-lite/batchingForReactDom'
 
 ReactDOM.render(
   <React.StrictMode>
