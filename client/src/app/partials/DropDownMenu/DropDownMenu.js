@@ -17,7 +17,6 @@ const DropDownMenu = () => {
       functionalityArray.push(functionality);
     }
 
-    console.log(functionalityArray);
 
     return (
         <div className={style.dropDownMenu}>

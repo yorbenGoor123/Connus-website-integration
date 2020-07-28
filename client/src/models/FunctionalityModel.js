@@ -11,8 +11,13 @@ class FunctionalityModel {
         this.title = title;
         this.description = description;
         this.sorted = sorted;
+        this.sections = [];
         rootStore.functionalityStore.addFunctionality(this);
     }
+
+    linkSection(section) {
+      !this.sections.includes(section) && this.sections.push(section);
+  }
 }
 
 

@@ -60,14 +60,14 @@ const Header = () => {
 
     const handleMouseEnter = () => {
         uiStore.viewDropdown();  
-        console.log(uiStore.dropdown)
+       
       
      
       }
     
       const handleMouseLeave = () => {
         uiStore.disableDropdown();
-        console.log(uiStore.dropdown)
+       
         
         
       

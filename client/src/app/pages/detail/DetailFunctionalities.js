@@ -8,9 +8,14 @@ import HeaderFunctionalities from '../../partials/HeaderFunctionalities/HeaderFu
 import HeaderImage from '../../assets/detailpages/01-content-creator/headerImage.svg'
 import SectionInfo from '../../partials/SectionInfo/SectionInfo';
 import Footer from '../../partials/Footer/Footer';
+import { rootStore } from '../../../stores';
+import { useObserver } from 'mobx-react-lite';
+
+
 
 const DetailFunctionalities = () => {
-    return (
+    console.log(rootStore.sectionStore.sections);
+    return useObserver(() => (
         <div className={style.detailWrapper}>
            <HeaderFunctionalities />
            
@@ -61,7 +66,7 @@ const DetailFunctionalities = () => {
         </div>
 
         
-    );
+    ));
 };
 
 export default DetailFunctionalities;
