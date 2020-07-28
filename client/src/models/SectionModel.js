@@ -11,8 +11,6 @@ class SectionModel {
         this.image = image;
         rootStore.sectionStore.addSection(this);
         rootStore.functionalityStore.findFunctionalityById(this.functionalityId).linkSection(this);
-        
-        
     }
 }
 

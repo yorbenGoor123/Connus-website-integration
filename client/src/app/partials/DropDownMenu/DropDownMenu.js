@@ -22,7 +22,7 @@ const DropDownMenu = () => {
         <div className={style.dropDownMenu}>
 
             {functionalityArray.map(functionality => (
-                <Link to={`/functionality/${functionality.id}`} style={{ textDecoration: 'none' }}>
+                <Link key={functionality.id} to={`/functionality/${functionality.id}`} style={{ textDecoration: 'none' }}>
                 <Dropdown key={functionality.id} icon={functionality.icon} title={functionality.title} description={functionality.description} /> 
                 </Link>
             ))}

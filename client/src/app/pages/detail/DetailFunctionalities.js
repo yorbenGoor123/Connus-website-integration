@@ -14,7 +14,7 @@ import { useObserver } from 'mobx-react-lite';
 
 
 const DetailFunctionalities = () => {
-    console.log(rootStore.sectionStore.sections);
+    console.log(rootStore.functionalityStore.functionalities[1].sections);
     return useObserver(() => (
         <div className={style.detailWrapper}>
            <HeaderFunctionalities />
