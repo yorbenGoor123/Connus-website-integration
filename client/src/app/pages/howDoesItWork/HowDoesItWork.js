@@ -19,6 +19,7 @@ const HowDoesItWork = () => {
         
     }));
 
+
     let functionalityArray = [];
     for (let i = 1; i<= rootStore.functionalityStore.filteredFunctionalities.length; i++){
       let functionality = rootStore.functionalityStore.filteredFunctionalities.find(functionality => functionality.sorted === i);

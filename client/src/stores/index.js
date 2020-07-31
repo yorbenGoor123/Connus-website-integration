@@ -4,9 +4,13 @@ import FunctionalityStore from './FunctionalityStore';
 import SectionStore from "./SectionStore";
 
 
+
 configure({enforceActions: "observed"});
 
+
+
 class RootStore {
+    
     constructor() {
         var secondaryAppConfig = {
             apiKey: process.env.REACT_APP_apiKey,
@@ -20,7 +24,8 @@ class RootStore {
         // Initialize Firebase
         this.firebase = firebase.initializeApp(secondaryAppConfig, "connus-functionalities");
         this.functionalityStore = new FunctionalityStore(this);
-        this.sectionStore = new SectionStore(this);    
+        this.sectionStore = new SectionStore(this);  
+        
     }
 }
 
