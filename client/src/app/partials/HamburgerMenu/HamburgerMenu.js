@@ -26,10 +26,11 @@ const HamburgerMenu = ({click}) => {
         
 
     const {functionalityStore} = useStore();
+    console.log(functionalityStore.filteredFunctionalities)
 
     let functionalityArray = [];
-    for (let i = 1; i<= functionalityStore.functionalities.length; i++){
-      let functionality = functionalityStore.functionalities.find(functionality => functionality.sorted === i);
+    for (let i = 1; i<= functionalityStore.filteredFunctionalities.length; i++){
+      let functionality = functionalityStore.filteredFunctionalities.find(functionality => functionality.sorted === i);
       functionalityArray.push(functionality);
     }
 

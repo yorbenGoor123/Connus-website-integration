@@ -69,17 +69,7 @@ const Header = () => {
 
     const handleMouseEnter = () => {
         uiStore.viewDropdown(); 
-        const preferedPage = getCookie('preferedPage');
-        if (preferedPage === 'content-creator' ) {
-            const result = rootStore.functionalityStore.filterFunctionalities("content-creator"); 
-            rootStore.functionalityStore.setFiltered(result);
-        };
 
-        if (preferedPage === 'brand' ) {
-            const result = rootStore.functionalityStore.filterFunctionalities("company"); 
-            rootStore.functionalityStore.setFiltered(result);
-            
-        };
         
      
       }
@@ -87,6 +77,18 @@ const Header = () => {
       const handleMouseLeave = () => {
         uiStore.disableDropdown();    
       }
+
+      const preferedPage = getCookie('preferedPage');
+      if (preferedPage === 'content-creator' ) {
+          const result = rootStore.functionalityStore.filterFunctionalities("content-creator"); 
+          rootStore.functionalityStore.setFiltered(result);
+      };
+
+      if (preferedPage === 'brand' ) {
+          const result = rootStore.functionalityStore.filterFunctionalities("company"); 
+          rootStore.functionalityStore.setFiltered(result);
+          
+      };
 
 
 
