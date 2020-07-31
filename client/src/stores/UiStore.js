@@ -1,7 +1,8 @@
 import {decorate, action, observable} from 'mobx'
 
 class UiStore {
-    constructor () {
+    constructor (rootStore) {
+        this.rootStore = rootStore;
         this.dropdown = false;
         this.selectedFunctionality = undefined;
         this.isLoaded = false;

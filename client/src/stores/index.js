@@ -2,6 +2,7 @@ import * as firebase from "firebase/app";
 import { configure } from 'mobx';
 import FunctionalityStore from './FunctionalityStore';
 import SectionStore from "./SectionStore";
+import UiStore from "./UiStore";
 
 
 
@@ -24,7 +25,8 @@ class RootStore {
         // Initialize Firebase
         this.firebase = firebase.initializeApp(secondaryAppConfig, "connus-functionalities");
         this.functionalityStore = new FunctionalityStore(this);
-        this.sectionStore = new SectionStore(this);  
+        this.sectionStore = new SectionStore(this);
+        this.uiStore = new UiStore(this)  
         
     }
 }

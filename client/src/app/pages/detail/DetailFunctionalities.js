@@ -9,6 +9,7 @@ import { useObserver } from 'mobx-react-lite';
 import { useParams } from 'react-router-dom';
 import { uiStore } from '../../../stores/UiStore';
 import { autorun } from 'mobx';
+import { useStore } from '../../../hooks';
 
 
 
@@ -18,6 +19,7 @@ const DetailFunctionalities = () => {
 
 
     const { id } = useParams();
+    const {uiStore} = useStore();
 
         
     
