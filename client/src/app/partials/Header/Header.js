@@ -12,8 +12,7 @@ import { useObserver } from 'mobx-react-lite';
 import { rootStore } from '../../../stores';
 
 import {useToolbox } from '../../services/toolbox.service';
-import { Link, NavLink } from 'react-router-dom';
-import ROUTES from '../../../consts/routes';
+
 
 const Header = () => {
 

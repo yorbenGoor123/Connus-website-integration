@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import HeaderFunctionalities from '../../partials/HeaderFunctionalities/HeaderFunctionalities';
 import { uiStore } from '../../../stores/UiStore';
-import SectionInfo from '../../partials/SectionInfo/SectionInfo';
 import { Footer } from '../../partials';
 import { rootStore } from '../../../stores';
 import style from './HowDoesItWork.module.css';
