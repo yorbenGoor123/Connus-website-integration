@@ -10,6 +10,7 @@ class FunctionalityStore {
 
     addFunctionality(functionality) {
         this.functionalities.push(functionality);
+    
 
     }
 
@@ -17,12 +18,21 @@ class FunctionalityStore {
     findFunctionalityById(id){
         return this.functionalities.find(functionality => functionality.id === id);
     }
+
+    filterFunctionalities(filter) {
+        if(filter === 'content-creator') {
+            return this.functionalities.filter(functionality => filter ? functionality.targetAudience === filter : true);
+        }else {
+            return this.functionalities.filter(functionality => filter ? functionality.targetAudience === filter : true);
+        }
+    }
 }
 
 decorate(FunctionalityStore, {
     functionalities: observable,
     addFunctionality: action,
-    findFunctionalityById: action
+    findFunctionalityById: action,
+    filterFunctionalities: action
 })
 
 export default FunctionalityStore;

@@ -9,6 +9,7 @@ import { FullLogo, HeaderChoice, HamburgerButton } from '../../components';
 import { HamburgerMenu } from '../HamburgerMenu';
 import style from './Header.module.css'
 import { useObserver } from 'mobx-react-lite';
+import { rootStore } from '../../../stores';
 
 const Header = () => {
     const { startHomeAnimation } = useAnimation();
@@ -62,7 +63,9 @@ const Header = () => {
     };
 
     const handleMouseEnter = () => {
-        uiStore.viewDropdown();  
+        uiStore.viewDropdown(); 
+        const result = rootStore.functionalityStore.filterFunctionalities("company"); 
+        console.log(result)
        
       
      
