@@ -11,10 +11,15 @@ import style from './Header.module.css'
 import { useObserver } from 'mobx-react-lite';
 import { rootStore } from '../../../stores';
 
+import {useToolbox } from '../../services/toolbox.service';
+
 const Header = () => {
     const { startHomeAnimation } = useAnimation();
     const [ hamburger, setHamburger ] = useState();
     console.log(uiStore.dropdown)
+
+    const { getCookie } = useToolbox();
+    
 
     
     
@@ -64,10 +69,18 @@ const Header = () => {
 
     const handleMouseEnter = () => {
         uiStore.viewDropdown(); 
-        const result = rootStore.functionalityStore.filterFunctionalities("company"); 
-        console.log(result)
-       
-      
+        const preferedPage = getCookie('preferedPage');
+        if (preferedPage === 'content-creator' ) {
+            const result = rootStore.functionalityStore.filterFunctionalities("content-creator"); 
+            rootStore.functionalityStore.setFiltered(result);
+        };
+
+        if (preferedPage === 'brand' ) {
+            const result = rootStore.functionalityStore.filterFunctionalities("company"); 
+            rootStore.functionalityStore.setFiltered(result);
+            
+        };
+        
      
       }
     

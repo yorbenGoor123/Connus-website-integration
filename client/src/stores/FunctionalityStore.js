@@ -6,12 +6,17 @@ class FunctionalityStore {
         this.rootStore = rootStore;
         this.functionalityService = new FunctionalityService(this.rootStore.firebase);
         this.functionalities = [];
+        this.filteredFunctionalities = undefined;
     }
 
     addFunctionality(functionality) {
         this.functionalities.push(functionality);
     
 
+    }
+
+    setFiltered (functionality) {
+        this.filteredFunctionalities = functionality;
     }
 
 
@@ -30,9 +35,13 @@ class FunctionalityStore {
 
 decorate(FunctionalityStore, {
     functionalities: observable,
+    filteredFunctionalities: observable,
     addFunctionality: action,
     findFunctionalityById: action,
-    filterFunctionalities: action
+    filterFunctionalities: action,
+    setFiltered: action,
+    
+    
 })
 
 export default FunctionalityStore;

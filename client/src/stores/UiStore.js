@@ -8,6 +8,7 @@ class UiStore {
     
     }
 
+
     loaded () {
         this.isLoaded = true;
     }
@@ -38,6 +39,7 @@ decorate(UiStore, {
     setSorted: action,
     loaded: action,
     setFunctionality: action
+
 })
 
 const uiStore = new UiStore();
