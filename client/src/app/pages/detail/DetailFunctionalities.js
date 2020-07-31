@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import style from './DetailFunctionalities.module.css'
 import HeaderFunctionalities from '../../partials/HeaderFunctionalities/HeaderFunctionalities';
-import HeaderImage from '../../assets/detailpages/01-content-creator/headerImage.svg'
+
 import SectionInfo from '../../partials/SectionInfo/SectionInfo';
 import Footer from '../../partials/Footer/Footer';
 import { rootStore } from '../../../stores';
@@ -50,7 +50,7 @@ const DetailFunctionalities = () => {
                     
                     <p className={style.detailPageLanding__info__title}>{uiStore.selectedFunctionality.title}</p>
                </div>
-                <img className={style.detailPageLanding__headerImage} src={HeaderImage} alt="headerImage"></img>
+                <img className={style.detailPageLanding__headerImage} src={require(`../../assets/detailpages/01-content-creator/header${uiStore.selectedFunctionality.image}.svg`)} alt="headerImage"></img>
            </div>
 
            
