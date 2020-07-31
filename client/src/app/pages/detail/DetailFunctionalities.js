@@ -10,6 +10,8 @@ import { useParams } from 'react-router-dom';
 import { autorun } from 'mobx';
 import { useStore } from '../../../hooks';
 
+import {Link} from 'react-scroll'
+
 
 
 
@@ -59,7 +61,7 @@ const DetailFunctionalities = () => {
             <ul className={style.detailPage__MenuItems}>
                 {uiStore.selectedFunctionality.sections.map(section => (
                             <>
-                                <li key={section.id} className={style.detailPage__MenuItem}>{section.title}</li>
+                               <Link to={section.id} duration={500} smooth={true} offset={-100}> <li key={section.id} className={style.detailPage__MenuItem}>{section.title}</li></Link>
                             </>
                 ))}
 
@@ -68,6 +70,7 @@ const DetailFunctionalities = () => {
             <div className={style.sections}>
             {uiStore.selectedFunctionality.sections.map(section => (
                     <SectionInfo key={section.id}
+                    sectionId={section.id}
                     title={section.title} 
                     text={section.text} 
                     illustration={section.image} 
