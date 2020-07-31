@@ -7,7 +7,6 @@ import Footer from '../../partials/Footer/Footer';
 import { rootStore } from '../../../stores';
 import { useObserver } from 'mobx-react-lite';
 import { useParams } from 'react-router-dom';
-import { uiStore } from '../../../stores/UiStore';
 import { autorun } from 'mobx';
 import { useStore } from '../../../hooks';
 
