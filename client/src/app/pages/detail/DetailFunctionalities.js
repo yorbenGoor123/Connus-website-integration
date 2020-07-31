@@ -41,6 +41,7 @@ const DetailFunctionalities = () => {
   
     
     return useObserver(() => (
+
         <div className={style.detailWrapper}>
            <HeaderFunctionalities />
         
@@ -63,8 +64,8 @@ const DetailFunctionalities = () => {
                 ))}
 
             </ul>
-
-
+            <div className={style.sectionsWrapper}>
+            <div className={style.sections}>
             {uiStore.selectedFunctionality.sections.map(section => (
                     <SectionInfo key={section.id}
                     title={section.title} 
@@ -74,6 +75,9 @@ const DetailFunctionalities = () => {
                     marginLeft={section.marginLeft}
                     marginRight = {section.marginRight} />
             ))}
+
+            </div>
+            </div>
            <Footer />
            </>
            ): null}
