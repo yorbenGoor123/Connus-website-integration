@@ -27,9 +27,9 @@ const SectionInfo = ({direction, title, text, illustration, marginLeft, marginRi
         </div>
         <div className={style.overflow}>
         {direction === "left" ? (
-            <img src={left} alt="left"></img>
+            <img className={style.direction} src={left} alt="left"></img>
         ): direction === "right" ? (
-            <img src={right} alt="right"></img>
+            <img className={style.direction} src={right} alt="right"></img>
         ): direction === "last" ? (
             null
         ): null }
