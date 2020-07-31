@@ -11,7 +11,7 @@ const HeaderChoice = () => {
     const toggle = (state) => {
         setPage(state);
 
-        window.location.reload();
+        window.location.replace("/home-content-creator");
     };
 
     const callback = useCallback(() => {
