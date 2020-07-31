@@ -8,6 +8,11 @@
     
 }
 
+.sectionInfo__imageContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .detailWrapper {
     width: 100vw;
     overflow: hidden;
@@ -93,6 +98,8 @@
         flex-direction: column;
         justify-content: center;
         width: 50vw;
+        margin-left: 10rem;
+        margin-right: 10rem;
     
     }
 
