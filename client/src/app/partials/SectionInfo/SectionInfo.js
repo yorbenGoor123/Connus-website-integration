@@ -14,13 +14,16 @@ const SectionInfo = ({direction, title, text, illustration, marginLeft, marginRi
         Aos.init({duration: 2000})
     });
     return (
-        <>
+        <div className={style.detailWrapper}>
         <div data-aos={(direction === "left" ? "fade-left": "fade-right" )} data-aos-offset="300"  className= {(direction === "left" ? style.detailPageSectionInfo__wrapper: style.directionLeft)}>
             <div  className={style.detailPageSectionInfo__paragraphs}>
                 <h2 className={style.detailPageSectionInfo__title}>{title}</h2>
                 <p className={style.detailPageSectionInfo__paragraph}>{text}</p>
             </div>
-            <img  style={{marginLeft: `${marginLeft}`, marginRight:`${marginRight}`}} className={style.illustration}  src={require(`../../assets/detailpages/01-content-creator/illustration${illustration}.svg`)} alt="imageConnect"></img>
+
+            <div className={style.sectionInfo__imageContainer}>
+            <img className={style.illustration}  src={require(`../../assets/detailpages/01-content-creator/illustration${illustration}.svg`)} alt="imageConnect"></img>
+            </div>
         </div>
         <div className={style.overflow}>
         {direction === "left" ? (
@@ -30,7 +33,7 @@ const SectionInfo = ({direction, title, text, illustration, marginLeft, marginRi
         }
         
         </div>
-        </>
+        </div>
     );
 };
 
