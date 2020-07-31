@@ -10,6 +10,7 @@ import { HomeBrand, HomeInfluencer, PlainPage } from './pages';
 
 import './_sass/index.scss';
 import 'bootstrap/dist/css/bootstrap.css';
+import HowDoesItWork from './pages/howDoesItWork/HowDoesItWork';
 
 function App() {
 
@@ -27,6 +28,13 @@ function App() {
                        <DetailFunctionalities />
                  
                      
+                  </Route>
+
+                  <Route path = {`${ROUTES.functionalities}`}>
+                    
+                    <HowDoesItWork />
+              
+                  
                   </Route>
                   <Redirect exact path="/" to='/home-content-creator'/>
                   <StandardRoute exact path="/home-content-creator" component={HomeInfluencer} layout={RouteLayout} />

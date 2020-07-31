@@ -12,6 +12,8 @@ import { useObserver } from 'mobx-react-lite';
 import { rootStore } from '../../../stores';
 
 import {useToolbox } from '../../services/toolbox.service';
+import { Link, NavLink } from 'react-router-dom';
+import ROUTES from '../../../consts/routes';
 
 const Header = () => {
     const { startHomeAnimation } = useAnimation();
@@ -99,16 +101,21 @@ const Header = () => {
                     <Col sizes="col-12 col-md-6 d-md-block d-flex justify-content-center">
                         <div className={style.menuNav__wrapper}>
                             <FullLogo />
+                            <NavLink className={style.NavItemHowDoes} style={{textDecoration: "none", color: "white"}} to={ROUTES.functionalities}>How it works</NavLink>
                             <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={style.navMenu}>
                             <ul className={style.menuItems}>
+                                
                                 <li className={style.menuItem__dropDown}>functionalities</li>
+                                
                             </ul>
+                            
                             {uiStore.dropdown ? 
                                 <div  className={style.header__dropDown}>
                                 <DropDownMenu  />
                                 </div>
                                 : null} 
                             </div>
+                            
                         </div>
                         
                     </Col>

@@ -1,0 +1,16 @@
+.HiwTitleContainer {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.HiwTitle {
+    font-family: tenon, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+}

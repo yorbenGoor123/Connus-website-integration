@@ -15,7 +15,19 @@
 
 .menuItem__dropDown {
     margin-top: .5rem;
+    width: 10rem;
 }
+
+.NavItemHowDoes {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin-left: 10rem;
+   
+    
+}
+
 
 
 
