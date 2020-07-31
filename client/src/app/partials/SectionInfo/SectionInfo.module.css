@@ -33,6 +33,7 @@
     display: flex;
     justify-content: center;
     margin-top: 6rem;
+    width: 100%;
 }
 
 
@@ -65,12 +66,20 @@
 
 }
 
+@media screen and (min-width: 600px) {
+    .illustration {
+        width: unset;
+    }
+}
+
 
 @media screen and (min-width: 1200px) {
     .overflow {
         display: flex;
         justify-content: center;
     }
+
+
 
     .detailPageSectionInfo__wrapper {
         display: flex;

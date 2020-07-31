@@ -13,6 +13,10 @@
     margin-left: 2rem;
 }
 
+.dropdown__menuItem__icon {
+    display: none;
+}
+
 .dropdown__menu__description {
     color: #818181;
     line-height: 1.5rem;
@@ -27,5 +31,12 @@
 @keyframes fadeIn {
     from {opacity: 0; top: 4px;}
     to {opacity: 1; top: 0px;}
+  }
+
+  @media screen and (min-width: 400px) {
+    .dropdown__menuItem__icon {
+        display: block;
+    }
+
   }
 
