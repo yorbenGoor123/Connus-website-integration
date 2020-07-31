@@ -11,7 +11,15 @@ const HeaderChoice = () => {
     const toggle = (state) => {
         setPage(state);
 
-        window.location.replace("/home-content-creator");
+        const cookie = getCookie('preferedPage');
+        setPrefPage(cookie);
+        
+        if (cookie === 'brand') {
+            window.location.replace("/home-content-creator");
+        } else {
+            window.location.replace("/home-brand");
+        };
+        
     };
 
     const callback = useCallback(() => {
